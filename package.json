@@ -1,0 +1,52 @@
+{
+  "name": "@elonehoo/starter-ts",
+  "type": "module",
+  "version": "0.0.3",
+  "description": "Starter template for TypeScript library",
+  "author": "Elone Hoo <hi@elonehoo.me>",
+  "license": "MIT",
+  "homepage": "https://github.com/elonehoo/starter-ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elonehoo/starter-ts"
+  },
+  "bugs": "https://github.com/elonehoo/starter-ts/issues",
+  "keywords": [
+    "template",
+    "TypeScript"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
+    }
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.cjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "test": "vitest",
+    "ui": "vitest --ui",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "tsc --noEmit",
+    "release": "bumpp package.json --commit --push --tag && pnpm -r publish --access public"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.38.5",
+    "@types/node": "^18.16.0",
+    "bumpp": "^9.1.0",
+    "eslint": "^8.39.0",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.1",
+    "@vitest/ui": "^0.29.2",
+    "vitest": "^0.29.2"
+  }
+}
