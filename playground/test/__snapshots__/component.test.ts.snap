@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TheCounter.vue > should render 1`] = `
+"<div data-loc=\\"/src/components/counter/TheCounter.vue:10\\" inline-flex=\\"\\" m=\\"y-3\\"><button data-loc=\\"/src/components/counter/TheCounter.vue:11\\" class=\\"dec\\" btn=\\"\\" p-2=\\"\\" rounded-full=\\"\\">
+    <div data-loc=\\"/src/components/counter/TheCounter.vue:12\\" i-carbon-subtract=\\"\\"></div>
+  </button>
+  <div data-loc=\\"/src/components/counter/TheCounter.vue:14\\" font=\\"mono\\" w=\\"15\\" m-auto=\\"\\" inline-block=\\"\\">10</div><button data-loc=\\"/src/components/counter/TheCounter.vue:17\\" class=\\"inc\\" btn=\\"\\" p-2=\\"\\" rounded-full=\\"\\">
+    <div data-loc=\\"/src/components/counter/TheCounter.vue:18\\" i-carbon-add=\\"\\"></div>
+  </button>
+</div>"
+`;
