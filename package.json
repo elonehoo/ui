@@ -1,7 +1,7 @@
 {
   "name": "samuui",
   "type": "module",
-  "version": "0.0.3",
+  "version": "0.0.0",
   "description": "Starter template for TypeScript library",
   "author": "Elone Hoo <hi@elonehoo.me>",
   "license": "MIT",
