@@ -6,7 +6,10 @@ import {
   alertWarning,
   alertError,
   avatar,
-  avatarGroup
+  avatarGroup,
+  button,
+  buttonDefault,
+  buttonDefaultActive
 } from './styled'
 import {Colors} from './color/theme'
 
@@ -26,6 +29,10 @@ export function Samuui(): Preset {
       // avatar
       [avatar.name,avatar.value],
       [avatarGroup.name,avatarGroup.value],
+      // button
+      [button.name,button.value],
+      [buttonDefault.name,buttonDefault.value],
+      [buttonDefaultActive.name,buttonDefaultActive.value],
     ],
     preflights:[
 
