@@ -5,7 +5,7 @@ import {
   presetUno,
   presetWebFonts,
 } from 'unocss'
-import {Samuui} from '../src'
+import Samuui from '../src'
 
 export default defineConfig({
   presets: [

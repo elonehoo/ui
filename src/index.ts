@@ -31,7 +31,7 @@ import {
 } from './styled'
 import {Colors} from './color/theme'
 
-export function Samuui(): Preset {
+export default function Samuui(): Preset {
   return {
     name: 'unocss-samu-ui',
     theme:{
