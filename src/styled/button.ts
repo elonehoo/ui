@@ -115,3 +115,14 @@ export const buttonGhost:ShortcutsType = {
     "dark:[&.btn-active]:bg-dark-base-content " +
     "focus-visible:outline-2px focus-visible:outline-solid focus-visible:outline-current"
 }
+
+export const buttonLink:ShortcutsType = {
+  name:'btn-link',
+  value:
+    "border-transparent bg-transparent text-light-primary underline " +
+    "border-none dark:border-transparent dark:bg-transparent dark:text-light-primary " +
+    "hover:border-transparent hover:bg-transparent hover:underline dark:hover:bg-transparent " +
+    "[&.btn-active]:border-transparent [&.btn-active]:bg-transparent [&.btn-active]:underline " +
+    "dark:[&.btn-active]:bg-transparent " +
+    "focus-visible:outline-2px focus-visible:outline-solid focus-visible:outline-current"
+}
