@@ -18,7 +18,10 @@ export const button:ShortcutsType = {
     "dark:hover:border-dark-neutral-focus dark:hover:bg-dark-neutral-focus " +
     "[&.btn-active]:border-light-neutral-focus [&.btn-active]:bg-light-neutral-focus " +
     "dark:[&.btn-active]:border-dark-neutral-focus dark:[&.btn-active]:bg-dark-neutral-focus " +
-    "focus-visible:outline-2px focus-visible:outline-solid focus-visible:outline-#111318"
+    "focus-visible:outline-2px focus-visible:outline-solid focus-visible:outline-#111318 " +
+    // disabled style
+    "disabled:cursor-not-allowed disabled:animate-none disabled:border-opacity-0 disabled:bg-light-neutral disabled:dark:bg-dark-neutral disabled:bg-opacity-20 disabled:text-light-base-content disabled:dark:text-dark-base-content disabled:text-opacity-20 disabled:dark:text-opacity-20 " +
+    "disabled:hover:border-opacity-0 disabled:hover:bg-light-neutral disabled:hover:bg-opacity-20 disabled:hover:text-light-base-content disabled:dark:hover:text-dark-base-content disabled:hover:text-opacity-20 disabled:dark:hover:text-opacity-20 "
 }
 
 export const buttonPrimary:ShortcutsType = {
@@ -125,4 +128,112 @@ export const buttonLink:ShortcutsType = {
     "[&.btn-active]:border-transparent [&.btn-active]:bg-transparent [&.btn-active]:underline " +
     "dark:[&.btn-active]:bg-transparent " +
     "focus-visible:outline-2px focus-visible:outline-solid focus-visible:outline-current"
+}
+
+export const buttonOutline:ShortcutsType = {
+  name:'btn-outline',
+  value:
+    // default style
+    "border-current bg-transparent dark:bg-transparent text-light-base-content dark:text-dark-base-content " +
+    "hover:border-light-base-content dark:hover:border-dark-base-content " +
+    "hover:bg-light-base-content dark:hover:bg-dark-base-content " +
+    "hover:text-light-base-100 dark:hover:text-dark-base-100 " +
+    // active style
+    "[&.btn-active]:border-light-base-content [&.btn-active]:dark:border-light-base-content " +
+    "[&.btn-active]:bg-light-base-content [&.btn-active]:dark:bg-dark-base-content " +
+    "[&.btn-active]:text-light-base-100 [&.btn-active]:dark:text-dark-base-100 " +
+    // primary style
+    "[&.btn-primary]:bg-transparent [&.btn-primary]:dark:bg-transparent " +
+    "[&.btn-primary]:text-light-primary [&.btn-primary]:dark:text-dark-primary " +
+    // primary hover style
+    "[&.btn-primary]:hover:text-light-primary-content [&.btn-primary]:dark:hover:text-light-primary-content " +
+    "[&.btn-primary]:hover:border-light-primary-focus [&.btn-primary]:dark:hover:border-dark-primary-focus " +
+    "[&.btn-primary]:hover:bg-light-primary-focus [&.btn-primary]:dark:hover:bg-dark-primary-focus " +
+    // primary active style
+    "[&.btn-primary]:[&.btn-active]:text-light-primary-content [&.btn-primary]:[&.btn-active]:dark:text-light-primary-content " +
+    "[&.btn-primary]:[&.btn-active]:border-light-primary-focus [&.btn-primary]:[&.btn-active]:dark:border-dark-primary-focus " +
+    "[&.btn-primary]:[&.btn-active]:bg-light-primary-focus [&.btn-primary]:[&.btn-active]:dark:bg-dark-primary-focus " +
+    // secondary style
+    "[&.btn-secondary]:bg-transparent [&.btn-secondary]:dark:bg-transparent " +
+    "[&.btn-secondary]:text-light-secondary [&.btn-secondary]:dark:text-dark-secondary " +
+    // secondary hover style
+    "[&.btn-secondary]:hover:text-light-secondary-content [&.btn-secondary]:dark:hover:text-light-secondary-content " +
+    "[&.btn-secondary]:hover:border-light-secondary-focus [&.btn-secondary]:dark:hover:border-dark-secondary-focus " +
+    "[&.btn-secondary]:hover:bg-light-secondary-focus [&.btn-secondary]:dark:hover:bg-dark-secondary-focus " +
+    // secondary active style
+    "[&.btn-secondary]:[&.btn-active]:text-light-secondary-content [&.btn-secondary]:[&.btn-active]:dark:text-light-secondary-content " +
+    "[&.btn-secondary]:[&.btn-active]:border-light-secondary-focus [&.btn-secondary]:[&.btn-active]:dark:border-dark-secondary-focus " +
+    "[&.btn-secondary]:[&.btn-active]:bg-light-secondary-focus [&.btn-secondary]:[&.btn-active]:dark:bg-dark-secondary-focus " +
+    // accent style
+    "[&.btn-accent]:bg-transparent [&.btn-accent]:dark:bg-transparent " +
+    "[&.btn-accent]:text-light-accent [&.btn-accent]:dark:text-dark-accent " +
+    // accent hover style
+    "[&.btn-accent]:hover:text-light-accent-content [&.btn-accent]:dark:hover:text-light-accent-content " +
+    "[&.btn-accent]:hover:border-light-accent-focus [&.btn-accent]:dark:hover:border-dark-accent-focus " +
+    "[&.btn-accent]:hover:bg-light-accent-focus [&.btn-accent]:dark:hover:bg-dark-accent-focus " +
+    // accent active style
+    "[&.btn-accent]:[&.btn-active]:text-light-accent-content [&.btn-accent]:[&.btn-active]:dark:text-light-accent-content " +
+    "[&.btn-accent]:[&.btn-active]:border-light-accent-focus [&.btn-accent]:[&.btn-active]:dark:border-dark-accent-focus " +
+    "[&.btn-accent]:[&.btn-active]:bg-light-accent-focus [&.btn-accent]:[&.btn-active]:dark:bg-dark-accent-focus " +
+    // success style
+    "[&.btn-success]:bg-transparent [&.btn-success]:dark:bg-transparent " +
+    "[&.btn-success]:text-light-success [&.btn-success]:dark:text-dark-success " +
+    // success hover style
+    "[&.btn-success]:hover:text-light-success-content [&.btn-success]:dark:hover:text-light-success-content " +
+    "[&.btn-success]:hover:border-light-success [&.btn-success]:dark:hover:border-dark-success " +
+    "[&.btn-success]:hover:bg-light-success [&.btn-success]:dark:hover:bg-dark-success " +
+    // success active style
+    "[&.btn-success]:[&.btn-active]:text-light-success-content [&.btn-success]:[&.btn-active]:dark:text-light-success-content " +
+    "[&.btn-success]:[&.btn-active]:border-light-success [&.btn-success]:[&.btn-active]:dark:border-dark-success " +
+    "[&.btn-success]:[&.btn-active]:bg-light-success [&.btn-success]:[&.btn-active]:dark:bg-dark-success " +
+    // info style
+    "[&.btn-info]:bg-transparent [&.btn-info]:dark:bg-transparent " +
+    "[&.btn-info]:text-light-info [&.btn-info]:dark:text-dark-info " +
+    // info hover style
+    "[&.btn-info]:hover:text-light-info-content [&.btn-info]:dark:hover:text-light-info-content " +
+    "[&.btn-info]:hover:border-light-info [&.btn-info]:dark:hover:border-dark-info " +
+    "[&.btn-info]:hover:bg-light-info [&.btn-info]:dark:hover:bg-dark-info " +
+    // info active style
+    "[&.btn-info]:[&.btn-active]:text-light-info-content [&.btn-info]:[&.btn-active]:dark:text-light-info-content " +
+    "[&.btn-info]:[&.btn-active]:border-light-info [&.btn-info]:[&.btn-active]:dark:border-dark-info " +
+    "[&.btn-info]:[&.btn-active]:bg-light-info [&.btn-info]:[&.btn-active]:dark:bg-dark-info " +
+    // warning style
+    "[&.btn-warning]:bg-transparent [&.btn-warning]:dark:bg-transparent " +
+    "[&.btn-warning]:text-light-warning [&.btn-warning]:dark:text-dark-warning " +
+    // warning hover style
+    "[&.btn-warning]:hover:text-light-warning-content [&.btn-warning]:dark:hover:text-light-warning-content " +
+    "[&.btn-warning]:hover:border-light-warning [&.btn-warning]:dark:hover:border-dark-warning " +
+    "[&.btn-warning]:hover:bg-light-warning [&.btn-warning]:dark:hover:bg-dark-warning " +
+    // warning active style
+    "[&.btn-warning]:[&.btn-active]:text-light-warning-content [&.btn-warning]:[&.btn-active]:dark:text-light-warning-content " +
+    "[&.btn-warning]:[&.btn-active]:border-light-warning [&.btn-warning]:[&.btn-active]:dark:border-dark-warning " +
+    "[&.btn-warning]:[&.btn-active]:bg-light-warning [&.btn-warning]:[&.btn-active]:dark:bg-dark-warning " +
+    // error style
+    "[&.btn-error]:bg-transparent [&.btn-error]:dark:bg-transparent " +
+    "[&.btn-error]:text-light-error [&.btn-error]:dark:text-dark-error " +
+    // error hover style
+    "[&.btn-error]:hover:text-light-error-content [&.btn-error]:dark:hover:text-light-error-content " +
+    "[&.btn-error]:hover:border-light-error [&.btn-error]:dark:hover:border-dark-error " +
+    "[&.btn-error]:hover:bg-light-error [&.btn-error]:dark:hover:bg-dark-error " +
+    // error active style
+    "[&.btn-error]:[&.btn-active]:text-light-error-content [&.btn-error]:[&.btn-active]:dark:text-light-error-content " +
+    "[&.btn-error]:[&.btn-active]:border-light-error [&.btn-error]:[&.btn-active]:dark:border-dark-error " +
+    "[&.btn-error]:[&.btn-active]:bg-light-error [&.btn-error]:[&.btn-active]:dark:bg-dark-error "
+}
+
+export const buttonDisabled:ShortcutsType = {
+  name:'btn-disabled',
+  value:
+    "cursor-not-allowed animate-none border-opacity-0 bg-light-neutral dark:bg-dark-neutral bg-opacity-20 dark:bg-opacity-20 text-light-base-content dark:text-dark-base-content text-opacity-20 dark:text-opacity-20 " +
+    "hover:border-opacity-0 hover:bg-light-neutral dark:hover:bg-dark-neutral hover:bg-opacity-20 hover:text-light-base-content dark:hover:text-dark-base-content hover:text-opacity-20 dark:hover:text-opacity-20 "
+}
+
+export const buttonSquare:ShortcutsType = {
+  name:'btn-square',
+  value: "h-12 w-12 p-0"
+}
+
+export const buttonCircle:ShortcutsType = {
+  name:'btn-circle',
+  value: "h-12 w-12 rounded-full p-0"
 }

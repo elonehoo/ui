@@ -16,7 +16,11 @@ import {
   buttonWarning,
   buttonError,
   buttonGhost,
-  buttonLink
+  buttonLink,
+  buttonOutline,
+  buttonDisabled,
+  buttonCircle,
+  buttonSquare
 } from './styled'
 import {Colors} from './color/theme'
 
@@ -47,6 +51,10 @@ export default function Samuui(): Preset {
       [buttonError.name,buttonError.value],
       [buttonGhost.name,buttonGhost.value],
       [buttonLink.name,buttonLink.value],
+      [buttonOutline.name,buttonOutline.value],
+      [buttonDisabled.name,buttonDisabled.value],
+      [buttonCircle.name,buttonCircle.value],
+      [buttonSquare.name,buttonSquare.value],
     ],
     preflights:[
       {
