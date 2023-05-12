@@ -20,7 +20,13 @@ import {
   buttonOutline,
   buttonDisabled,
   buttonCircle,
-  buttonSquare
+  buttonSquare,
+  buttonXs,
+  buttonSm,
+  buttonMd,
+  buttonLg,
+  buttonWide,
+  buttonBlock
 } from './styled'
 import {Colors} from './color/theme'
 
@@ -55,6 +61,12 @@ export default function Samuui(): Preset {
       [buttonDisabled.name,buttonDisabled.value],
       [buttonCircle.name,buttonCircle.value],
       [buttonSquare.name,buttonSquare.value],
+      [buttonXs.name,buttonXs.value],
+      [buttonSm.name,buttonSm.value],
+      [buttonMd.name,buttonMd.value],
+      [buttonLg.name,buttonLg.value],
+      [buttonWide.name,buttonWide.value],
+      [buttonBlock.name,buttonBlock.value],
     ],
     preflights:[
       {

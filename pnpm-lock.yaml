@@ -74,6 +74,9 @@ importers:
       '@types/node':
         specifier: ^18.16.0
         version: 18.16.3
+      '@unocss/preset-icons':
+        specifier: ^0.51.12
+        version: 0.51.12
       '@vitejs/plugin-vue':
         specifier: ^4.1.0
         version: 4.1.0(vite@4.3.3)(vue@3.2.47)
@@ -993,6 +996,10 @@ packages:
       '@unocss/core': 0.51.8
       unconfig: 0.3.7
 
+  /@unocss/core@0.51.12:
+    resolution: {integrity: sha512-H8mLy6ZKu9nGZe5jlHhLPIVwh2G3cCDSBGl5aIZJFI1qpmDC+Zb3iueBGigNpX75IzkjaGKZiK1WUWq8TShjtA==}
+    dev: true
+
   /@unocss/core@0.51.8:
     resolution: {integrity: sha512-myHRKBphEN3h0OnsUhg2JaFKjFGfqF/jmmzZCCMNU5UmxbheZomXANNLYXVgEP6LHvd4xAF0DEzrOBcDPLf0HQ==}
 
@@ -1024,6 +1031,16 @@ packages:
     resolution: {integrity: sha512-2JkGrutvVwvXAC48vCiEpiYLMXlV1rDigR1lwRrKxQC1s/1/j4Wei2RqY0649CkpWZBvdiJ5oPF38NV9pWOnKw==}
     dependencies:
       '@unocss/core': 0.51.8
+
+  /@unocss/preset-icons@0.51.12:
+    resolution: {integrity: sha512-JdA3j9GhpwU6/VJMJjqZulYVdYAx2R86eXdlwZXVt7WYy/zWAF4au1iBI6+e5rp3V98yxFe+byWXqvn5aRUszg==}
+    dependencies:
+      '@iconify/utils': 2.1.5
+      '@unocss/core': 0.51.12
+      ofetch: 1.0.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
 
   /@unocss/preset-icons@0.51.8:
     resolution: {integrity: sha512-qvHNsLYVJw6js+1+FNaNZm4qLTM+z4VnHHp1NNMtqHTMEOFUsxu+bAL6CIPkwja455F1GxyvYbHpB6eekSwNEA==}

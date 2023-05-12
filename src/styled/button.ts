@@ -230,10 +230,50 @@ export const buttonDisabled:ShortcutsType = {
 
 export const buttonSquare:ShortcutsType = {
   name:'btn-square',
-  value: "h-12 w-12 p-0"
+  value:
+    "h-12 w-12 p-0 " +
+    "[&>:where(.btn-xs)]:h-6 [&>:where(.btn-xs)]:w-6 [&>:where(.btn-xs)]:p-0 " +
+    "[&>:where(.btn-sm)]:h-8 [&>:where(.btn-sm)]:w-8 [&>:where(.btn-sm)]:p-0 " +
+    "[&>:where(.btn-md)]:h-12 [&>:where(.btn-md)]:w-12 [&>:where(.btn-md)]:p-0 " +
+    "[&>:where(.btn-lg)]:h-16 [&>:where(.btn-lg)]:w-16 [&>:where(.btn-lg)]:p-0 "
 }
 
 export const buttonCircle:ShortcutsType = {
   name:'btn-circle',
-  value: "h-12 w-12 rounded-full p-0"
+  value:
+    "h-12 w-12 rounded-full p-0 " +
+    "[&>:where(.btn-xs)]:h-6 [&>:where(.btn-xs)]:w-6 [&>:where(.btn-xs)]:rounded-full [&>:where(.btn-xs)]:p-0 " +
+    "[&>:where(.btn-xs)]:h-8 [&>:where(.btn-xs)]:w-8 [&>:where(.btn-xs)]:rounded-full [&>:where(.btn-xs)]:p-0 " +
+    "[&>:where(.btn-xs)]:h-12 [&>:where(.btn-xs)]:w-12 [&>:where(.btn-xs)]:rounded-full [&>:where(.btn-xs)]:p-0 " +
+    "[&>:where(.btn-xs)]:h-16 [&>:where(.btn-xs)]:w-16 [&>:where(.btn-xs)]:rounded-full [&>:where(.btn-xs)]:p-0 "
+}
+
+export const buttonXs:ShortcutsType = {
+  name:'btn-xs',
+  value:"h-6 px-2 min-h-6 text-0.75em"
+}
+
+export const buttonSm:ShortcutsType = {
+  name:'btn-sm',
+  value:"h-8 px-3 min-h-8 text-0.875em"
+}
+
+export const buttonMd:ShortcutsType = {
+  name:'btn-md',
+  value:"h-12 px-4 min-h-12 text-0.875em"
+}
+
+export const buttonLg:ShortcutsType = {
+  name:'btn-lg',
+  value:"h-16 px-6 min-h-16 text-1.125em"
+}
+
+export const buttonWide:ShortcutsType = {
+  name:'btn-wide',
+  value:"w-64"
+}
+
+export const buttonBlock:ShortcutsType = {
+  name:'btn-block',
+  value:"w-full"
 }
