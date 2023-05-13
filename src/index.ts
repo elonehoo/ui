@@ -27,14 +27,72 @@ import {
   buttonWarning,
   buttonWide,
   buttonXs,
+  badge
 } from './styled'
-import { Colors } from './color/theme'
 
 export default function Samuui(): Preset {
   return {
     name: 'unocss-samu-ui',
     theme: {
-      colors: Colors,
+      colors: {
+        light: {
+          primary: '#570DF8',
+          primaryFocus: '#4406CB',
+          primaryContent: '#FFFFFF',
+          secondary: '#F000B8',
+          secondaryFocus: '#C00093',
+          secondaryContent: '#FFFFFF',
+          accent: '#37CDBE',
+          accentFocus: '#2AA69A',
+          accentContent: '#163835',
+          neutral: '#3D4451',
+          neutralFocus: '#313641',
+          neutralContent: '#FFFFFF',
+          base: {
+            100: '#FFFFFF',
+            200: '#F2F2F2',
+            300: '#E5E6E6',
+            content: '#1F2937',
+          },
+          info: '#3ABFF8',
+          infoContent: '#002B3D',
+          success: '#36D399',
+          successContent: '#003320',
+          warning: '#FBBD23',
+          warningContent: '#382800',
+          error: '#F87272',
+          errorContent: '#470000',
+        },
+        dark: {
+          primary: '#661AE6',
+          primaryFocus: '#5114B9',
+          primaryContent: '#FFFFFF',
+          secondary: '#D926AA',
+          secondaryFocus: '#AE1E88',
+          secondaryContent: '#FFFFFF',
+          accent: '#1FB2A5',
+          accentFocus: '#198E84',
+          accentContent: '#FFFFFF',
+          neutral: '#191D24',
+          neutralFocus: '#111318',
+          neutralContent: '#A6ADBB',
+          base: {
+            100: '#2A303C',
+            200: '#242933',
+            300: '#20252E',
+            content: '#A6ADBB',
+          },
+          info: '#3ABFF8',
+          infoContent: '#002B3D',
+          success: '#36D399',
+          successContent: '#003320',
+          warning: '#FBBD23',
+          warningContent: '#382800',
+          error: '#F87272',
+          errorContent: '#470000',
+        },
+        badge: '1.9rem'
+      },
     },
     shortcuts: [
       // alert
@@ -67,8 +125,19 @@ export default function Samuui(): Preset {
       [buttonLg.name, buttonLg.value],
       [buttonWide.name, buttonWide.value],
       [buttonBlock.name, buttonBlock.value],
+      // badge
+      [badge.name, badge.value],
     ],
     preflights: [
+      {
+        getCSS:()=>{
+          return `
+            :root {
+              --badge: 1.9rem;
+            }
+          `
+        }
+      },
       {
         getCSS: () => {
           return `
