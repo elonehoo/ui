@@ -1,76 +1,76 @@
 import type { Preset } from 'unocss'
 import {
   alert,
+  alertError,
   alertInfo,
   alertSuccess,
   alertWarning,
-  alertError,
   avatar,
   avatarGroup,
   button,
-  buttonPrimary,
-  buttonSecondary,
   buttonAccent,
-  buttonInfo,
-  buttonSuccess,
-  buttonWarning,
+  buttonBlock,
+  buttonCircle,
+  buttonDisabled,
   buttonError,
   buttonGhost,
-  buttonLink,
-  buttonOutline,
-  buttonDisabled,
-  buttonCircle,
-  buttonSquare,
-  buttonXs,
-  buttonSm,
-  buttonMd,
+  buttonInfo,
   buttonLg,
+  buttonLink,
+  buttonMd,
+  buttonOutline,
+  buttonPrimary,
+  buttonSecondary,
+  buttonSm,
+  buttonSquare,
+  buttonSuccess,
+  buttonWarning,
   buttonWide,
-  buttonBlock
+  buttonXs,
 } from './styled'
-import {Colors} from './color/theme'
+import { Colors } from './color/theme'
 
 export default function Samuui(): Preset {
   return {
     name: 'unocss-samu-ui',
-    theme:{
-      colors:Colors
+    theme: {
+      colors: Colors,
     },
-    shortcuts:[
+    shortcuts: [
       // alert
-      [alert.name,alert.value],
-      [alertInfo.name,alertInfo.value],
-      [alertSuccess.name,alertSuccess.value],
-      [alertWarning.name,alertWarning.value],
-      [alertError.name,alertError.value],
+      [alert.name, alert.value],
+      [alertInfo.name, alertInfo.value],
+      [alertSuccess.name, alertSuccess.value],
+      [alertWarning.name, alertWarning.value],
+      [alertError.name, alertError.value],
       // avatar
-      [avatar.name,avatar.value],
-      [avatarGroup.name,avatarGroup.value],
+      [avatar.name, avatar.value],
+      [avatarGroup.name, avatarGroup.value],
       // button
-      [button.name,button.value],
-      [buttonPrimary.name,buttonPrimary.value],
-      [buttonSecondary.name,buttonSecondary.value],
-      [buttonAccent.name,buttonAccent.value],
-      [buttonInfo.name,buttonInfo.value],
-      [buttonSuccess.name,buttonSuccess.value],
-      [buttonWarning.name,buttonWarning.value],
-      [buttonError.name,buttonError.value],
-      [buttonGhost.name,buttonGhost.value],
-      [buttonLink.name,buttonLink.value],
-      [buttonOutline.name,buttonOutline.value],
-      [buttonDisabled.name,buttonDisabled.value],
-      [buttonCircle.name,buttonCircle.value],
-      [buttonSquare.name,buttonSquare.value],
-      [buttonXs.name,buttonXs.value],
-      [buttonSm.name,buttonSm.value],
-      [buttonMd.name,buttonMd.value],
-      [buttonLg.name,buttonLg.value],
-      [buttonWide.name,buttonWide.value],
-      [buttonBlock.name,buttonBlock.value],
+      [button.name, button.value],
+      [buttonPrimary.name, buttonPrimary.value],
+      [buttonSecondary.name, buttonSecondary.value],
+      [buttonAccent.name, buttonAccent.value],
+      [buttonInfo.name, buttonInfo.value],
+      [buttonSuccess.name, buttonSuccess.value],
+      [buttonWarning.name, buttonWarning.value],
+      [buttonError.name, buttonError.value],
+      [buttonGhost.name, buttonGhost.value],
+      [buttonLink.name, buttonLink.value],
+      [buttonOutline.name, buttonOutline.value],
+      [buttonDisabled.name, buttonDisabled.value],
+      [buttonCircle.name, buttonCircle.value],
+      [buttonSquare.name, buttonSquare.value],
+      [buttonXs.name, buttonXs.value],
+      [buttonSm.name, buttonSm.value],
+      [buttonMd.name, buttonMd.value],
+      [buttonLg.name, buttonLg.value],
+      [buttonWide.name, buttonWide.value],
+      [buttonBlock.name, buttonBlock.value],
     ],
-    preflights:[
+    preflights: [
       {
-        getCSS:() =>{
+        getCSS: () => {
           return `
             @keyframes button-pop {
               0% {
@@ -84,10 +84,10 @@ export default function Samuui(): Preset {
               }
             }
           `
-        }
+        },
       },
       {
-        getCSS:()=>{
+        getCSS: () => {
           return `
             @keyframes spin {
               from {
@@ -98,8 +98,8 @@ export default function Samuui(): Preset {
               }
             }
           `
-        }
-      }
-    ]
+        },
+      },
+    ],
   }
 }

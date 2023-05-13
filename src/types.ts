@@ -1,4 +1,4 @@
-export type ShortcutsType = {
-  name:string
-  value:string
+export interface ShortcutsType {
+  name: string
+  value: string
 }
