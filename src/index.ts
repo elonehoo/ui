@@ -28,7 +28,14 @@ import {
   buttonWarning,
   buttonWide,
   buttonXs,
-  badge
+  badge,
+  badgePrimary,
+  badgeSecondary,
+  badgeAccent,
+  badgeInfo,
+  badgeSuccess,
+  badgeWarning,
+  badgeError
 } from './styled'
 
 export default function Samuui(options:Partial<Options> = {}): Preset {
@@ -130,6 +137,13 @@ export default function Samuui(options:Partial<Options> = {}): Preset {
       [buttonBlock.name, buttonBlock.value],
       // badge
       [badge.name, badge.value],
+      [badgePrimary.name, badgePrimary.value],
+      [badgeSecondary.name, badgeSecondary.value],
+      [badgeAccent.name, badgeAccent.value],
+      [badgeInfo.name, badgeInfo.value],
+      [badgeSuccess.name, badgeSuccess.value],
+      [badgeWarning.name, badgeWarning.value],
+      [badgeError.name, badgeError.value],
     ],
     preflights: [
       {
