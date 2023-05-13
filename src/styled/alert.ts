@@ -1,7 +1,8 @@
 import type {ShortcutsType} from '../types'
 export const alert:ShortcutsType = {
   name:'alert',
-  value: 'bg-light-base-200 p-4 rounded-1em dark:bg-dark-base-200 flex w-full flex-col items-center justify-between gap-4 space-y-2 md:flex-row md:space-y-0 [&>:where(*)]:flex [&>:where(*)]:items-center [&>:where(*)]:gap-2'
+  value: 'bg-light-base-200 p-4 rounded-1em dark:bg-dark-base-200 flex w-full flex-col items-center justify-between gap-4 space-y-2 md:flex-row md:space-y-0 ' +
+  "[&>:where(*)]:flex [&>:where(*)]:items-center [&>:where(*)]:gap-2 "
 }
 
 export const alertInfo:ShortcutsType = {
