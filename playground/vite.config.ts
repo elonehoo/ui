@@ -4,8 +4,6 @@ import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
-import Props from 'unplugin-vue-prop/vite'
-import SfcName from 'unplugin-vue-sfc-name/vite'
 import UnoCss from 'unocss/vite'
 import Pages from 'vite-plugin-pages'
 import Inspector from 'vite-inspector'
@@ -44,12 +42,6 @@ export default defineConfig({
     Components({
       dts: true,
     }),
-
-    // https://github.com/elonehoo/unplugin-vue-prop
-    Props(),
-
-    // https://github.com/elonehoo/unplugin-vue-sfc-name
-    SfcName({}),
 
     // https://github.com/antfu/unocss
     // see unocss.config.ts for config

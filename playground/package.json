@@ -1,49 +1,30 @@
 {
-  "version": "0.0.5",
   "private": "true",
-  "description": "Starter template for Vue",
   "author": "Elone Hoo <hi@elonehoo.me>",
   "license": "MIT",
   "scripts": {
     "dev": "vite --port 3333",
     "build": "vite build",
-    "preview": "vite preview --port 8766",
-    "test": "vitest",
-    "test:ui": "vitest --ui --open false",
-    "test:coverage": "vitest run --coverage",
-    "typecheck": "vue-tsc --noEmit",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "release": "bumpp package.json --commit --push --tag"
+    "preview": "vite preview --port 8766"
   },
   "dependencies": {
-    "@unocss/reset": "^0.51.8",
-    "@vueuse/core": "^10.1.0",
-    "unocss": "^0.51.8",
-    "vue": "^3.2.47",
-    "vue-router": "^4.1.6"
+    "@unocss/reset": "^0.51.12",
+    "@vueuse/core": "^10.1.2",
+    "unocss": "^0.51.12",
+    "vue": "^3.3.2",
+    "vue-router": "^4.2.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.38.5",
     "@iconify-json/carbon": "^1.1.16",
-    "@types/node": "^18.16.0",
+    "@types/node": "^20.1.3",
     "@unocss/preset-icons": "^0.51.12",
-    "@vitejs/plugin-vue": "^4.1.0",
-    "@vitest/coverage-c8": "^0.30.1",
-    "@vitest/ui": "^0.30.1",
-    "@vue/test-utils": "^2.3.2",
-    "bumpp": "^9.1.0",
-    "eslint": "^8.39.0",
-    "happy-dom": "^9.9.2",
+    "@vitejs/plugin-vue": "^4.2.3",
     "typescript": "^5.0.4",
     "unplugin-auto-import": "^0.15.3",
     "unplugin-vue-components": "^0.24.1",
-    "unplugin-vue-prop": "^0.0.9",
-    "unplugin-vue-sfc-name": "^0.0.9",
-    "vite": "^4.3.1",
+    "vite": "^4.3.5",
     "vite-inspector": "^0.0.11",
     "vite-plugin-pages": "^0.29.0",
-    "vitest": "^0.30.1",
-    "vue-tsc": "^1.4.4"
+    "vue-tsc": "^1.6.5"
   }
 }
