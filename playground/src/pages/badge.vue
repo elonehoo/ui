@@ -19,6 +19,6 @@
   </div>
   <div m="t-5">
     <div class="badge badge-outline">neutral</div>
-    <div class="badge badge-primary badge-outline">primary</div>
+    <div class="badge badge-outline badge-primary ml-1">primary</div>
   </div>
 </template>

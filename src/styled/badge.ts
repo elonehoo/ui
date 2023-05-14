@@ -70,8 +70,8 @@ export const badgeOutline: ShortcutsType = {
     // basic style
     "border-current border-opacity-50 bg-transparent text-current " +
     "dark:border-current dark:border-opacity-50 dark:bg-transparent dark:text-current " +
+    " " +
     // primary style
-    "[&.btn-primary]:text-light-primary dark:[&.btn-primary]:text-dark-primary " +
-    "[&.btn-primary]:border-light-primary [&.btn-primary]:bg-light-primary [&.btn-primary]:text-light-primary-content " +
-    "dark:[&.btn-primary]:border-dark-primary dark:[&.btn-primary]:bg-dark-primary dark:[&.btn-primary]:text-dark-primary-content "
+    "[&.btn-primary]:bg-transparent [&.btn-primary]:text-light-primary " +
+    "dark:[&.btn-primary]:text-dark-primary dark:[&.btn-primary]:bg-transparent "
 }
