@@ -56,3 +56,22 @@ export const badgeError: ShortcutsType = {
     "border-transparent bg-light-error text-light-error-content " +
     "dark:border-transparent dark:bg-dark-error dark:text-dark-error-content"
 }
+
+export const badgeGhost: ShortcutsType = {
+  name:'badge-ghost',
+  value:
+    "border-light-base-200 bg-light-base-200 text-light-base-content " +
+    "dark:border-dark-base-200 dark:bg-dark-base-200 dark:text-dark-base-content"
+}
+
+export const badgeOutline: ShortcutsType = {
+  name:'badge-outline',
+  value:
+    // basic style
+    "border-current border-opacity-50 bg-transparent text-current " +
+    "dark:border-current dark:border-opacity-50 dark:bg-transparent dark:text-current " +
+    // primary style
+    "[&.btn-primary]:text-light-primary dark:[&.btn-primary]:text-dark-primary " +
+    "[&.btn-primary]:border-light-primary [&.btn-primary]:bg-light-primary [&.btn-primary]:text-light-primary-content " +
+    "dark:[&.btn-primary]:border-dark-primary dark:[&.btn-primary]:bg-dark-primary dark:[&.btn-primary]:text-dark-primary-content "
+}

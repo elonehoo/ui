@@ -15,5 +15,10 @@
     <div class="badge badge-success ml-1">info</div>
     <div class="badge badge-warning ml-1">info</div>
     <div class="badge badge-error ml-1">info</div>
+    <div class="badge badge-ghost ml-1">info</div>
+  </div>
+  <div m="t-5">
+    <div class="badge badge-outline">neutral</div>
+    <div class="badge badge-primary badge-outline">primary</div>
   </div>
 </template>
