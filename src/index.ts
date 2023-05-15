@@ -37,7 +37,11 @@ import {
   badgeWarning,
   badgeError,
   badgeGhost,
-  badgeOutline
+  badgeOutline,
+  badgeSm,
+  badgeXs,
+  badgeMd,
+  badgeLg
 } from './styled'
 
 export default function Samuui(options:Partial<Options> = {}): Preset {
@@ -148,6 +152,10 @@ export default function Samuui(options:Partial<Options> = {}): Preset {
       [badgeError.name, badgeError.value],
       [badgeGhost.name, badgeGhost.value],
       [badgeOutline.name, badgeOutline.value],
+      [badgeSm.name, badgeSm.value],
+      [badgeXs.name, badgeXs.value],
+      [badgeMd.name, badgeMd.value],
+      [badgeLg.name, badgeLg.value],
     ],
     preflights: [
       {
