@@ -33,3 +33,6 @@ $ pnpm run play
 
 Open your browser and visit http://127.0.0.1:3333 ,
 
+## License
+
+[MIT](./LICENSE) License © 2023 [Elone Hoo](https://github.com/elonehoo)
