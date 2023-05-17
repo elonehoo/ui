@@ -48,7 +48,7 @@
     <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Responsive</button>
   </div>
   <div class="mt-5px">
-    <button class="btn" disabled="disabled">Disabled using attribute</button>
+    <button class="btn" disabled>Disabled using attribute</button>
     <button class="btn btn-disabled ml-5px" tabindex="-1" role="button" aria-disabled="true">Disabled using class name</button>
   </div>
   <div class="mt-5px">

@@ -3,7 +3,7 @@
     <div text-center>
       <RouterView />
     </div>
-    <div text-center>
+    <div>
       <TheFooter />
     </div>
   </main>

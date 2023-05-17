@@ -10,7 +10,7 @@ const routes = router.getRoutes()
 <template>
   <div text="center">
     <RouterLink
-      m-5
+      m="5"
       v-for="route in routes"
       :to="route.path">
       {{ route.name }}
