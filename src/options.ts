@@ -1,57 +1,57 @@
 export interface Options {
-  lightPrimary: string,
-  lightPrimaryFocus:string,
-  lightPrimaryContent:string,
-  lightSecondary:string,
-  lightSecondaryFocus:string,
-  lightSecondaryContent:string,
-  lightAccent:string,
-  lightAccentFocus:string,
-  lightAccentContent:string,
-  lightNeutral:string,
-  lightNeutralFocus:string,
-  lightNeutralContent:string,
-  lightBase100:string,
-  lightBase200:string,
-  lightBase300:string,
-  lightBaseContent:string,
-  lightInfo:string,
-  lightInfoContent:string,
-  lightSuccess:string,
-  lightSuccessContent:string
-  lightWarning:string,
-  lightWarningContent:string,
-  lightError:string,
-  lightErrorContent:string,
-  darkPrimary: string,
-  darkPrimaryFocus:string,
-  darkPrimaryContent:string,
-  darkSecondary:string,
-  darkSecondaryFocus:string,
-  darkSecondaryContent:string,
-  darkAccent:string,
-  darkAccentFocus:string,
-  darkAccentContent:string,
-  darkNeutral:string,
-  darkNeutralFocus:string,
-  darkNeutralContent:string,
-  darkBase100:string,
-  darkBase200:string,
-  darkBase300:string,
-  darkBaseContent:string,
-  darkInfo:string,
-  darkInfoContent:string,
-  darkSuccess:string,
-  darkSuccessContent:string
-  darkWarning:string,
-  darkWarningContent:string,
-  darkError:string,
-  darkErrorContent:string,
+  lightPrimary: string
+  lightPrimaryFocus: string
+  lightPrimaryContent: string
+  lightSecondary: string
+  lightSecondaryFocus: string
+  lightSecondaryContent: string
+  lightAccent: string
+  lightAccentFocus: string
+  lightAccentContent: string
+  lightNeutral: string
+  lightNeutralFocus: string
+  lightNeutralContent: string
+  lightBase100: string
+  lightBase200: string
+  lightBase300: string
+  lightBaseContent: string
+  lightInfo: string
+  lightInfoContent: string
+  lightSuccess: string
+  lightSuccessContent: string
+  lightWarning: string
+  lightWarningContent: string
+  lightError: string
+  lightErrorContent: string
+  darkPrimary: string
+  darkPrimaryFocus: string
+  darkPrimaryContent: string
+  darkSecondary: string
+  darkSecondaryFocus: string
+  darkSecondaryContent: string
+  darkAccent: string
+  darkAccentFocus: string
+  darkAccentContent: string
+  darkNeutral: string
+  darkNeutralFocus: string
+  darkNeutralContent: string
+  darkBase100: string
+  darkBase200: string
+  darkBase300: string
+  darkBaseContent: string
+  darkInfo: string
+  darkInfoContent: string
+  darkSuccess: string
+  darkSuccessContent: string
+  darkWarning: string
+  darkWarningContent: string
+  darkError: string
+  darkErrorContent: string
   badge: string
 }
 
-export const config:Required<Options> = {
-  lightPrimary:'#570DF8',
+export const config: Required<Options> = {
+  lightPrimary: '#570DF8',
   lightPrimaryFocus: '#4406CB',
   lightPrimaryContent: '#FFFFFF',
   lightSecondary: '#F000B8',
@@ -99,5 +99,5 @@ export const config:Required<Options> = {
   darkWarningContent: '#382800',
   darkError: '#F87272',
   darkErrorContent: '#470000',
-  badge: '1.9rem'
+  badge: '1.9rem',
 }

@@ -1,5 +1,6 @@
 import type { Preset } from 'unocss'
-import { Options,config } from './options'
+import type { Options } from './options'
+import { config } from './options'
 import {
   alert,
   alertError,
@@ -8,6 +9,20 @@ import {
   alertWarning,
   avatar,
   avatarGroup,
+  badge,
+  badgeAccent,
+  badgeError,
+  badgeGhost,
+  badgeInfo,
+  badgeLg,
+  badgeMd,
+  badgeOutline,
+  badgePrimary,
+  badgeSecondary,
+  badgeSm,
+  badgeSuccess,
+  badgeWarning,
+  badgeXs,
   button,
   buttonAccent,
   buttonBlock,
@@ -28,26 +43,12 @@ import {
   buttonWarning,
   buttonWide,
   buttonXs,
-  badge,
-  badgePrimary,
-  badgeSecondary,
-  badgeAccent,
-  badgeInfo,
-  badgeSuccess,
-  badgeWarning,
-  badgeError,
-  badgeGhost,
-  badgeOutline,
-  badgeSm,
-  badgeXs,
-  badgeMd,
-  badgeLg,
   carousel,
+  carouselItem,
   carouselVertical,
-  carouselItem
 } from './styled'
 
-export default function Samuui(options:Partial<Options> = {}): Preset {
+export default function Samuui(options: Partial<Options> = {}): Preset {
   const option = Object.assign({}, config, options)
 
   return {
@@ -110,7 +111,7 @@ export default function Samuui(options:Partial<Options> = {}): Preset {
           error: option.darkError,
           errorContent: option.darkErrorContent,
         },
-        badge: option.badge
+        badge: option.badge,
       },
     },
     shortcuts: [
@@ -159,23 +160,23 @@ export default function Samuui(options:Partial<Options> = {}): Preset {
       [badgeXs.name, badgeXs.value],
       [badgeMd.name, badgeMd.value],
       [badgeLg.name, badgeLg.value],
-      //carousel
-      [carousel.name,carousel.value],
-      [carouselVertical.name,carouselVertical.value],
-      [carouselItem.name,carouselItem.value]
+      // carousel
+      [carousel.name, carousel.value],
+      [carouselVertical.name, carouselVertical.value],
+      [carouselItem.name, carouselItem.value],
     ],
     preflights: [
       {
-        getCSS:()=>{
+        getCSS: () => {
           return `
             :root {
               --badge: ${option.badge};
             }
           `
-        }
+        },
       },
       {
-        getCSS:()=>{
+        getCSS: () => {
           return `
             .carousel {
               -ms-overflow-style: none;
@@ -193,7 +194,7 @@ export default function Samuui(options:Partial<Options> = {}): Preset {
               }
             }
           `
-        }
+        },
       },
       {
         getCSS: () => {
