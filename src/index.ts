@@ -41,7 +41,10 @@ import {
   badgeSm,
   badgeXs,
   badgeMd,
-  badgeLg
+  badgeLg,
+  carousel,
+  carouselVertical,
+  carouselItem
 } from './styled'
 
 export default function Samuui(options:Partial<Options> = {}): Preset {
@@ -156,13 +159,38 @@ export default function Samuui(options:Partial<Options> = {}): Preset {
       [badgeXs.name, badgeXs.value],
       [badgeMd.name, badgeMd.value],
       [badgeLg.name, badgeLg.value],
+      //carousel
+      [carousel.name,carousel.value],
+      [carouselVertical.name,carouselVertical.value],
+      [carouselItem.name,carouselItem.value]
     ],
     preflights: [
       {
         getCSS:()=>{
           return `
             :root {
-              --badge: 1.9rem;
+              --badge: ${option.badge};
+            }
+          `
+        }
+      },
+      {
+        getCSS:()=>{
+          return `
+            .carousel {
+              -ms-overflow-style: none;
+              scrollbar-width: none;
+              scroll-snap-type: x mandatory;
+              scroll-behavior: smooth;
+              &-vertical {
+                scroll-snap-type: y mandatory;
+              }
+              &-center .carousel-item {
+                scroll-snap-align: center;
+              }
+              &-end .carousel-item {
+                scroll-snap-align: end;
+              }
             }
           `
         }
