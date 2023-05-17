@@ -6,7 +6,7 @@
   <div>
     <div class="avatar">
       <div class="w-24 rounded">
-        <img src="https://github.com/elonehoo.png" />
+        <img src="/elonehoo.png" />
       </div>
     </div>
   </div>
@@ -14,22 +14,22 @@
   <div class="mt-5">
     <div class="avatar mt-5">
       <div class="w-32 rounded">
-        <img src="https://github.com/elonehoo.png" />
+        <img src="/elonehoo.png" />
       </div>
     </div>
     <div class="avatar ml-1">
       <div class="w-20 rounded">
-        <img src="https://github.com/elonehoo.png" alt="UnoCss-Avatar-component" />
+        <img src="/elonehoo.png" alt="UnoCss-Avatar-component" />
       </div>
     </div>
     <div class="avatar ml-1">
       <div class="w-16 rounded">
-        <img src="https://github.com/elonehoo.png" alt="UnoCss-Avatar-component" />
+        <img src="/elonehoo.png" alt="UnoCss-Avatar-component" />
       </div>
     </div>
     <div class="avatar ml-1">
       <div class="w-8 rounded">
-        <img src="https://github.com/elonehoo.png" alt="UnoCss-Avatar-component" />
+        <img src="/elonehoo.png" alt="UnoCss-Avatar-component" />
       </div>
     </div>
   </div>
@@ -37,12 +37,12 @@
   <div class="mt-5">
     <div class="avatar">
       <div class="w-24 rounded-xl">
-        <img src="https://github.com/elonehoo.png" />
+        <img src="/elonehoo.png" />
       </div>
     </div>
     <div class="avatar ml-1">
       <div class="w-24 rounded-full">
-        <img src="https://github.com/elonehoo.png" />
+        <img src="/elonehoo.png" />
       </div>
     </div>
   </div>
@@ -50,17 +50,17 @@
   <div m="t-5">
     <div class="avatar">
       <div class="w-24 mask mask-squircle">
-        <img src="https://github.com/elonehoo.png" />
+        <img src="/elonehoo.png" />
       </div>
     </div>
     <div class="avatar ml-1">
       <div class="w-24 mask mask-hexagon">
-        <img src="https://github.com/elonehoo.png" />
+        <img src="/elonehoo.png" />
       </div>
     </div>
     <div class="avatar ml-1">
       <div class="w-24 mask mask-triangle">
-        <img src="https://github.com/elonehoo.png" />
+        <img src="/elonehoo.png" />
       </div>
     </div>
   </div>
@@ -69,22 +69,22 @@
     <div class="avatar-group -space-x-6">
       <div class="avatar">
         <div class="w-12">
-          <img src="https://github.com/elonehoo.png" />
+          <img src="/elonehoo.png" />
         </div>
       </div>
       <div class="avatar">
         <div class="w-12">
-          <img src="https://github.com/elonehoo.png" />
+          <img src="/elonehoo.png" />
         </div>
       </div>
       <div class="avatar">
         <div class="w-12">
-          <img src="https://github.com/elonehoo.png" />
+          <img src="/elonehoo.png" />
         </div>
       </div>
       <div class="avatar">
         <div class="w-12">
-          <img src="https://github.com/elonehoo.png" />
+          <img src="/elonehoo.png" />
         </div>
       </div>
     </div>
@@ -94,17 +94,17 @@
     <div class="avatar-group -space-x-6">
       <div class="avatar">
         <div class="w-12">
-          <img src="https://github.com/elonehoo.png" />
+          <img src="/elonehoo.png" />
         </div>
       </div>
       <div class="avatar">
         <div class="w-12">
-          <img src="https://github.com/elonehoo.png" />
+          <img src="/elonehoo.png" />
         </div>
       </div>
       <div class="avatar">
         <div class="w-12">
-          <img src="https://github.com/elonehoo.png" />
+          <img src="/elonehoo.png" />
         </div>
       </div>
       <div class="avatar placeholder">
@@ -118,7 +118,7 @@
   <div m="t-5">
     <div class="avatar">
       <div class="w-24 rounded-full ring ring-light-primary dark:ring-dark-primary ring-offset-light-base-100 dark:ring-offset-dark-base-100 ring-offset-2">
-        <img src="https://github.com/elonehoo.png" />
+        <img src="/elonehoo.png" />
       </div>
     </div>
   </div>
@@ -126,12 +126,12 @@
   <div m="t-5">
     <div class="avatar online">
       <div class="w-24 rounded-full">
-        <img src="https://github.com/elonehoo.png" />
+        <img src="/elonehoo.png" />
       </div>
     </div>
     <div class="avatar offline ml-1">
       <div class="w-24 rounded-full">
-        <img src="https://github.com/elonehoo.png" />
+        <img src="/elonehoo.png" />
       </div>
     </div>
   </div>
