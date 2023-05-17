@@ -1,32 +1,35 @@
-# starter-ts
+<h1 align="center">
+samuui
+</h1>
 
-[![NPM version](https://img.shields.io/npm/v/@elonehoo/starter-ts?color=a1b858&label=)](https://www.npmjs.com/package/@elonehoo/starter-ts)
+<p align="center">
+UnoCss component library
+</p>
 
-Starter template for TypeScript library.
+## Features
 
-## Try it now!
+- A presets for UnoCss
 
-### GitHub Template
+- Faster developmen
 
-[Create a repo from this template on GitHub](https://github.com/elonehoo/starter-ts/generate).
+- Cleaner HTML
 
-### Clone to local
+- Customizable and themeable
 
-If you prefer to do it manually with the cleaner git history
+- Pure CSS. Works on all frameworks
+
+## Development
+
+Use [Stackblitz](https://stackblitz.com/~/github.com/wip-elonehoo/samuui), a free online dev environment for GitHub.
+
+Or clone locally:
 
 ```bash
-sudo npx degit elonehoo/starter-ts my-ts-app
-cd my-ts-app
-pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
+$ git clone git@github.com:wip-elonehoo/samuui.git
+$ cd samuui
+$ pnpm install
+$ pnpm run play
 ```
 
-## Checklist
+Open your browser and visit http://127.0.0.1:3333 ,
 
-When you use this template, try follow the checklist to update your info properly
-
-- [ ] Change the author name in `LICENSE`
-- [ ] Change the package name in `package.json` and package info
-- [ ] Remove the `.github` folder which contains the funding info
-- [ ] Clean up the README
-
-And, enjoy :)
