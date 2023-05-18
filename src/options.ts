@@ -48,6 +48,8 @@ export interface Options {
   darkError: string
   darkErrorContent: string
   badge: string
+  box: string
+  paddingCard: string
 }
 
 export const config: Required<Options> = {
@@ -100,4 +102,6 @@ export const config: Required<Options> = {
   darkError: '#F87272',
   darkErrorContent: '#470000',
   badge: '1.9rem',
+  box: '1rem',
+  paddingCard: '2rem',
 }
