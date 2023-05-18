@@ -43,14 +43,14 @@ import {
   buttonWarning,
   buttonWide,
   buttonXs,
+  card,
+  cardActions,
+  cardBody,
+  cardBordered,
+  cardTitle,
   carousel,
   carouselItem,
   carouselVertical,
-  card,
-  cardBordered,
-  cardBody,
-  cardTitle,
-  cardActions
 } from './styled'
 
 export default function Samuui(options: Partial<Options> = {}): Preset {
@@ -117,7 +117,7 @@ export default function Samuui(options: Partial<Options> = {}): Preset {
           errorContent: option.darkErrorContent,
         },
         badge: option.badge,
-        box:option.box
+        box: option.box,
       },
     },
     shortcuts: [
@@ -190,7 +190,7 @@ export default function Samuui(options: Partial<Options> = {}): Preset {
         },
       },
       {
-        getCSS:() =>{
+        getCSS: () => {
           return `
             .card {
               :where(figure:first-child) {
@@ -283,7 +283,7 @@ export default function Samuui(options: Partial<Options> = {}): Preset {
               }
             }
           `
-        }
+        },
       },
       {
         getCSS: () => {
