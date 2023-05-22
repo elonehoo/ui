@@ -51,6 +51,7 @@ import {
   carousel,
   carouselItem,
   carouselVertical,
+  cardSide
 } from './styled'
 
 export default function Samuui(options: Partial<Options> = {}): Preset {
@@ -176,6 +177,7 @@ export default function Samuui(options: Partial<Options> = {}): Preset {
       [cardBody.name, cardBody.value],
       [cardTitle.name, cardTitle.value],
       [cardActions.name, cardActions.value],
+      [cardSide.name, cardSide.value],
     ],
     preflights: [
       {
@@ -237,8 +239,6 @@ export default function Samuui(options: Partial<Options> = {}): Preset {
               }
             }
             .card-side {
-              align-items: stretch;
-              flex-direction: row;
               :where(figure:first-child) {
                 overflow: hidden;
                 border-start-start-radius: inherit;

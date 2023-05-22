@@ -100,7 +100,7 @@
     </div>
   </div>
 
-  <div class="card w-120 card-side bg-light-base-100 dark:bg-dark-base-100 shadow-xl mt-5">
+  <div class="card w-120 lg:card-side bg-light-base-100 dark:bg-dark-base-100 shadow-xl mt-5">
     <figure><img src="/card-3.jpeg" alt="Album"/></figure>
     <div class="card-body">
       <h2 class="card-title text-start">New album is released!</h2>

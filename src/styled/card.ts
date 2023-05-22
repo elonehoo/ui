@@ -36,3 +36,9 @@ export const cardActions: ShortcutsType = {
   value:
     'flex flex-wrap items-start gap-2',
 }
+
+export const cardSide: ShortcutsType = {
+  name: 'card-side',
+  value:
+    'flex-row items-stretch',
+}
