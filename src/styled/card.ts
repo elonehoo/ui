@@ -3,7 +3,7 @@ import type { ShortcutsType } from '../types'
 export const card: ShortcutsType = {
   name: 'card',
   value:
-    'rounded-[var(--box)] relative flex flex-col '
+    'rounded-[var(--box)] relative flex flex-col [&.card-side]:flex-row '
     + '[&.bordered]:border [&.bordered]:border-light-base-200 dark:[&.bordered]:border-dark-base-200 '
     + '[&.card-body]:[&.compact]:p-4 [&.card-body]:[&.compact]:text-sm '
     + 'before:[&.image-full]:z-10 before:[&.image-full]:opacity-75 before:[&.image-full]:rounded-[var(--box)] '

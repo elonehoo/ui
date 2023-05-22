@@ -113,7 +113,7 @@ export const buttonGhost: ShortcutsType = {
   value:
     'border border-transparent bg-transparent text-current '
     + 'border-none dark:border-transparent dark:bg-transparent dark:text-current '
-    + 'hover:border-opacity-0 hover:bg-light-base-content dark:hover:bg-dark-base-content hover:bg-opacity-20 '
+    + 'hover:border-opacity-0 hover:bg-light-base-content hover:bg-opacity-20 dark:hover:bg-dark-base-content dark:hover:bg-opacity-20 '
     + '[&.btn-active]:border-opacity-0 [&.btn-active]:bg-light-base-content [&.btn-active]:bg-opacity-20 '
     + 'dark:[&.btn-active]:bg-dark-base-content '
     + 'focus-visible:outline-2px focus-visible:outline-solid focus-visible:outline-current',

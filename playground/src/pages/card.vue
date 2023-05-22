@@ -89,7 +89,7 @@
     </div>
   </div>
 
-  <div class="card card-side bg-light-base-100 dark:bg-dark-base-100 shadow-xl mt-5">
+  <div class="card w-120 card-side bg-light-base-100 dark:bg-dark-base-100 shadow-xl mt-5">
     <figure><img src="/card-2.jpeg" alt="Movie"/></figure>
     <div class="card-body">
       <h2 class="card-title">New movie is released!</h2>
@@ -100,11 +100,11 @@
     </div>
   </div>
 
-  <div class="card lg:card-side bg-light-base-100 dark:bg-dark-base-100 shadow-xl mt-5">
+  <div class="card w-120 card-side bg-light-base-100 dark:bg-dark-base-100 shadow-xl mt-5">
     <figure><img src="/card-3.jpeg" alt="Album"/></figure>
     <div class="card-body">
-      <h2 class="card-title">New album is released!</h2>
-      <p>Click the button to listen on Spotiwhy app.</p>
+      <h2 class="card-title text-start">New album is released!</h2>
+      <p text-start>Click the button to listen on Spotiwhy app.</p>
       <div class="card-actions justify-end">
         <button class="btn btn-primary">Listen</button>
       </div>
