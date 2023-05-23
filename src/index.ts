@@ -47,12 +47,14 @@ import {
   cardActions,
   cardBody,
   cardBordered,
+  cardSide,
   cardTitle,
   carousel,
   carouselItem,
   carouselVertical,
-  cardSide
 } from './styled'
+import { buttonPop, rootStyle, spin } from './class'
+import { cardUnStyled, carouselUnStyled } from './unstyled'
 
 export default function Samuui(options: Partial<Options> = {}): Preset {
   const option = Object.assign({}, config, options)
@@ -182,160 +184,27 @@ export default function Samuui(options: Partial<Options> = {}): Preset {
     preflights: [
       {
         getCSS: () => {
-          return `
-            :root {
-              --badge: ${option.badge};
-              --box: ${option.box};
-              --padding-card: ${option.paddingCard};
-            }
-          `
+          return rootStyle(option.badge, option.box, option.paddingCard)
         },
       },
       {
         getCSS: () => {
-          return `
-            .card {
-              :where(figure:first-child) {
-                overflow: hidden;
-                border-start-start-radius: inherit;
-                border-start-end-radius: inherit;
-                border-end-start-radius: unset;
-                border-end-end-radius: unset;
-              }
-              :where(figure:last-child) {
-                overflow: hidden;
-                border-start-start-radius: unset;
-                border-start-end-radius: unset;
-                border-end-start-radius: inherit;
-                border-end-end-radius: inherit;
-              }
-              &:focus-visible {
-                outline: 2px solid currentColor;
-                outline-offset: 2px;
-              }
-              & figure {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              }
-              &.image-full {
-                display: grid;
-                &:before {
-                  position: relative;
-                  content: "";
-                }
-                &:before,
-                & > * {
-                  grid-column-start: 1;
-                  grid-row-start: 1;
-                }
-                & > figure img {
-                  height: 100%;
-                  object-fit: cover;
-                }
-              }
-              &.image-full > &-body {
-                position: relative;
-              }
-            }
-            .card-side {
-              :where(figure:first-child) {
-                overflow: hidden;
-                border-start-start-radius: inherit;
-                border-start-end-radius: unset;
-                border-end-start-radius: inherit;
-                border-end-end-radius: unset;
-              }
-              :where(figure:last-child) {
-                overflow: hidden;
-                border-start-start-radius: unset;
-                border-start-end-radius: inherit;
-                border-end-start-radius: unset;
-                border-end-end-radius: inherit;
-              }
-              & figure > * {
-                max-width: unset;
-              }
-            }
-            :where(.card-side figure > *) {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-            }
-            .card-compact {
-              .card-body {
-                padding: 1rem;
-                font-size: 0.875rem;
-                line-height: 1.25rem;
-              }
-              .card-title {
-                margin-bottom: 0.25rem;
-              }
-            }
-            .card-normal {
-              .card-body {
-                padding: var(--padding-card);
-                font-size: 1rem;
-                line-height: 1.5rem;
-              }
-              .card-title {
-                margin-bottom: 0.75rem;
-              }
-            }
-          `
+          return cardUnStyled
         },
       },
       {
         getCSS: () => {
-          // carousel
-          return `
-            .carousel {
-              -ms-overflow-style: none;
-              scrollbar-width: none;
-              scroll-snap-type: x mandatory;
-              scroll-behavior: smooth;
-              &-vertical {
-                scroll-snap-type: y mandatory;
-              }
-              &-center .carousel-item {
-                scroll-snap-align: center;
-              }
-              &-end .carousel-item {
-                scroll-snap-align: end;
-              }
-            }
-          `
+          return carouselUnStyled
         },
       },
       {
         getCSS: () => {
-          return `
-            @keyframes button-pop {
-              0% {
-                transform: scale(0.95);
-              }
-              40% {
-                transform: scale(1.02);
-              }
-              100% {
-                transform: scale(1);
-              }
-            }
-          `
+          return buttonPop
         },
       },
       {
         getCSS: () => {
-          return `
-            @keyframes spin {
-              from {
-                transform: rotate(0deg);
-              }
-              to {
-                transform: rotate(360deg);
-              }
-            }
-          `
+          return spin
         },
       },
     ],
