@@ -55,10 +55,17 @@ import {
   collapse,
   collapseContent,
   collapseTitle,
-  roundedBox
+  roundedBox,
+  dropdown,
+  dropdownBottom,
+  dropdownContent,
+  dropdownLeft,
+  dropdownRight,
+  dropdownTop,
+
 } from './styled'
 import { buttonPop, rootStyle, spin } from './class'
-import { cardUnStyled, carouselUnStyled,collapseUnStyled } from './unstyled'
+import { cardUnStyled, carouselUnStyled,collapseUnStyled,dropdownUnStyled } from './unstyled'
 
 export default function Samuui(options: Partial<Options> = {}): Preset {
   const option = Object.assign({}, config, options)
@@ -185,10 +192,18 @@ export default function Samuui(options: Partial<Options> = {}): Preset {
       [cardTitle.name, cardTitle.value],
       [cardActions.name, cardActions.value],
       [cardSide.name, cardSide.value],
+      // collapse
       [collapse.name, collapse.value],
       [collapseContent.name, collapseContent.value],
       [collapseTitle.name, collapseTitle.value],
       [roundedBox.name, roundedBox.value],
+      // dropdown
+      [dropdown.name, dropdown.value],
+      [dropdownBottom.name, dropdownBottom.value],
+      [dropdownContent.name, dropdownContent.value],
+      [dropdownLeft.name, dropdownLeft.value],
+      [dropdownRight.name, dropdownRight.value],
+      [dropdownTop.name, dropdownTop.value],
     ],
     preflights: [
       {
@@ -219,6 +234,11 @@ export default function Samuui(options: Partial<Options> = {}): Preset {
       {
         getCSS: () => {
           return collapseUnStyled
+        }
+      },
+      {
+        getCSS: ()=>{
+          return dropdownUnStyled
         }
       }
     ],
