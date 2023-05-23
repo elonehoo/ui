@@ -4,3 +4,9 @@ export * from './button'
 export * from './badge'
 export * from './carousel'
 export * from './card'
+export * from './collapse'
+
+export const roundedBox = {
+  name:'rounded-box',
+  value:'rounded-[var(--box)]'
+}
