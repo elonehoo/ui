@@ -60,7 +60,7 @@ import {
   menu
 } from './styled'
 import { buttonPop, rootStyle, spin } from './class'
-import { cardUnStyled, carouselUnStyled,collapseUnStyled,dropdownUnStyled } from './unstyled'
+import { cardUnStyled, carouselUnStyled,collapseUnStyled,dropdownUnStyled,menuUnStyled } from './unstyled'
 
 export default function Samuui(options: Partial<Options> = {}): Preset {
   const option = Object.assign({}, config, options)
@@ -127,7 +127,8 @@ export default function Samuui(options: Partial<Options> = {}): Preset {
         },
         badge: option.badge,
         box: option.box,
-        collapseFocus:option.collapseFocus
+        collapseFocus:option.collapseFocus,
+        roundedBtn:option.roundedBtn
       },
     },
     shortcuts: [
@@ -199,7 +200,7 @@ export default function Samuui(options: Partial<Options> = {}): Preset {
     preflights: [
       {
         getCSS: () => {
-          return rootStyle(option.badge, option.box, option.paddingCard,option.collapseFocus)
+          return rootStyle(option.badge, option.box, option.paddingCard,option.collapseFocus,option.roundedBtn)
         },
       },
       {
@@ -230,6 +231,13 @@ export default function Samuui(options: Partial<Options> = {}): Preset {
       {
         getCSS: ()=>{
           return dropdownUnStyled
+        }
+      },
+      {
+        getCSS: ({theme}) =>{
+          return menuUnStyled(
+            {light:theme.colors.light, dark:theme.colors.dark}
+          )
         }
       }
     ],

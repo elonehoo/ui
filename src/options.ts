@@ -51,6 +51,7 @@ export interface Options {
   box: string
   paddingCard: string
   collapseFocus: string
+  roundedBtn:string
 }
 
 export const config: Required<Options> = {
@@ -105,5 +106,6 @@ export const config: Required<Options> = {
   badge: '1.9rem',
   box: '1rem',
   paddingCard: '2rem',
-  collapseFocus: '222.86 17.073% 8.0392%'
+  collapseFocus: '222.86 17.073% 8.0392%',
+  roundedBtn: '0.5rem'
 }
