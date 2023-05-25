@@ -57,7 +57,6 @@ import {
   collapseTitle,
   roundedBox,
   dropdown,
-  menu
 } from './styled'
 import { buttonPop, rootStyle, spin } from './class'
 import { cardUnStyled, carouselUnStyled,collapseUnStyled,dropdownUnStyled,menuUnStyled } from './unstyled'
@@ -195,7 +194,6 @@ export default function Samuui(options: Partial<Options> = {}): Preset {
       [roundedBox.name, roundedBox.value],
       // dropdown
       [dropdown.name, dropdown.value],
-      [menu.name, menu.value],
     ],
     preflights: [
       {

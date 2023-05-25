@@ -90,19 +90,19 @@ export function menuUnStyled(
         color: ${colors.dark.base.content};
         --un-text-opacity: 0.2;
       }
-      hover:& > * {
+      & > *:hover {
         background-color: transparent;
       }
     }
-    li.hover-bordered {
+    li .hover-bordered {
       a {
         border-left-width: 4px;
         border-color: transparent;
       }
-      hover:a {
+      a:hover {
         border-color: ${colors.light.primary};
       }
-      .dark hover:a {
+      .dark a:hover {
         border-color: ${colors.dark.primary};
       }
     }
@@ -232,6 +232,9 @@ export function menuUnStyled(
     border-bottom-left-radius: inherit;
   }
   .menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     &.horizontal {
       flex-direction: row;
       display: inline-flex;
