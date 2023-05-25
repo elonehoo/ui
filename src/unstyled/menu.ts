@@ -4,13 +4,6 @@ export function menuUnStyled(
   return `
   .menu {
     &.horizontal {
-      display: inline-flex;
-      flex-direction: row;
-      :where(li) {
-        flex-direction: row;
-      }
-    }
-    &.horizontal {
       > li {
         &.bordered {
           > a,
@@ -22,50 +15,6 @@ export function menuUnStyled(
           }
         }
       }
-    }
-    :where(.menu li) {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      align-items: stretch;
-      flex-shrink: 0;
-    }
-    .menu :where(li:not(.menu-title)) > :where(*:not(ul)) {
-      display: flex;
-    }
-    .menu :where(li:not(.disabled):not(.menu-title)) > :where(*:not(ul)) {
-      cursor: pointer;
-      -webkit-user-select: none;
-      user-select: none;
-      align-items: center;
-      outline: 2px solid transparent;
-      outline-offset: 2px;
-    }
-    .menu > :where(li > *:not(ul):focus) {
-      outline: 2px solid transparent;
-      outline-offset: 2px;
-    }
-    .menu > :where(li.disabled > *:not(ul):focus) {
-      cursor: auto;
-    }
-
-    .menu > :where(li) :where(ul) {
-      display: flex;
-      flex-direction: column;
-      align-items: stretch;
-    }
-    .menu > :where(li) > :where(ul) {
-      display: none;
-      position: absolute;
-      top: initial;
-      left: 100%;
-    }
-    .menu > :where(li:hover) > :where(ul) {
-      display: flex;
-    }
-    .menu > :where(li:focus) > :where(ul) {
-      display: flex;
     }
     &[class*=" px-"]:not(&[class*=" px-0"]) li > *,
     &[class^="px-"]:not(&[class^="px-0"]) li > *,
@@ -93,24 +42,28 @@ export function menuUnStyled(
 
     :where(li:not(.menu-title):not(:empty)) > :where(*:not(ul):focus),
     :where(li:not(.menu-title):not(:empty)) > :where(*:not(ul):hover) {
-      background-color: ${colors.light.base.content};
       --un-bg-opacity: 0.1;
+      background-color: ${colors.light.base.content};
     }
+
     .dark :where(li:not(.menu-title):not(:empty)) > :where(*:not(ul):focus),
     :where(li:not(.menu-title):not(:empty)) > :where(*:not(ul):hover) {
-      background-color: ${colors.dark.base.content};
       --un-bg-opacity: 0.1;
+      background-color: ${colors.dark.base.content};
     }
+
     :where(li:not(.menu-title):not(:empty)) > :where(:not(ul).active),
     :where(li:not(.menu-title):not(:empty)) > :where(*:not(ul):active) {
       background-color: ${colors.light.primary};
       color: ${colors.light.primaryContent};
     }
-    .dark:where(li:not(.menu-title):not(:empty)) > :where(:not(ul).active),
+
+    .dark :where(li:not(.menu-title):not(:empty)) > :where(:not(ul).active),
     :where(li:not(.menu-title):not(:empty)) > :where(*:not(ul):active) {
       background-color: ${colors.dark.primary};
       color: ${colors.dark.primaryContent};
     }
+
     :where(li:empty) {
       margin-left: 1rem;
       margin-right: 1rem;
@@ -120,7 +73,6 @@ export function menuUnStyled(
       --un-bg-opacity: 0.1;
       background-color: ${colors.light.base.content};
     }
-
     .dark :where(li:empty) {
       margin-left: 1rem;
       margin-right: 1rem;
@@ -135,14 +87,8 @@ export function menuUnStyled(
       & > * {
         -webkit-user-select: none;
         user-select: none;
-        --un-text-opacity: 0.2;
-        color: ${colors.light.base.content};
-      }
-      .dark & > * {
-        -webkit-user-select: none;
-        user-select: none;
-        --un-text-opacity: 0.2;
         color: ${colors.dark.base.content};
+        --un-text-opacity: 0.2;
       }
       hover:& > * {
         background-color: transparent;
@@ -155,21 +101,19 @@ export function menuUnStyled(
       }
       hover:a {
         border-color: ${colors.light.primary};
-        color: ${colors.light.primaryContent};
       }
       .dark hover:a {
         border-color: ${colors.dark.primary};
-        color: ${colors.dark.primaryContent};
       }
     }
     &.compact {
       li {
         > a,
         > span {
-          font-size: 0.875rem;
-          line-height: 1.25rem;
           padding-top: 0.5rem;
           padding-bottom: 0.5rem;
+          font-size: 0.875rem;
+          line-height: 1.25rem;
         }
       }
     }
@@ -240,15 +184,15 @@ export function menuUnStyled(
   }
 
   .menu > :where(li) > :where(ul) :where(li) {
-    white-space: nowrap;
     width: 100%;
+    white-space: nowrap;
   }
   .menu > :where(li) > :where(ul) :where(li) :where(ul) {
     padding-left: 1rem;
   }
   .menu > :where(li) > :where(ul) :where(li) > :where(:not(ul)) {
-    white-space: nowrap;
     width: 100%;
+    white-space: nowrap;
   }
 
   .menu > :where(li) > :where(ul) > :where(li:first-child) {
@@ -287,13 +231,66 @@ export function menuUnStyled(
     border-bottom-right-radius: inherit;
     border-bottom-left-radius: inherit;
   }
+  .menu {
+    &.horizontal {
+      flex-direction: row;
+      display: inline-flex;
+      :where(li) {
+        flex-direction: row;
+      }
+    }
+  }
+  :where(.menu li) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    flex-shrink: 0;
+  }
+  .menu :where(li:not(.menu-title)) > :where(*:not(ul)) {
+    display: flex;
+  }
+  .menu :where(li:not(.disabled):not(.menu-title)) > :where(*:not(ul)) {
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    align-items: center;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
+  .menu > :where(li > *:not(ul):focus) {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
+  .menu > :where(li.disabled > *:not(ul):focus) {
+    cursor: auto;
+  }
+
+  .menu > :where(li) :where(ul) {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .menu > :where(li) > :where(ul) {
+    display: none;
+    position: absolute;
+    top: initial;
+    left: 100%;
+  }
+  .menu > :where(li:hover) > :where(ul) {
+    display: flex;
+  }
+  .menu > :where(li:focus) > :where(ul) {
+    display: flex;
+  }
   .menu-vertical :where(li.bordered > *) {
-    border-bottom-width: 0;
     border-left-width: 4px;
+    border-bottom-width: 0;
   }
   .menu-horizontal :where(li.bordered > *) {
-    border-bottom-width: 4px;
     border-left-width: 0;
+    border-bottom-width: 4px;
   }
   .menu-normal :where(li > *) {
     padding-top: 0.75rem;
