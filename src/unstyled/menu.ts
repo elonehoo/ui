@@ -42,25 +42,29 @@ export function menuUnStyled(
         outline-offset: 2px;
       }
       .menu > :where(li > *:not(ul):focus) {
-        @apply outline-none;
+        outline: 2px solid transparent;
+        outline-offset: 2px;
       }
       .menu > :where(li.disabled > *:not(ul):focus) {
-        @apply cursor-auto;
+        cursor: auto;
       }
 
       .menu > :where(li) :where(ul) {
-        @apply flex flex-col items-stretch;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
       }
       .menu > :where(li) > :where(ul) {
-        @apply absolute hidden;
+        display: none;
+        position: absolute;
         top: initial;
         left: 100%;
       }
       .menu > :where(li:hover) > :where(ul) {
-        @apply flex;
+        display: flex;
       }
       .menu > :where(li:focus) > :where(ul) {
-        @apply flex;
+        display: flex;
       }
     }
     &[class*=" px-"]:not(&[class*=" px-0"]) li > *,
