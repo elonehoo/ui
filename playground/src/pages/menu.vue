@@ -68,9 +68,9 @@
 
 <div mt-5>
   <ul class="menu bg-light-base-100 dark:bg-dark-base-100 w-56 rounded-box">
-    <li class="disabled"><a>Item 1</a></li>
-    <li class="disabled"><a>Item 2</a></li>
-    <li class="disabled"><a>Item 3</a></li>
+    <li class="disabled"><a>Disabled</a></li>
+    <li class="disabled"><a>Disabled</a></li>
+    <li class="disabled"><a>Disabled</a></li>
   </ul>
 </div>
 
