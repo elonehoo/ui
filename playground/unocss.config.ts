@@ -5,11 +5,13 @@ import {
   presetUno,
   presetWebFonts,
 } from 'unocss'
-import Samuui from '../src'
+import Sammui from '../src/index'
 
 export default defineConfig({
+  shortcuts:[
+  ],
   presets: [
-    Samuui(),
+    Sammui(),
     presetUno(),
     presetAttributify(),
     presetIcons({
