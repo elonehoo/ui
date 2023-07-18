@@ -71,6 +71,17 @@ export default function elonehooUI(): Preset {
         else
           return 'text-sm px-2.5 py-1.5'
       }],
+      { 'kbd': 'inline-flex items-center justify-center text-gray-900 dark:text-white h-5 min-w-[20px] text-[11px] px-1 rounded font-medium font-sans bg-gray-100 dark:bg-gray-800 ring-1 ring-gray-300 dark:ring-gray-700 ring-inset' },
+      [/^kbd-((xs|sm|md))$/, ([, size]) => {
+        if (size === 'xs')
+          return 'h-4 min-w-[16px] text-[10px]'
+
+        else if (size === 'sm')
+          return 'h-5 min-w-[20px] text-[11px]'
+
+        else
+          return 'h-6 min-w-[24px] text-[12px]'
+      }],
     ],
   }
 }
