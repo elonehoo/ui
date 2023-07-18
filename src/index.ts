@@ -1,8 +1,8 @@
 import type { Preset } from 'unocss'
 
-export default function Samuui(): Preset {
+export default function elonehooUI(): Preset {
   return {
-    name: 'unocss-samu-ui',
+    name: 'elonehoo-ui',
     shortcuts: [
       { 'space-vertical': '[flex-flow:column_nowrap]' },
       [/^btn-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([, c]) => `focus:outline-none focus-visible:outline-0 disabled:cursor-not-allowed disabled:opacity-75 flex-shrink-0 font-medium rounded-md text-sm gap-x-1.5 px-2.5 py-1.5 shadow-sm text-white dark:text-gray-900 bg-${c}-500 hover:bg-${c}-600 disabled:bg-${c}-500 disabled:hover:bg-${c}-500 dark:bg-${c}-400 dark:hover:bg-${c}-500 dark:disabled:bg-${c}-400 dark:disabled:hover:bg-${c}-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-${c}-500 dark:focus-visible:outline-${c}-400 inline-flex items-center`],
