@@ -1,243 +1,63 @@
 import type { Preset } from 'unocss'
-import type { Options } from './options'
-import { config } from './options'
-import {
-  alert,
-  alertError,
-  alertInfo,
-  alertSuccess,
-  alertWarning,
-  avatar,
-  avatarGroup,
-  badge,
-  badgeAccent,
-  badgeError,
-  badgeGhost,
-  badgeInfo,
-  badgeLg,
-  badgeMd,
-  badgeOutline,
-  badgePrimary,
-  badgeSecondary,
-  badgeSm,
-  badgeSuccess,
-  badgeWarning,
-  badgeXs,
-  button,
-  buttonAccent,
-  buttonBlock,
-  buttonCircle,
-  buttonDisabled,
-  buttonError,
-  buttonGhost,
-  buttonInfo,
-  buttonLg,
-  buttonLink,
-  buttonMd,
-  buttonOutline,
-  buttonPrimary,
-  buttonSecondary,
-  buttonSm,
-  buttonSquare,
-  buttonSuccess,
-  buttonWarning,
-  buttonWide,
-  buttonXs,
-  card,
-  cardActions,
-  cardBody,
-  cardBordered,
-  cardSide,
-  cardTitle,
-  carousel,
-  carouselItem,
-  carouselVertical,
-  collapse,
-  collapseContent,
-  collapseTitle,
-  roundedBox,
-  dropdown,
-} from './styled'
-import { buttonPop, rootStyle, spin } from './class'
-import { cardUnStyled, carouselUnStyled,collapseUnStyled,dropdownUnStyled,menuUnStyled } from './unstyled'
-
-export default function Samuui(options: Partial<Options> = {}): Preset {
-  const option = Object.assign({}, config, options)
-
+export default function Samuui(): Preset {
   return {
     name: 'unocss-samu-ui',
-    theme: {
-      colors: {
-        light: {
-          primary: option.lightPrimary,
-          primaryFocus: option.lightPrimaryFocus,
-          primaryContent: option.lightPrimaryContent,
-          secondary: option.lightSecondary,
-          secondaryFocus: option.lightSecondaryFocus,
-          secondaryContent: option.lightSecondaryContent,
-          accent: option.lightAccent,
-          accentFocus: option.lightAccentFocus,
-          accentContent: option.lightAccentContent,
-          neutral: option.lightNeutral,
-          neutralFocus: option.lightNeutralFocus,
-          neutralContent: option.lightNeutralContent,
-          base: {
-            100: option.lightBase100,
-            200: option.lightBase200,
-            300: option.lightBase300,
-            content: option.lightBaseContent,
-          },
-          info: option.lightInfo,
-          infoContent: option.lightInfoContent,
-          success: option.lightSuccess,
-          successContent: option.lightSuccessContent,
-          warning: option.lightWarning,
-          warningContent: option.lightWarningContent,
-          error: option.lightError,
-          errorContent: option.lightErrorContent,
-        },
-        dark: {
-          primary: option.darkPrimary,
-          primaryFocus: option.darkPrimaryFocus,
-          primaryContent: option.darkPrimaryContent,
-          secondary: option.darkSecondary,
-          secondaryFocus: option.darkSecondaryFocus,
-          secondaryContent: option.darkSecondaryContent,
-          accent: option.darkAccent,
-          accentFocus: option.darkAccentFocus,
-          accentContent: option.darkAccentContent,
-          neutral: option.darkNeutral,
-          neutralFocus: option.darkNeutralFocus,
-          neutralContent: option.darkNeutralContent,
-          base: {
-            100: option.darkBase100,
-            200: option.darkBase200,
-            300: option.darkBase300,
-            content: option.darkBaseContent,
-          },
-          info: option.darkInfo,
-          infoContent: option.darkInfoContent,
-          success: option.darkSuccess,
-          successContent: option.darkSuccessContent,
-          warning: option.darkWarning,
-          warningContent: option.darkWarningContent,
-          error: option.darkError,
-          errorContent: option.darkErrorContent,
-        },
-        badge: option.badge,
-        box: option.box,
-        collapseFocus:option.collapseFocus,
-        roundedBtn:option.roundedBtn
-      },
-    },
-    shortcuts: [
-      // alert
-      [alert.name, alert.value],
-      [alertInfo.name, alertInfo.value],
-      [alertSuccess.name, alertSuccess.value],
-      [alertWarning.name, alertWarning.value],
-      [alertError.name, alertError.value],
-      // avatar
-      [avatar.name, avatar.value],
-      [avatarGroup.name, avatarGroup.value],
-      // button
-      [button.name, button.value],
-      [buttonPrimary.name, buttonPrimary.value],
-      [buttonSecondary.name, buttonSecondary.value],
-      [buttonAccent.name, buttonAccent.value],
-      [buttonInfo.name, buttonInfo.value],
-      [buttonSuccess.name, buttonSuccess.value],
-      [buttonWarning.name, buttonWarning.value],
-      [buttonError.name, buttonError.value],
-      [buttonGhost.name, buttonGhost.value],
-      [buttonLink.name, buttonLink.value],
-      [buttonOutline.name, buttonOutline.value],
-      [buttonDisabled.name, buttonDisabled.value],
-      [buttonCircle.name, buttonCircle.value],
-      [buttonSquare.name, buttonSquare.value],
-      [buttonXs.name, buttonXs.value],
-      [buttonSm.name, buttonSm.value],
-      [buttonMd.name, buttonMd.value],
-      [buttonLg.name, buttonLg.value],
-      [buttonWide.name, buttonWide.value],
-      [buttonBlock.name, buttonBlock.value],
-      // badge
-      [badge.name, badge.value],
-      [badgePrimary.name, badgePrimary.value],
-      [badgeSecondary.name, badgeSecondary.value],
-      [badgeAccent.name, badgeAccent.value],
-      [badgeInfo.name, badgeInfo.value],
-      [badgeSuccess.name, badgeSuccess.value],
-      [badgeWarning.name, badgeWarning.value],
-      [badgeError.name, badgeError.value],
-      [badgeGhost.name, badgeGhost.value],
-      [badgeOutline.name, badgeOutline.value],
-      [badgeSm.name, badgeSm.value],
-      [badgeXs.name, badgeXs.value],
-      [badgeMd.name, badgeMd.value],
-      [badgeLg.name, badgeLg.value],
-      // carousel
-      [carousel.name, carousel.value],
-      [carouselVertical.name, carouselVertical.value],
-      [carouselItem.name, carouselItem.value],
-      // card
-      [card.name, card.value],
-      [cardBordered.name, cardBordered.value],
-      [cardBody.name, cardBody.value],
-      [cardTitle.name, cardTitle.value],
-      [cardActions.name, cardActions.value],
-      [cardSide.name, cardSide.value],
-      // collapse
-      [collapse.name, collapse.value],
-      [collapseContent.name, collapseContent.value],
-      [collapseTitle.name, collapseTitle.value],
-      [roundedBox.name, roundedBox.value],
-      // dropdown
-      [dropdown.name, dropdown.value],
-    ],
-    preflights: [
-      {
-        getCSS: () => {
-          return rootStyle(option.badge, option.box, option.paddingCard,option.collapseFocus,option.roundedBtn)
-        },
-      },
-      {
-        getCSS: () => {
-          return cardUnStyled
-        },
-      },
-      {
-        getCSS: () => {
-          return carouselUnStyled
-        },
-      },
-      {
-        getCSS: () => {
-          return buttonPop
-        },
-      },
-      {
-        getCSS: () => {
-          return spin
-        },
-      },
-      {
-        getCSS: () => {
-          return collapseUnStyled
+    shortcuts:[
+      { 'space-vertical':'[flex-flow:column_nowrap]' },
+      [/^btn-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([, c])=> `focus:outline-none focus-visible:outline-0 disabled:cursor-not-allowed disabled:opacity-75 flex-shrink-0 font-medium rounded-md text-sm gap-x-1.5 px-2.5 py-1.5 shadow-sm text-white dark:text-gray-900 bg-${c}-500 hover:bg-${c}-600 disabled:bg-${c}-500 disabled:hover:bg-${c}-500 dark:bg-${c}-400 dark:hover:bg-${c}-500 dark:disabled:bg-${c}-400 dark:disabled:hover:bg-${c}-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-${c}-500 dark:focus-visible:outline-${c}-400 inline-flex items-center`],
+      [/^btn-outline-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([, c])=> `focus:outline-none focus-visible:outline-0 disabled:cursor-not-allowed disabled:opacity-75 flex-shrink-0 font-medium rounded-md text-sm gap-x-1.5 px-2.5 py-1.5 ring-1 ring-inset ring-current text-${c}-500 dark:text-${c}-400 hover:bg-${c}-50 disabled:bg-transparent dark:hover:bg-${c}-950 dark:disabled:bg-transparent focus-visible:ring-2 focus-visible:ring-${c}-500 dark:focus-visible:ring-${c}-400 inline-flex items-center`],
+      [/^btn-soft-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([, c])=> `focus:outline-none focus-visible:outline-0 disabled:cursor-not-allowed disabled:opacity-75 flex-shrink-0 font-medium rounded-md text-sm gap-x-1.5 px-2.5 py-1.5 text-${c}-500 dark:text-${c}-400 bg-${c}-50 hover:bg-${c}-100 disabled:bg-${c}-50 dark:bg-${c}-950 dark:hover:bg-${c}-900 dark:disabled:bg-${c}-950 focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-${c}-500 dark:focus-visible:ring-${c}-400 inline-flex items-center`],
+      [/^btn-ghost-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([, c])=> `focus:outline-none focus-visible:outline-0 disabled:cursor-not-allowed disabled:opacity-75 flex-shrink-0 font-medium rounded-md text-sm gap-x-1.5 px-2.5 py-1.5 text-${c}-500 dark:text-${c}-400 hover:bg-${c}-50 disabled:bg-transparent dark:hover:bg-${c}-950 dark:disabled:bg-transparent focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-${c}-500 dark:focus-visible:ring-${c}-400 inline-flex items-center`],
+      [/^btn-link-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([, c])=> `focus:outline-none focus-visible:outline-0 disabled:cursor-not-allowed disabled:opacity-75 flex-shrink-0 font-medium rounded-md text-sm gap-x-1.5 px-2.5 py-1.5 text-${c}-500 hover:text-${c}-600 disabled:text-${c}-500 dark:text-${c}-400 dark:hover:text-${c}-500 dark:disabled:text-${c}-400 underline-offset-4 hover:underline focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-${c}-500 dark:focus-visible:ring-${c}-400 inline-flex items-center`],
+      [/^btn-black-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([, c])=> `focus:outline-none focus-visible:outline-0 disabled:cursor-not-allowed disabled:opacity-75 flex-shrink-0 font-medium rounded-md text-sm gap-x-1.5 px-2.5 py-1.5 shadow-sm text-white dark:text-gray-900 bg-${c}-500 hover:bg-${c}-600 disabled:bg-${c}-500 dark:bg-${c}-400 dark:hover:bg-${c}-500 dark:disabled:bg-${c}-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-${c}-500 dark:focus-visible:outline-${c}-400 w-full flex justify-center items-center`],
+      [/^btn-((2xs|xs|sm|md|lg|xl))$/, ([, size])=>{
+        if(size === '2xs'){
+          return 'text-xs gap-x-1 px-2 py-1'
+        } else if(size === 'xs' || size === 'sm'){
+          return 'text-xs gap-x-1.5 px-2.5 py-1.5'
+        } else if(size === 'md'){
+          return 'text-sm gap-x-2 px-3 py-2'
+        } else if(size === 'lg'){
+          return 'text-sm gap-x-2.5 px-3.5 py-2.5'
+        } else{
+          return 'text-base gap-x-2.5 px-3.5 py-2.5'
         }
-      },
-      {
-        getCSS: ()=>{
-          return dropdownUnStyled
+      }],
+      [/^space-((start|center|end|between|around|evenly|stretch))$/, ([, c])=> `flex justify-${c} gap-[8px_12px] [flex-flow:row_wrap]`],
+      { 'avatar':'relative inline-flex items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-full h-8 w-8 text-xs' },
+      [/^avatar-((3xs|2xs|xs|sm|md|lg|xl|2xl|3xl))$/, ([, size])=>{
+        if(size === '3xs'){
+          return 'h-4 w-4 text-[8px]'
+        } else if (size === '2xs'){
+          return 'h-5 w-5 text-[10px]'
+        } else if(size === 'xs'){
+          return 'h-6 w-6 text-[11px]'
+        } else if(size === 'sm'){
+          return 'h-8 w-8 text-xs'
+        } else if(size === 'md'){
+          return 'h-10 w-10 text-sm'
+        } else if(size === 'lg'){
+          return 'h-12 w-12 text-base'
+        } else if(size === 'xl'){
+          return 'h-14 w-14 text-lg'
+        } else if(size === '2xl'){
+          return 'h-16 w-16 text-xl'
+        } else {
+          return 'h-20 w-20 text-2xl'
         }
-      },
-      {
-        getCSS: ({theme}) =>{
-          return menuUnStyled(
-            {light:theme.colors.light, dark:theme.colors.dark}
-          )
+      }],
+      [/^badge-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([, c])=> `inline-flex items-center font-medium rounded-md text-xs px-2 py-1 bg-${c}-50 dark:bg-${c}-400 dark:bg-opacity-10 text-${c}-500 dark:text-${c}-400 ring-1 ring-inset ring-${c}-500 dark:ring-${c}-400 ring-opacity-10 dark:ring-opacity-20`],
+      [/^badge-((xs|sm|md|lg))$/, ([, size])=>{
+        if(size === 'xs'){
+          return 'text-xs px-1.5 py-0.5'
+        } else if (size === 'sm'){
+          return 'text-xs px-2 py-1'
+        } else if(size === 'md'){
+          return 'text-sm px-2 py-1'
+        } else {
+          return 'text-sm px-2.5 py-1.5'
         }
-      }
+      }],
     ],
   }
 }
