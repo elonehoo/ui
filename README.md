@@ -65,6 +65,8 @@ UnoCss component library
 ## Credits
 Thanks to:
 
+> If you think this project is good and you want to sponsor it, please sponsor them, this project will not happen without them.
+
 - [daisyui](https://github.com/saadeghi/daisyui)
 - [nuxtlabs/ui](https://github.com/nuxtlabs/ui)
 - [shadcn/ui](https://github.com/shadcn/ui)
