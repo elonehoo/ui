@@ -17,4 +17,9 @@
     <button btn="violet lg">Button</button>
     <button btn="indigo xl">Button</button>
   </div>
+  <div>
+    <button btn="rose 2xs">
+      <div class="i-carbon-home" />
+    </button>
+  </div>
 </template>
