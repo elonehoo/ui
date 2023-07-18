@@ -32,6 +32,14 @@ UnoCss component library
 
 </details>
 
+## Credits
+Thanks to:
+
+- [daisyui](https://github.com/saadeghi/daisyui)
+- [nuxtlabs/ui](https://github.com/nuxtlabs/ui)
+- [shadcn/ui](https://github.com/shadcn/ui)
+- [unocss](https://github.com/unocss/unocss)
+
 ## License
 
 [MIT](./LICENSE) License © 2023 [Elone Hoo](https://github.com/elonehoo)
