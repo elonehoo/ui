@@ -34,7 +34,7 @@ UnoCss component library
   - [x] Keyboard Key
 
 - Forms
-  - [ ] Input
+  - [x] Input
   - [ ] Textarea
   - [ ] Select
   - [ ] Checkbox
