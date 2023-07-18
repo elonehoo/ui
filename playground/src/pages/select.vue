@@ -4,7 +4,7 @@
 
 <template>
   <div>
-    <select select="green lg" placeholder="Search..." >
+    <select select="green lg" >
       <option disabled value="">Please select one</option>
       <option>A</option>
       <option>B</option>
