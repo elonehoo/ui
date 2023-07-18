@@ -33,6 +33,20 @@ $ pnpm run play
 
 Open your browser and visit http://127.0.0.1:3333 ,
 
+## List of components
+
+<details>
+<summary>
+  show / hide
+</summary>
+
+- [x] Button
+- [x] Avatar
+- [x] Badge
+- [ ] Keyboard Key
+
+</details>
+
 ## License
 
 [MIT](./LICENSE) License © 2023 [Elone Hoo](https://github.com/elonehoo)
