@@ -12,8 +12,8 @@
   "author": "Elone Hoo <hi@elonehoo.me>",
   "license": "MIT",
   "dependencies": {
-    "unocss": "^0.51.12",
-    "unplugin-vue-components": "^0.24.1",
-    "vitepress": "1.0.0-alpha.75"
+    "unocss": "^0.53.5",
+    "unplugin-vue-components": "^0.25.1",
+    "vitepress": "1.0.0-beta.5"
   }
 }
