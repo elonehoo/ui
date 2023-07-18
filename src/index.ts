@@ -71,7 +71,7 @@ export default function elonehooUI(): Preset {
         else
           return 'text-sm px-2.5 py-1.5'
       }],
-      { 'kbd': 'inline-flex items-center justify-center text-gray-900 dark:text-white h-5 min-w-[20px] text-[11px] px-1 rounded font-medium font-sans bg-gray-100 dark:bg-gray-800 ring-1 ring-gray-300 dark:ring-gray-700 ring-inset' },
+      { kbd: 'inline-flex items-center justify-center text-gray-900 dark:text-white h-5 min-w-[20px] text-[11px] px-1 rounded font-medium font-sans bg-gray-100 dark:bg-gray-800 ring-1 ring-gray-300 dark:ring-gray-700 ring-inset' },
       [/^kbd-((xs|sm|md))$/, ([, size]) => {
         if (size === 'xs')
           return 'h-4 min-w-[16px] text-[10px]'
@@ -83,11 +83,11 @@ export default function elonehooUI(): Preset {
           return 'h-6 min-w-[24px] text-[12px]'
       }],
       [/^input-((none|rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([, c]) => {
-        if(c === 'none'){
+        if (c === 'none')
           return 'relative block w-full disabled:cursor-not-allowed disabled:opacity-75 focus:outline-none border-0 rounded-md placeholder-gray-400 dark:placeholder-gray-500 text-sm px-2.5 py-1.5 bg-transparent focus:ring-0 focus:shadow-none'
-        }else{
+
+        else
           return `relative block w-full disabled:cursor-not-allowed disabled:opacity-75 focus:outline-none border-0 rounded-md placeholder-gray-400 dark:placeholder-gray-500 text-sm px-2.5 py-1.5 shadow-sm bg-white dark:bg-gray-900 text-gray-900 dark:text-white ring-1 ring-inset ring-gray-300 dark:ring-gray-700 focus:ring-2 focus:ring-${c}-500 dark:focus:ring-${c}-400`
-        }
       }],
       [/^input-((2xs|xs|sm|md|lg|xl))$/, ([, size]) => {
         if (size === '2xs')
@@ -106,11 +106,11 @@ export default function elonehooUI(): Preset {
           return 'text-base gap-x-2 px-3.5 py-2.5'
       }],
       [/^textarea-((none|rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([, c]) => {
-        if(c === 'none'){
+        if (c === 'none')
           return 'form-textarea relative block w-full disabled:cursor-not-allowed disabled:opacity-75 focus:outline-none border-0 rounded-md placeholder-gray-400 dark:placeholder-gray-500 text-sm px-2.5 py-1.5 bg-transparent focus:ring-0 focus:shadow-none resize-none'
-        }else{
+
+        else
           return `relative block w-full disabled:cursor-not-allowed disabled:opacity-75 focus:outline-none border-0 rounded-md placeholder-gray-400 dark:placeholder-gray-500 text-sm px-2.5 py-1.5 shadow-sm bg-white dark:bg-gray-900 text-gray-900 dark:text-white ring-1 ring-inset ring-gray-300 dark:ring-gray-700 focus:ring-2 focus:ring-${c}-500 dark:focus:ring-${c}-400 resize-none`
-        }
       }],
       [/^textarea-((2xs|xs|sm|md|lg|xl))$/, ([, size]) => {
         if (size === '2xs')
@@ -128,6 +128,31 @@ export default function elonehooUI(): Preset {
         else
           return 'text-base gap-x-2 px-3.5 py-2.5'
       }],
+      [/^select-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([, c]) => `select-arrow appearance-none relative block w-full disabled:cursor-not-allowed disabled:opacity-75 focus:outline-none border-0 rounded-md text-sm px-2.5 py-1.5 shadow-sm bg-white dark:bg-gray-900 text-gray-900 dark:text-white ring-1 ring-inset ring-gray-300 dark:ring-gray-700 focus:ring-2 focus:ring-${c}-500 dark:focus:ring-${c}-400 pe-9`],
+      [/^select-((2xs|xs|sm|md|lg|xl))$/, ([, size]) => {
+        if (size === '2xs')
+          return 'text-xs gap-x-1 px-2 py-1'
+
+        else if (size === 'xs')
+          return 'text-xs gap-x-1.5 px-2.5 py-1.5'
+
+        else if (size === 'sm')
+          return 'text-sm gap-x-2 px-2.5 py-1.5'
+        else if (size === 'md')
+          return 'text-sm gap-x-2 px-3 py-2'
+        else if (size === 'lg')
+          return 'text-sm gap-x-2 px-3.5 py-2.5'
+        else
+          return 'text-base gap-x-2 px-3.5 py-2.5'
+      }],
     ],
+    rules:[
+      ['select-arrow',{
+        'background-image': 'linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%)',
+        'background-position': 'calc(100% - 20px) calc(1px + 50%),calc(100% - 16px) calc(1px + 50%)',
+        'background-size': '4px 4px,4px 4px',
+        'background-repeat': 'no-repeat'
+      }]
+    ]
   }
 }
