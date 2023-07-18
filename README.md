@@ -35,7 +35,7 @@ UnoCss component library
 
 - Forms
   - [x] Input
-  - [ ] Textarea
+  - [x] Textarea
   - [ ] Select
   - [ ] Checkbox
   - [ ] Radio
