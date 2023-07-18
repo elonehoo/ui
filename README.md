@@ -25,10 +25,40 @@ UnoCss component library
   show / hide
 </summary>
 
-- [x] Button
-- [x] Avatar
-- [x] Badge
-- [ ] Keyboard Key
+- Elements
+  - [x] Avatar
+  - [x] Badge
+  - [x] Button
+  - [ ] Dropdown
+  - [ ] Accordion
+  - [x] Keyboard Key
+
+- Forms
+  - [ ] Input
+  - [ ] Textarea
+  - [ ] Select
+  - [ ] Checkbox
+  - [ ] Radio
+  - [ ] Toggle
+  - [ ] Range
+
+- Data
+  - [ ] Table
+
+- Navigation
+  - [ ] Menu
+  - [ ] Pagination
+
+- Overlays
+  - [ ] Modal
+  - [ ] Popover
+  - [ ] Tooltip
+  - [ ] Notification
+
+- Layout
+  - [ ] Card
+  - [ ] Container
+  - [ ] Skeleton
 
 </details>
 
