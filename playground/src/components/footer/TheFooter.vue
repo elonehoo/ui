@@ -12,7 +12,7 @@ const router = useRouter()
       <a
         icon-btn i-carbon-logo-github
         rel="noreferrer"
-        href="https://github.com/elonehoo/starter-vue"
+        href="https://github.com/elonehoo/ui"
         target="_blank"
         title="GitHub"
       />
