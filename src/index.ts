@@ -163,14 +163,15 @@ export default function elonehooUI(): Preset {
         if(layout === 'box'){
           return 'overflow-hidden rounded-lg divide-y divide-gray-200 dark:divide-gray-800 ring-1 ring-gray-200 dark:ring-gray-800 shadow bg-white dark:bg-gray-900 w-full'
         }else if(layout === 'body'){
-          return 'relative overflow-hidden rounded border-dashed border-gray-400 dark:border-gray-500 opacity-75 h-32'
+          return 'px-4 py-5 sm:p-6'
         }else if(layout === 'head'){
-          return 'relative overflow-hidden rounded border-dashed border-gray-400 dark:border-gray-500 opacity-75 h-8'
+          return 'px-4 py-5 sm:px-6'
         }else{
-          return 'relative overflow-hidden rounded border-dashed border-gray-400 dark:border-gray-500 opacity-75 h-8'
+          return 'px-4 py-4 sm:px-6'
         }
       }],
       [/^skeleton-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([, color]) => `animate-pulse bg-${color}-100 dark:bg-${color}-800`],
+      { 'content': 'mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl w-full' },
     ],
     rules:[
       ['select-arrow',{
