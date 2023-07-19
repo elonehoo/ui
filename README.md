@@ -39,7 +39,7 @@ UnoCss component library
   - [x] Select
   - [ ] Checkbox
   - [ ] Radio
-  - [ ] Toggle
+  - [x] Toggle
   - [ ] Range
 
 - Data
