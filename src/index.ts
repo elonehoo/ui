@@ -169,8 +169,8 @@ export default function elonehooUI(): Preset {
         }else{
           return 'relative overflow-hidden rounded border-dashed border-gray-400 dark:border-gray-500 opacity-75 h-8'
         }
-
       }],
+      [/^skeleton-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([, color]) => `animate-pulse bg-${color}-100 dark:bg-${color}-800`],
     ],
     rules:[
       ['select-arrow',{

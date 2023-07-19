@@ -58,7 +58,7 @@ UnoCss component library
 - Layout
   - [x] Card
   - [ ] Container
-  - [ ] Skeleton
+  - [x] Skeleton
 
 </details>
 
