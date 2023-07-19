@@ -3,5 +3,5 @@ const demo = ref(false)
 </script>
 
 <template>
-  <input v-model="demo" type="checkbox" disabled toggle="green none">
+  <input v-model="demo" type="checkbox" toggle="red lg">
 </template>

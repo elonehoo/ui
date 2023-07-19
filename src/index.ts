@@ -146,7 +146,19 @@ export default function elonehooUI(): Preset {
           return 'text-base gap-x-2 px-3.5 py-2.5'
       }],
       [/^toggle-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([, c]) => `shrink-0 h-6 w-12 cursor-pointer appearance-none border duration-300 focus-visible:outline-color-${c}-200  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 border-${c} bg-${c} bg-opacity-40 checked:bg-opacity-100 ease-in-out rounded-3xl indeterminate:shadow-[-1.5rem_0_0_2px_white_inset,0_0_0_2px_white_inset] shadow-[-1.5rem_0_0_2px_white_inset,0_0_0_2px_white_inset] checked:shadow-[1.5rem_0_0_2px_white_inset,0_0_0_2px_white_inset] dark:shadow-[-1.5rem_0_0_2px_black_inset,0_0_0_2px_black_inset] checked:dark:shadow-[1.5rem_0_0_2px_black_inset,0_0_0_2px_black_inset] indeterminate:dark:shadow-[1.5rem_0_0_2px_black_inset,0_0_0_2px_black_inset] disabled:cursor-not-allowed`],
-      {'toggle-none':'indeterminate:shadow-[0_0_2px_white_inset,0_0_0_2px_white_inset]! shadow-[0_0_2px_white_inset,0_0_0_2px_white_inset]! checked:shadow-[0_0_2px_white_inset,0_0_0_2px_white_inset]! dark:shadow-[0_0_2px_black_inset,0_0_0_2px_black_inset]! checked:dark:shadow-[0_0_2px_black_inset,0_0_0_2px_black_inset]! indeterminate:dark:shadow-[0_0_2px_black_inset,0_0_0_2px_black_inset]!'}
+      {'toggle-none':'indeterminate:shadow-[0_0_2px_white_inset,0_0_0_2px_white_inset]! shadow-[0_0_2px_white_inset,0_0_0_2px_white_inset]! checked:shadow-[0_0_2px_white_inset,0_0_0_2px_white_inset]! dark:shadow-[0_0_2px_black_inset,0_0_0_2px_black_inset]! checked:dark:shadow-[0_0_2px_black_inset,0_0_0_2px_black_inset]! indeterminate:dark:shadow-[0_0_2px_black_inset,0_0_0_2px_black_inset]!'},
+      [/^toggle-((xs|sm|md|lg))$/, ([, size]) => {
+        if (size === 'xs')
+          return 'h-4! w-6! indeterminate:shadow-[-0.5rem_0_0_2px_white_inset,0_0_0_2px_white_inset]! shadow-[-0.5rem_0_0_2px_white_inset,0_0_0_2px_white_inset]! checked:shadow-[0.5rem_0_0_2px_white_inset,0_0_0_2px_white_inset]! dark:shadow-[-0.5rem_0_0_2px_black_inset,0_0_0_2px_black_inset]! checked:dark:shadow-[0.5rem_0_0_2px_black_inset,0_0_0_2px_black_inset]! indeterminate:dark:shadow-[0.5rem_0_0_2px_black_inset,0_0_0_2px_black_inset]!'
+
+        else if (size === 'sm')
+          return 'h-5! w-8! indeterminate:shadow-[-0.75rem_0_0_2px_white_inset,0_0_0_2px_white_inset]! shadow-[-0.75rem_0_0_2px_white_inset,0_0_0_2px_white_inset]! checked:shadow-[0.75rem_0_0_2px_white_inset,0_0_0_2px_white_inset]! dark:shadow-[-0.75rem_0_0_2px_black_inset,0_0_0_2px_black_inset]! checked:dark:shadow-[0.75rem_0_0_2px_black_inset,0_0_0_2px_black_inset]! indeterminate:dark:shadow-[0.75rem_0_0_2px_black_inset,0_0_0_2px_black_inset]!'
+
+        else if (size === 'md')
+          return 'h-6! w-12! indeterminate:shadow-[-1.5rem_0_0_2px_white_inset,0_0_0_2px_white_inset]! shadow-[-1.5rem_0_0_2px_white_inset,0_0_0_2px_white_inset]! checked:shadow-[1.5rem_0_0_2px_white_inset,0_0_0_2px_white_inset]! dark:shadow-[-1.5rem_0_0_2px_black_inset,0_0_0_2px_black_inset]! checked:dark:shadow-[1.5rem_0_0_2px_black_inset,0_0_0_2px_black_inset]! indeterminate:dark:shadow-[1.5rem_0_0_2px_black_inset,0_0_0_2px_black_inset]!'
+        else
+        return 'h-8! w-16! indeterminate:shadow-[-2rem_0_0_2px_white_inset,0_0_0_2px_white_inset]! shadow-[-2rem_0_0_2px_white_inset,0_0_0_2px_white_inset]! checked:shadow-[2rem_0_0_2px_white_inset,0_0_0_2px_white_inset]! dark:shadow-[-2rem_0_0_2px_black_inset,0_0_0_2px_black_inset]! checked:dark:shadow-[2rem_0_0_2px_black_inset,0_0_0_2px_black_inset]! indeterminate:dark:shadow-[2rem_0_0_2px_black_inset,0_0_0_2px_black_inset]!'
+      }],
     ],
     rules:[
       ['select-arrow',{
