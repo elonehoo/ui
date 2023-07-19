@@ -56,7 +56,7 @@ UnoCss component library
   - [ ] Notification
 
 - Layout
-  - [ ] Card
+  - [x] Card
   - [ ] Container
   - [ ] Skeleton
 
