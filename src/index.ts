@@ -172,6 +172,9 @@ export default function elonehooUI(): Preset {
       }],
       [/^skeleton-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([, color]) => `animate-pulse bg-${color}-100 dark:bg-${color}-800`],
       { 'content': 'mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl w-full' },
+      [/^model-code-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([, color]) => `relative overflow-hidden overflow-x-auto min-w-72 bg-${color} text-${color === 'light' ? 'black' : 'white'} rounded-4 py-5 before:content-[""] before:block before:h-3 before:w-3 before:opacity-30 before:shadow-[1.4em_0,2.8em_0,4.2em_0] before:mb-4 before:rounded-full`],
+      {'code-line':'pr-5 before:content-[""] flex justify-start before:mr-2ch before:content-[attr(data-prefix)] before:inline-block before:text-right before:w-8 before:opacity-50'}
+
     ],
     rules:[
       ['select-arrow',{

@@ -8,7 +8,7 @@ const routes = router.getRoutes()
 </script>
 
 <template>
-  <div text="center">
+  <div text="center" flex="~ col" >
     <RouterLink
       m="5"
       v-for="route in routes"
