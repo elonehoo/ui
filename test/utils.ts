@@ -28,6 +28,6 @@ export const uiColor: string[] = [
   'coolgray', 'bluegray',
 ]
 
-export function prettierCss(css: string) {
+export function prettierCSS(css: string) {
   return prettier.format(css, { parser: 'css', plugins: [parserCSS as any], singleQuote: true, semi: false })
 }
