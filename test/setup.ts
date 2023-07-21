@@ -7,10 +7,8 @@ import UI from '../src/index'
 const generator = createGenerator({
   presets: [
     UI(),
-    presetWind()
-  ]
+    presetWind(),
+  ],
 })
-
-
 
 export default generator
