@@ -186,6 +186,17 @@ export default function elonehooUI(): Preset {
           return 'w-8 h-8'
         }
       }],
+      [/^radio-((xs|sm|md|lg))$/, ([, layout]) => {
+        if(layout === 'xs'){
+          return 'w-4 h-4'
+        }else if(layout === 'sm'){
+          return 'w-5 h-5'
+        }else if(layout === 'md'){
+          return 'w-6 h-6'
+        }else{
+          return 'w-8 h-8'
+        }
+      }],
     ],
     rules:[
       ['select-arrow',{
@@ -214,7 +225,24 @@ export default function elonehooUI(): Preset {
           }
           `
         }
-      }]
+      }],
+    ],
+    preflights: [
+      {
+        getCSS: () => `
+          @keyframes checkmark {
+            0% {
+              background-position-y: 5px;
+            }
+            50% {
+              background-position-y: -2px;
+            }
+            100% {
+              background-position-y: 0;
+            }
+          }
+        `
+      }
     ]
   }
 }
