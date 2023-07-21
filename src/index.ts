@@ -173,8 +173,19 @@ export default function elonehooUI(): Preset {
       [/^skeleton-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([, color]) => `animate-pulse bg-${color}-100 dark:bg-${color}-800`],
       { 'content': 'mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl w-full' },
       [/^model-code-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([, color]) => `relative overflow-hidden overflow-x-auto min-w-72 bg-${color} text-${color === 'light' ? 'black' : 'white'} rounded-4 py-5 before:content-[""] before:block before:h-3 before:w-3 before:opacity-30 before:shadow-[1.4em_0,2.8em_0,4.2em_0] before:mb-4 before:rounded-full`],
-      {'code-line':'pr-5 before:content-[""] flex justify-start before:mr-2ch before:content-[attr(data-prefix)] before:inline-block before:text-right before:w-8 before:opacity-50'}
-
+      {'code-line':'pr-5 before:content-[""] flex justify-start before:mr-2ch before:content-[attr(data-prefix)] before:inline-block before:text-right before:w-8 before:opacity-50'},
+      [/^checkbox-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([, color]) => `shrink-0 h-6 w-6 cursor-pointer appearance-none border rounded-lg border-${color} focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-${color} checked:bg-${color} checked:bg-no-repeat checked:animate-[checkmark_0.2s_ease-in-out] checked:checkbox-bg-img-${color} indeterminate:bg-${color} indeterminate:bg-no-repeat indeterminate:animate-[checkmark_0.2s_ease-in-out] indeterminate:checkbox-bg-img-${color}`],
+      [/^checkbox-((xs|sm|md|lg))$/, ([, layout]) => {
+        if(layout === 'xs'){
+          return 'w-4 h-4'
+        }else if(layout === 'sm'){
+          return 'w-5 h-5'
+        }else if(layout === 'md'){
+          return 'w-6 h-6'
+        }else{
+          return 'w-8 h-8'
+        }
+      }],
     ],
     rules:[
       ['select-arrow',{
@@ -182,6 +193,27 @@ export default function elonehooUI(): Preset {
         'background-position': 'calc(100% - 20px) calc(1px + 50%),calc(100% - 16px) calc(1px + 50%)',
         'background-size': '4px 4px,4px 4px',
         'background-repeat': 'no-repeat'
+      }],
+      [/^checkbox-bg-img-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/,([,color],{ rawSelector, currentSelector, variantHandlers, theme })=>{
+        if(color === 'dark'){
+          return `
+          .${rawSelector}:checked{
+            background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0) 65%, ${theme.colors[color].DEFAULT} 65.99%), linear-gradient(45deg, rgba(0, 0, 0, 0) 75%, ${theme.colors[color].DEFAULT} 75.99%), linear-gradient(-45deg, ${theme.colors[color].DEFAULT} 40%, rgba(0, 0, 0, 0) 40.99%), linear-gradient(45deg, ${theme.colors[color].DEFAULT} 30%, rgb(255, 255, 255) 30.99%, rgb(255, 255, 255) 40%, rgba(0, 0, 0, 0) 40.99%), linear-gradient(-45deg, rgb(255, 255, 255) 50%, ${theme.colors[color].DEFAULT} 50.99%);
+          }
+          .${rawSelector}:indeterminate{
+            background-image:linear-gradient(90deg, rgba(0, 0, 0, 0) 80%, ${theme.colors[color].DEFAULT} 80%), linear-gradient(-90deg, rgba(0, 0, 0, 0) 80%, ${theme.colors[color].DEFAULT} 80%), linear-gradient(0deg, ${theme.colors[color].DEFAULT} 43%, rgb(255, 255, 255) 43%, rgb(255, 255, 255) 57%, ${theme.colors[color].DEFAULT} 57%)
+          }
+          `
+        }else {
+          return `
+          .${rawSelector}:checked{
+            background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0) 65%, ${theme.colors[color].DEFAULT} 65.99%), linear-gradient(45deg, rgba(0, 0, 0, 0) 75%, ${theme.colors[color].DEFAULT} 75.99%), linear-gradient(-45deg, ${theme.colors[color].DEFAULT} 40%, rgba(0, 0, 0, 0) 40.99%), linear-gradient(45deg, ${theme.colors[color].DEFAULT} 30%, rgb(29, 35, 42) 30.99%, rgb(29, 35, 42) 40%, rgba(0, 0, 0, 0) 40.99%), linear-gradient(-45deg, rgb(29, 35, 42) 50%, ${theme.colors[color].DEFAULT} 50.99%)
+          }
+          .${rawSelector}:indeterminate{
+            background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 80%, ${theme.colors[color].DEFAULT} 80%), linear-gradient(-90deg, rgba(0, 0, 0, 0) 80%, ${theme.colors[color].DEFAULT} 80%), linear-gradient(0deg, ${theme.colors[color].DEFAULT} 43%, rgb(29, 35, 42) 43%, rgb(29, 35, 42) 57%, ${theme.colors[color].DEFAULT} 57%)
+          }
+          `
+        }
       }]
     ]
   }

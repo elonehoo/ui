@@ -37,7 +37,7 @@ UnoCss component library
   - [x] Input
   - [x] Textarea
   - [x] Select
-  - [ ] Checkbox
+  - [x] Checkbox
   - [ ] Radio
   - [x] Toggle
   - [ ] Range
