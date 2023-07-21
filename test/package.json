@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "scripts": {
+    "test": "vitest",
+    "ui": "vitest --ui --open false"
+  },
+  "dependencies": {
+    "@unocss/core": "^0.53.5",
+    "@unocss/reset": "^0.53.5",
+    "@vue/test-utils": "^2.4.1",
+    "unocss": "^0.53.5"
+  },
+  "devDependencies": {
+    "jsdom": "^22.1.0",
+    "vite": "^4.4.6"
+  }
+}

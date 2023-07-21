@@ -1,7 +1,5 @@
 {
   "private": "true",
-  "author": "Elone Hoo <hi@elonehoo.me>",
-  "license": "MIT",
   "scripts": {
     "dev": "vite --port 3333",
     "build": "vite build",

@@ -215,6 +215,17 @@ export default function elonehooUI(): Preset {
           .${data.awSelector}:indeterminate{
             background-image:linear-gradient(90deg, rgba(0, 0, 0, 0) 80%, ${data.theme.colors[color].DEFAULT} 80%), linear-gradient(-90deg, rgba(0, 0, 0, 0) 80%, ${data.theme.colors[color].DEFAULT} 80%), linear-gradient(0deg, ${data.theme.colors[color].DEFAULT} 43%, rgb(255, 255, 255) 43%, rgb(255, 255, 255) 57%, ${data.theme.colors[color].DEFAULT} 57%)
           }
+          @keyframes checkmark {
+            0% {
+              background-position-y: 5px;
+            }
+            50% {
+              background-position-y: -2px;
+            }
+            100% {
+              background-position-y: 0;
+            }
+          }
           `
         }else {
           return `
@@ -223,6 +234,17 @@ export default function elonehooUI(): Preset {
           }
           .${data.rawSelector}:indeterminate{
             background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 80%, ${data.theme.colors[color].DEFAULT} 80%), linear-gradient(-90deg, rgba(0, 0, 0, 0) 80%, ${data.theme.colors[color].DEFAULT} 80%), linear-gradient(0deg, ${data.theme.colors[color].DEFAULT} 43%, rgb(29, 35, 42) 43%, rgb(29, 35, 42) 57%, ${data.theme.colors[color].DEFAULT} 57%)
+          }
+          @keyframes checkmark {
+            0% {
+              background-position-y: 5px;
+            }
+            50% {
+              background-position-y: -2px;
+            }
+            100% {
+              background-position-y: 0;
+            }
           }
           `
         }
@@ -253,22 +275,5 @@ export default function elonehooUI(): Preset {
         `
       }],
     ],
-    preflights: [
-      {
-        getCSS: () => `
-          @keyframes checkmark {
-            0% {
-              background-position-y: 5px;
-            }
-            50% {
-              background-position-y: -2px;
-            }
-            100% {
-              background-position-y: 0;
-            }
-          }
-        `
-      }
-    ]
   }
 }
