@@ -206,28 +206,28 @@ export default function elonehooUI(): Preset {
         'background-size': '4px 4px,4px 4px',
         'background-repeat': 'no-repeat'
       }],
-      [/^checkbox-bg-img-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/,([,color],{ rawSelector, currentSelector, variantHandlers, theme })=>{
+      [/^checkbox-bg-img-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/,([,color],data:any)=>{
         if(color === 'dark'){
           return `
-          .${rawSelector}:checked{
-            background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0) 65%, ${theme.colors[color].DEFAULT} 65.99%), linear-gradient(45deg, rgba(0, 0, 0, 0) 75%, ${theme.colors[color].DEFAULT} 75.99%), linear-gradient(-45deg, ${theme.colors[color].DEFAULT} 40%, rgba(0, 0, 0, 0) 40.99%), linear-gradient(45deg, ${theme.colors[color].DEFAULT} 30%, rgb(255, 255, 255) 30.99%, rgb(255, 255, 255) 40%, rgba(0, 0, 0, 0) 40.99%), linear-gradient(-45deg, rgb(255, 255, 255) 50%, ${theme.colors[color].DEFAULT} 50.99%);
+          .${data.rawSelector}:checked{
+            background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0) 65%, ${data.theme.colors[color].DEFAULT} 65.99%), linear-gradient(45deg, rgba(0, 0, 0, 0) 75%, ${data.theme.colors[color].DEFAULT} 75.99%), linear-gradient(-45deg, ${data.theme.colors[color].DEFAULT} 40%, rgba(0, 0, 0, 0) 40.99%), linear-gradient(45deg, ${data.theme.colors[color].DEFAULT} 30%, rgb(255, 255, 255) 30.99%, rgb(255, 255, 255) 40%, rgba(0, 0, 0, 0) 40.99%), linear-gradient(-45deg, rgb(255, 255, 255) 50%, ${data.theme.colors[color].DEFAULT} 50.99%);
           }
-          .${rawSelector}:indeterminate{
-            background-image:linear-gradient(90deg, rgba(0, 0, 0, 0) 80%, ${theme.colors[color].DEFAULT} 80%), linear-gradient(-90deg, rgba(0, 0, 0, 0) 80%, ${theme.colors[color].DEFAULT} 80%), linear-gradient(0deg, ${theme.colors[color].DEFAULT} 43%, rgb(255, 255, 255) 43%, rgb(255, 255, 255) 57%, ${theme.colors[color].DEFAULT} 57%)
+          .${data.awSelector}:indeterminate{
+            background-image:linear-gradient(90deg, rgba(0, 0, 0, 0) 80%, ${data.theme.colors[color].DEFAULT} 80%), linear-gradient(-90deg, rgba(0, 0, 0, 0) 80%, ${data.theme.colors[color].DEFAULT} 80%), linear-gradient(0deg, ${data.theme.colors[color].DEFAULT} 43%, rgb(255, 255, 255) 43%, rgb(255, 255, 255) 57%, ${data.theme.colors[color].DEFAULT} 57%)
           }
           `
         }else {
           return `
-          .${rawSelector}:checked{
-            background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0) 65%, ${theme.colors[color].DEFAULT} 65.99%), linear-gradient(45deg, rgba(0, 0, 0, 0) 75%, ${theme.colors[color].DEFAULT} 75.99%), linear-gradient(-45deg, ${theme.colors[color].DEFAULT} 40%, rgba(0, 0, 0, 0) 40.99%), linear-gradient(45deg, ${theme.colors[color].DEFAULT} 30%, rgb(29, 35, 42) 30.99%, rgb(29, 35, 42) 40%, rgba(0, 0, 0, 0) 40.99%), linear-gradient(-45deg, rgb(29, 35, 42) 50%, ${theme.colors[color].DEFAULT} 50.99%)
+          .${data.rawSelector}:checked{
+            background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0) 65%, ${data.theme.colors[color].DEFAULT} 65.99%), linear-gradient(45deg, rgba(0, 0, 0, 0) 75%, ${data.theme.colors[color].DEFAULT} 75.99%), linear-gradient(-45deg, ${data.theme.colors[color].DEFAULT} 40%, rgba(0, 0, 0, 0) 40.99%), linear-gradient(45deg, ${data.theme.colors[color].DEFAULT} 30%, rgb(29, 35, 42) 30.99%, rgb(29, 35, 42) 40%, rgba(0, 0, 0, 0) 40.99%), linear-gradient(-45deg, rgb(29, 35, 42) 50%, ${data.theme.colors[color].DEFAULT} 50.99%)
           }
-          .${rawSelector}:indeterminate{
-            background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 80%, ${theme.colors[color].DEFAULT} 80%), linear-gradient(-90deg, rgba(0, 0, 0, 0) 80%, ${theme.colors[color].DEFAULT} 80%), linear-gradient(0deg, ${theme.colors[color].DEFAULT} 43%, rgb(29, 35, 42) 43%, rgb(29, 35, 42) 57%, ${theme.colors[color].DEFAULT} 57%)
+          .${data.rawSelector}:indeterminate{
+            background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 80%, ${data.theme.colors[color].DEFAULT} 80%), linear-gradient(-90deg, rgba(0, 0, 0, 0) 80%, ${data.theme.colors[color].DEFAULT} 80%), linear-gradient(0deg, ${data.theme.colors[color].DEFAULT} 43%, rgb(29, 35, 42) 43%, rgb(29, 35, 42) 57%, ${data.theme.colors[color].DEFAULT} 57%)
           }
           `
         }
       }],
-      [/^radiomark-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/,([,color],{ rawSelector, currentSelector, variantHandlers, theme })=>{
+      [/^radiomark-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/,([,color])=>{
         return `
           :root {
             --radiomark-color: #FFFFFF;
