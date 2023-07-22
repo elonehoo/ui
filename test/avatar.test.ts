@@ -1,4 +1,4 @@
-import { describe, it,expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import generator from './setup'
 import { prettierCSS } from './utils'
 
@@ -29,8 +29,8 @@ describe('avatar', () => {
   })
 })
 
-describe('avatar size',()=>{
-  it('avatar size 3xs',async ()=>{
+describe('avatar size', () => {
+  it('avatar size 3xs', async () => {
     const { getLayer } = await generator.generate('avatar-3xs')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -43,7 +43,7 @@ describe('avatar size',()=>{
 `)
   })
 
-  it('avatar size 2xs',async ()=>{
+  it('avatar size 2xs', async () => {
     const { getLayer } = await generator.generate('avatar-2xs')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -56,7 +56,7 @@ describe('avatar size',()=>{
 `)
   })
 
-  it('avatar size xs',async ()=>{
+  it('avatar size xs', async () => {
     const { getLayer } = await generator.generate('avatar-xs')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -69,7 +69,7 @@ describe('avatar size',()=>{
 `)
   })
 
-  it('avatar size sm',async ()=>{
+  it('avatar size sm', async () => {
     const { getLayer } = await generator.generate('avatar-sm')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -83,7 +83,7 @@ describe('avatar size',()=>{
 `)
   })
 
-  it('avatar size md',async ()=>{
+  it('avatar size md', async () => {
     const { getLayer } = await generator.generate('avatar-md')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -97,7 +97,7 @@ describe('avatar size',()=>{
 `)
   })
 
-  it('avatar size lg',async ()=>{
+  it('avatar size lg', async () => {
     const { getLayer } = await generator.generate('avatar-lg')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -111,7 +111,7 @@ describe('avatar size',()=>{
 `)
   })
 
-  it('avatar size xl',async ()=>{
+  it('avatar size xl', async () => {
     const { getLayer } = await generator.generate('avatar-xl')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -125,7 +125,7 @@ describe('avatar size',()=>{
 `)
   })
 
-  it('avatar size 2xl',async ()=>{
+  it('avatar size 2xl', async () => {
     const { getLayer } = await generator.generate('avatar-2xl')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -139,7 +139,7 @@ describe('avatar size',()=>{
 `)
   })
 
-  it('avatar size 3xl',async ()=>{
+  it('avatar size 3xl', async () => {
     const { getLayer } = await generator.generate('avatar-3xl')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(

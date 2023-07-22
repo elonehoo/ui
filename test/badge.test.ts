@@ -1,9 +1,9 @@
-import { describe, it,expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import generator from './setup'
-import { prettierCSS, uiColor, hexToRgb } from './utils'
+import { hexToRgb, prettierCSS, uiColor } from './utils'
 
 describe('badge color', () => {
-  for(const color of uiColor){
+  for (const color of uiColor) {
     it(`badge ${color}`, async () => {
       const { getLayer } = await generator.generate(`badge-${color}`)
       const css = await prettierCSS(getLayer('shortcuts')!)
@@ -52,11 +52,10 @@ describe('badge color', () => {
   }
 })
 
-describe('badge size', ()=>{
-  it('badge size xs',async ()=>{
+describe('badge size', () => {
+  it('badge size xs', async () => {
     const { getLayer } = await generator.generate('badge-xs')
     const css = await prettierCSS(getLayer('shortcuts')!)
-    console.log(css)
     expect(css).toEqual(
 `/* layer: shortcuts */
 .badge-xs {
@@ -70,10 +69,9 @@ describe('badge size', ()=>{
 `)
   })
 
-  it('badge size sm',async ()=>{
+  it('badge size sm', async () => {
     const { getLayer } = await generator.generate('badge-sm')
     const css = await prettierCSS(getLayer('shortcuts')!)
-    console.log(css)
     expect(css).toEqual(
 `/* layer: shortcuts */
 .badge-sm {
@@ -87,10 +85,9 @@ describe('badge size', ()=>{
 `)
   })
 
-  it('badge size md',async ()=>{
+  it('badge size md', async () => {
     const { getLayer } = await generator.generate('badge-md')
     const css = await prettierCSS(getLayer('shortcuts')!)
-    console.log(css)
     expect(css).toEqual(
 `/* layer: shortcuts */
 .badge-md {
@@ -104,10 +101,9 @@ describe('badge size', ()=>{
 `)
   })
 
-  it('badge size lg',async ()=>{
+  it('badge size lg', async () => {
     const { getLayer } = await generator.generate('badge-lg')
     const css = await prettierCSS(getLayer('shortcuts')!)
-    console.log(css)
     expect(css).toEqual(
 `/* layer: shortcuts */
 .badge-lg {
