@@ -63,6 +63,13 @@ UnoCss component library
 
 </details>
 
+## Dream
+
+- [x] add [test](/test) module
+- [ ] add docs module
+- [ ] get [antfu](https://github.com/antfu) star
+- [ ] add 100 star
+
 ## Credits
 Thanks to:
 
