@@ -10,7 +10,7 @@ UnoCss component library
 
 - A presets for UnoCss
 
-- Faster developmen
+- Faster development
 
 - Cleaner HTML
 
@@ -66,6 +66,7 @@ UnoCss component library
 ## Dream
 
 - [x] add [test](/test) module
+- [ ] add [playground] module
 - [ ] add docs module
 - [ ] get [Anthony Fu](https://github.com/antfu) star
 - [ ] get 100 star
