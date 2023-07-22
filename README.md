@@ -67,7 +67,7 @@ UnoCss component library
 
 - [x] add [test](/test) module
 - [ ] add docs module
-- [ ] get [antfu](https://github.com/antfu) star
+- [ ] get [Anthony Fu](https://github.com/antfu) star
 - [ ] add 100 star
 
 ## Credits
