@@ -6,7 +6,6 @@ describe('input',()=>{
   it('input', async ()=>{
     const { getLayer } = await generator.generate('input-green')
     const css = await prettierCSS(getLayer('shortcuts')!)
-    console.log(css)
     expect(css).toEqual(
 `/* layer: shortcuts */
 .input-green {
@@ -45,7 +44,7 @@ describe('input',()=>{
 }
 .dark .input-green {
   --un-bg-opacity: 1;
-  background-color: rgba(17, 24, 39, var(--un-bg-opacity));
+  background-color: rgba(15, 15, 15, var(--un-bg-opacity));
   --un-text-opacity: 1;
   color: rgba(255, 255, 255, var(--un-text-opacity));
   --un-ring-opacity: 1;
