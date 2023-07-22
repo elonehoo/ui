@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import generator from './setup'
-import { prettierCSS } from './utils'
+import generator from '../setup'
+import { prettierCSS } from '../utils'
 
 describe('space', () => {
   it('space start', async () => {

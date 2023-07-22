@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import generator from './setup'
-import { hexToRgb, prettierCSS, uiColor } from './utils'
+import generator from '../setup'
+import { hexToRgb, prettierCSS, uiColor } from '../utils'
 
 describe('badge color', () => {
   for (const color of uiColor) {

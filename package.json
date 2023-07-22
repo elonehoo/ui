@@ -47,12 +47,10 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.39.8",
     "@types/node": "^20.4.2",
-    "@vitest/ui": "^0.33.0",
     "bumpp": "^9.1.1",
     "eslint": "^8.45.0",
     "typescript": "^5.1.6",
     "unbuild": "^1.2.1",
-    "unocss": "^0.53.5",
-    "vitest": "^0.33.0"
+    "unocss": "^0.53.5"
   }
 }

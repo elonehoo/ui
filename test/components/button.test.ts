@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import generator from './setup'
-import { hexToRgb, prettierCSS, uiColor } from './utils'
+import generator from '../setup'
+import { hexToRgb, prettierCSS, uiColor } from '../utils'
 
 describe('button base', () => {
   for (const color of uiColor) {
