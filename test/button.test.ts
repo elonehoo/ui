@@ -86,9 +86,9 @@ describe('button base', () => {
   }
 })
 
-describe('button outline',()=>{
+describe('button outline', () => {
   for (const color of uiColor) {
-    it(`button outline ${color}`,async ()=>{
+    it(`button outline ${color}`, async () => {
       const { getLayer } = await generator.generate(`btn-outline-${color}`)
       const css = await prettierCSS(getLayer('shortcuts')!)
       expect(css).toEqual(
@@ -164,12 +164,11 @@ describe('button outline',()=>{
 `)
     })
   }
-
 })
 
-describe('button soft',()=>{
+describe('button soft', () => {
   for (const color of uiColor) {
-    it(`button soft ${color}`,async ()=>{
+    it(`button soft ${color}`, async () => {
       const { getLayer } = await generator.generate(`btn-soft-${color}`)
       const css = await prettierCSS(getLayer('shortcuts')!)
       expect(css).toEqual(
@@ -244,9 +243,9 @@ describe('button soft',()=>{
   }
 })
 
-describe('button ghost',()=>{
+describe('button ghost', () => {
   for (const color of uiColor) {
-    it(`button ghost ${color}`, async ()=>{
+    it(`button ghost ${color}`, async () => {
       const { getLayer } = await generator.generate(`btn-ghost-${color}`)
       const css = await prettierCSS(getLayer('shortcuts')!)
       expect(css).toEqual(
@@ -315,9 +314,9 @@ describe('button ghost',()=>{
   }
 })
 
-describe('button link',()=>{
+describe('button link', () => {
   for (const color of uiColor) {
-    it(`button link ${color}`,async ()=>{
+    it(`button link ${color}`, async () => {
       const { getLayer } = await generator.generate(`btn-link-${color}`)
       const css = await prettierCSS(getLayer('shortcuts')!)
       expect(css).toEqual(
@@ -390,9 +389,9 @@ describe('button link',()=>{
   }
 })
 
-describe('button black',()=>{
+describe('button black', () => {
   for (const color of uiColor) {
-    it(`button black ${color}`, async ()=>{
+    it(`button black ${color}`, async () => {
       const { getLayer } = await generator.generate(`btn-black-${color}`)
       const css = await prettierCSS(getLayer('shortcuts')!)
       expect(css).toEqual(
@@ -467,10 +466,9 @@ describe('button black',()=>{
   }
 })
 
-describe('button size',()=>{
-  // const sizes = ['2xs','xs','md','lg','xl']
-  it('button size 2xs',async ()=>{
-    const { getLayer } = await generator.generate(`btn-2xs`)
+describe('button size', () => {
+  it('button size 2xs', async () => {
+    const { getLayer } = await generator.generate('btn-2xs')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
 `/* layer: shortcuts */
@@ -487,8 +485,8 @@ describe('button size',()=>{
 `)
   })
 
-  it('button size xs',async ()=>{
-    const { getLayer } = await generator.generate(`btn-xs`)
+  it('button size xs', async () => {
+    const { getLayer } = await generator.generate('btn-xs')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
 `/* layer: shortcuts */
@@ -505,8 +503,8 @@ describe('button size',()=>{
 `)
   })
 
-  it('button size md',async ()=>{
-    const { getLayer } = await generator.generate(`btn-md`)
+  it('button size md', async () => {
+    const { getLayer } = await generator.generate('btn-md')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
 `/* layer: shortcuts */
@@ -523,8 +521,8 @@ describe('button size',()=>{
 `)
   })
 
-  it('button size lg',async ()=>{
-    const { getLayer } = await generator.generate(`btn-lg`)
+  it('button size lg', async () => {
+    const { getLayer } = await generator.generate('btn-lg')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
 `/* layer: shortcuts */
@@ -541,8 +539,8 @@ describe('button size',()=>{
 `)
   })
 
-  it('button size xl',async ()=>{
-    const { getLayer } = await generator.generate(`btn-xl`)
+  it('button size xl', async () => {
+    const { getLayer } = await generator.generate('btn-xl')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
 `/* layer: shortcuts */

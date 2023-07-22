@@ -44,7 +44,7 @@ export const uiColor: string[] = [
   'warmgray',
   'truegray',
   'coolgray',
-  'bluegray'
+  'bluegray',
 ]
 
 export function prettierCSS(css: string) {

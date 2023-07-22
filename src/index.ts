@@ -27,7 +27,7 @@ export default function elonehooUI(): Preset {
         else
           return 'text-base gap-x-2.5 px-3.5 py-2.5'
       }],
-      [/^space-((start|center|end|between|around|evenly|stretch))$/, ([, color]) => `flex justify-${color} gap-[8px_12px] [flex-flow:row_wrap]`],
+      [/^space-((start|center|end|between|around|evenly|stretch))$/, ([, layout]) => `flex justify-${layout} gap-[8px_12px] [flex-flow:row_wrap]`],
       { avatar: 'relative inline-flex items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-full h-8 w-8 text-xs' },
       [/^avatar-((3xs|2xs|xs|sm|md|lg|xl|2xl|3xl))$/, ([, size]) => {
         if (size === '3xs')
