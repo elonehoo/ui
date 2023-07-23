@@ -7,7 +7,6 @@ describe('skeleton color', ()=>{
     it(`skeleton ${color}`, async ()=>{
       const { getLayer } = await generator.generate(`skeleton-${color}`)
       const css = await prettierCSS(getLayer('shortcuts')!)
-      console.log(css)
       expect(css).toEqual(
 `/* layer: shortcuts */
 .skeleton-${color} {
