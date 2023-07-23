@@ -232,7 +232,6 @@ describe('toggle size',()=>{
   it(`toggle lg`, async ()=>{
     const { getLayer } = await generator.generate(`toggle-lg`)
     const css = await prettierCSS(getLayer('shortcuts')!)
-    console.log(css)
     expect(css).toEqual(
 `/* layer: shortcuts */
 .toggle-lg {
