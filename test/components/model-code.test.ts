@@ -42,3 +42,27 @@ describe('model code color',()=>{
     })
   }
 })
+
+describe('code line', ()=>{
+  it('code line',async ()=>{
+    const { getLayer } = await generator.generate('code-line')
+    const css = await prettierCSS(getLayer('shortcuts')!)
+    expect(css).toEqual(
+`/* layer: shortcuts */
+.code-line::before {
+  margin-right: 2ch;
+  display: inline-block;
+  width: 2rem;
+  text-align: right;
+  opacity: 0.5;
+  content: '';
+  content: attr(data-prefix);
+}
+.code-line {
+  display: flex;
+  justify-content: flex-start;
+  padding-right: 1.25rem;
+}
+`)
+  })
+})
