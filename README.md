@@ -40,7 +40,7 @@ UnoCss component library
   - [x] Checkbox
   - [x] Radio
   - [x] Toggle
-  - [ ] Range
+  - [x] Range
 
 - Data
   - [ ] Table
