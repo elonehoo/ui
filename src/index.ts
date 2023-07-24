@@ -204,6 +204,22 @@ export default function elonehooUI(): Preset {
         else
           return 'w-8 h-8'
       }],
+      [/^table-((box|main|th|body|td))$/, ([, layout]) => {
+        if (layout === 'box')
+          return 'flex border border-gray-200 dark:border-gray-800 relative rounded-md bg-white dark:bg-dark-900 overflow-x-auto'
+
+        else if (layout === 'main')
+          return 'min-w-full table-fixed divide-y divide-gray-300 dark:divide-gray-800'
+
+        else if (layout === 'th')
+          return 'text-left rtl:text-right px-3 py-3.5 text-dark-950 dark:text-white font-semibold text-sm'
+
+        else if(layout === 'body')
+          return 'divide-y divide-gray-200 dark:divide-dark-800'
+
+        else
+          return 'whitespace-nowrap px-3 py-4 text-gray-500 dark:text-gray-400 text-sm'
+      }],
     ],
     rules: [
       ['select-arrow', {

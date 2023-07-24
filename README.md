@@ -43,7 +43,7 @@ UnoCss component library
   - [x] Range
 
 - Data
-  - [ ] Table
+  - [x] Table
 
 - Navigation
   - [ ] Menu
