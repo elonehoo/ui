@@ -218,7 +218,7 @@ export default function elonehooUI(): Preset {
           .${data.rawSelector}:checked{
             background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0) 65%, ${data.theme.colors[color].DEFAULT} 65.99%), linear-gradient(45deg, rgba(0, 0, 0, 0) 75%, ${data.theme.colors[color].DEFAULT} 75.99%), linear-gradient(-45deg, ${data.theme.colors[color].DEFAULT} 40%, rgba(0, 0, 0, 0) 40.99%), linear-gradient(45deg, ${data.theme.colors[color].DEFAULT} 30%, rgb(255, 255, 255) 30.99%, rgb(255, 255, 255) 40%, rgba(0, 0, 0, 0) 40.99%), linear-gradient(-45deg, rgb(255, 255, 255) 50%, ${data.theme.colors[color].DEFAULT} 50.99%);
           }
-          .${data.awSelector}:indeterminate{
+          .${data.rawSelector}:indeterminate{
             background-image:linear-gradient(90deg, rgba(0, 0, 0, 0) 80%, ${data.theme.colors[color].DEFAULT} 80%), linear-gradient(-90deg, rgba(0, 0, 0, 0) 80%, ${data.theme.colors[color].DEFAULT} 80%), linear-gradient(0deg, ${data.theme.colors[color].DEFAULT} 43%, rgb(255, 255, 255) 43%, rgb(255, 255, 255) 57%, ${data.theme.colors[color].DEFAULT} 57%)
           }
           @keyframes checkmark {

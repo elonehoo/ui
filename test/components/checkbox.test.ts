@@ -49,7 +49,6 @@ describe('checkbox size',()=>{
   it('checkbox size xs',async()=>{
     const { getLayer } = await generator.generate('checkbox-xs')
     const css = await prettierCSS(getLayer('shortcuts')!)
-    console.log(css)
     expect(css).toEqual(
 `/* layer: shortcuts */
 .checkbox-xs {
@@ -62,7 +61,6 @@ describe('checkbox size',()=>{
   it('checkbox size sm',async()=>{
     const { getLayer } = await generator.generate('checkbox-sm')
     const css = await prettierCSS(getLayer('shortcuts')!)
-    console.log(css)
     expect(css).toEqual(
 `/* layer: shortcuts */
 .checkbox-sm {
@@ -75,7 +73,6 @@ describe('checkbox size',()=>{
   it('checkbox size md',async()=>{
     const { getLayer } = await generator.generate('checkbox-md')
     const css = await prettierCSS(getLayer('shortcuts')!)
-    console.log(css)
     expect(css).toEqual(
 `/* layer: shortcuts */
 .checkbox-md {
@@ -88,7 +85,6 @@ describe('checkbox size',()=>{
   it('checkbox size lg',async()=>{
     const { getLayer } = await generator.generate('checkbox-lg')
     const css = await prettierCSS(getLayer('shortcuts')!)
-    console.log(css)
     expect(css).toEqual(
 `/* layer: shortcuts */
 .checkbox-lg {

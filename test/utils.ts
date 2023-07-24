@@ -15,6 +15,12 @@ export function hexToRgb(color: string, depth: string): { r: number; g: number; 
     : null
 }
 
+export function getHex(color: string, depth: string):string{
+  // @ts-expect-error the theme has colors
+  const hex = generator.config.theme.colors[color][depth]
+  return hex
+}
+
 export const uiColor: string[] = [
   'rose',
   'pink',
