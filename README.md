@@ -1,5 +1,5 @@
 <h1 >
-@elonehoo/ui
+elonehoo/ui
 </h1>
 
 <p >
