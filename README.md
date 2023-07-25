@@ -41,7 +41,7 @@ UnoCss component library
   - [x] Range
 
 - Data
-  - [ ] Alert
+  - [x] Alert
   - [x] Table
   - [ ] Dropdown
   - [ ] Accordion
@@ -54,7 +54,7 @@ UnoCss component library
   - [ ] Modal
   - [ ] Popover
   - [ ] Tooltip
-  - [ ] Notification
+  - [x] Toast
 
 - Layout
   - [x] code

@@ -222,6 +222,22 @@ export default function elonehooUI(): Preset {
       }],
       [/^range-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([,color]) => `h-6 w-full cursor-pointer appearance-none overflow-hidden bg-transparent rounded-2xl focus:[outline:none] range-focus-visible-${color} range-webkit-slider-runnable-track-${color} range-moz-range-track-${color} range-webkit-slider-thumb-${color} range-moz-range-thumb-${color}`],
       [/^alert-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([,color]) => `grid w-full grid-flow-row content-start items-center justify-items-center gap-4 text-center border text-${color === 'dark' ? 'white' : 'black'} bg-${color} p-4 rounded-2xl border-${color} sm:grid-flow-col sm:grid-cols-[auto_minmax(auto,1fr)] sm:justify-items-start sm:text-left`],
+      ['toast','fixed flex min-w-fit flex-col whitespace-nowrap gap-2 translate-x-0 translate-y-0 p-4 left-auto right-0 top-auto bottom-0 animate-[zoom-in_0.25s_ease-out]'],
+      [/^toast-((start|center|end|bottom|middle|top))$/, ([, layout]) => {
+        if (layout === 'start'){
+          return 'translate-x-0! left-0! right-auto!'
+        }else if(layout === 'center'){
+          return 'top-50%! translate-x-[-50%]! left-50%! '
+        }else if(layout === 'end'){
+          return 'translate-x-0! right-0! left-auto!'
+        }else if(layout === 'bottom'){
+          return 'translate-y-0! bottom-0! top-auto!'
+        }else if(layout === 'middle'){
+          return 'left-50%! translate-y-[-50%]! top-50%! '
+        }else{
+          return 'translate-y-0! top-0! bottom-auto!'
+        }
+      }],
     ],
     rules: [
       ['select-arrow', {
