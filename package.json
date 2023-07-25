@@ -36,6 +36,7 @@
     "build": "unbuild",
     "test": "pnpm -C test run test",
     "ui": "pnpm -C test run ui",
+    "coverage": "pnpm -C test run coverage",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "typecheck": "tsc --noEmit",

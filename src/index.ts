@@ -327,20 +327,20 @@ export default function elonehooUI(): Preset {
             height: 1.25rem !important;
           }
           .range-sm::-webkit-slider-runnable-track {
-            height: .25rem !important;
+            height: 0.25rem !important;
           }
           .range-sm::-moz-range-track {
-            height: .25rem !important;
+            height: 0.25rem !important;
           }
           .range-sm::-webkit-slider-thumb {
             height: 1.25rem !important;
             width: 1.25rem !important;
-            --filler-offset: .5rem !important;
+            --filler-offset: 0.5rem !important;
           }
           .range-sm::-moz-range-thumb {
             height: 1.25rem !important;
             width: 1.25rem !important;
-            --filler-offset: .5rem !important;
+            --filler-offset: 0.5rem !important;
           }
           `
         }else if(size === 'md'){
