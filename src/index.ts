@@ -220,6 +220,7 @@ export default function elonehooUI(): Preset {
         else
           return 'whitespace-nowrap px-3 py-4 text-gray-500 dark:text-gray-400 text-sm'
       }],
+      [/^range-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([,color]) => `h-6 w-full cursor-pointer appearance-none overflow-hidden bg-transparent rounded-2xl focus:[outline:none] range-focus-visible-${color} range-webkit-slider-runnable-track-${color} range-moz-range-track-${color} range-webkit-slider-thumb-${color} range-moz-range-thumb-${color}`]
     ],
     rules: [
       ['select-arrow', {
@@ -396,39 +397,35 @@ export default function elonehooUI(): Preset {
           `
         }
       }],
-      [/^range-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([,color], data: any) => {
+      [/^range-focus-visible-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([,color], data: any) => {
         return `
-        .range-${color} {
-          height: 1.5rem;
-          width: 100%;
-          cursor: pointer;
-          appearance: none;
-          overflow: hidden;
-          background-color: transparent;
-          border-radius: 1rem
-        }
-
-        .range-${color}:focus {
-          outline: none
-        }
         .range-${color}:focus-visible {
           --focus-shadow: 0 0 0 6px #1D232A inset, 0 0 0 2rem ${data.theme.colors[color].DEFAULT} inset
         }
-
+        `
+      }],
+      [/^range-webkit-slider-runnable-track-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([,color]) => {
+        return `
         .range-${color}::-webkit-slider-runnable-track {
           height: .5rem;
           width: 100%;
           background-color: #a6adba1a;
           border-radius: 1rem
         }
-
+        `
+      }],
+      [/^range-moz-range-track-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([,color]) => {
+        return `
         .range-${color}::-moz-range-track {
           height: .5rem;
           width: 100%;
           background-color: #a6adba1a;
           border-radius: 1rem
         }
-
+        `
+      }],
+      [/^range-webkit-slider-thumb-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([,color], data: any) => {
+        return `
         .range-${color}::-webkit-slider-thumb {
           position: relative;
           height: 1.5rem;
@@ -446,7 +443,10 @@ export default function elonehooUI(): Preset {
           --filler-offset: .6rem;
           box-shadow: 0 0 0 3px ${data.theme.colors[color].DEFAULT} inset,var(--focus-shadow,0 0),calc(var(--filler-size) * -1 - var(--filler-offset)) 0 0 var(--filler-size)
         }
-
+        `
+      }],
+      [/^range-moz-range-thumb-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([,color], data: any) => {
+        return `
         .range-${color}::-moz-range-thumb {
           position: relative;
           height: 1.5rem;

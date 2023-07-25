@@ -29,8 +29,6 @@ UnoCss component library
   - [x] Avatar
   - [x] Badge
   - [x] Button
-  - [ ] Dropdown
-  - [ ] Accordion
   - [x] Keyboard Key
 
 - Forms
@@ -43,7 +41,10 @@ UnoCss component library
   - [x] Range
 
 - Data
+  - [ ] Alert
   - [x] Table
+  - [ ] Dropdown
+  - [ ] Accordion
 
 - Navigation
   - [ ] Menu
