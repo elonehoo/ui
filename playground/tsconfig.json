@@ -18,8 +18,7 @@
         "forceConsistentCasingInFileNames": true,
         "types": [
             "vite/client",
-            "vite-plugin-pages/client",
-            "vitest/globals"
+            "vite-plugin-pages/client"
         ],
         "paths": {
             "~components/*": [
