@@ -44,7 +44,6 @@ UnoCss component library
   - [x] Alert
   - [x] Table
   - [x] Dropdown
-  - [ ] Accordion
 
 - Navigation
   - [ ] Pagination
