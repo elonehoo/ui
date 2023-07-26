@@ -27,7 +27,7 @@ describe('button base', () => {
   line-height: 1.25rem;
   font-weight: 500;
   --un-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--un-text-opacity));
+  color: rgba(${color === 'light' ? hexToRgb('gray', '900')?.r : '255'}, ${color === 'light' ? hexToRgb('gray', '900')?.g : '255'}, ${color === 'light' ? hexToRgb('gray', '900')?.b : '255'}, var(--un-text-opacity));
   --un-shadow: var(--un-shadow-inset) 0 1px 2px 0
     var(--un-shadow-color, rgba(0, 0, 0, 0.05));
   box-shadow: var(--un-ring-offset-shadow), var(--un-ring-shadow),
@@ -415,7 +415,7 @@ describe('button black', () => {
   line-height: 1.25rem;
   font-weight: 500;
   --un-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--un-text-opacity));
+  color: rgba(${color === 'light' ? hexToRgb('gray', '900')?.r : '255'}, ${color === 'light' ? hexToRgb('gray', '900')?.g : '255'}, ${color === 'light' ? hexToRgb('gray', '900')?.b : '255'}, var(--un-text-opacity));
   --un-shadow: var(--un-shadow-inset) 0 1px 2px 0
     var(--un-shadow-color, rgba(0, 0, 0, 0.05));
   box-shadow: var(--un-ring-offset-shadow), var(--un-ring-shadow),
