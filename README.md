@@ -47,13 +47,11 @@ UnoCss component library
   - [ ] Accordion
 
 - Navigation
-  - [ ] Menu
   - [ ] Pagination
 
 - Overlays
   - [ ] Modal
-  - [ ] Popover
-  - [ ] Tooltip
+  - [x] Tooltip
   - [x] Toast
 
 - Layout

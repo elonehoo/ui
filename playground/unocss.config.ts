@@ -9,7 +9,6 @@ import Sammui from '../src/index'
 
 export default defineConfig({
   shortcuts:[
-
   ],
   rules:[
   ],

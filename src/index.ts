@@ -252,7 +252,13 @@ export default function elonehooUI(): Preset {
         }else {
           return 'cursor-default select-none relative flex items-center justify-between gap-1 rounded-md px-2 py-1.5 text-sm text-gray-900 dark:text-white pe-7 hover:bg-gray-100 dark:hover:bg-dark-900'
         }
-      }]
+      }],
+      [/^tooltip-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([, color]) =>
+        `tooltip-basic-${color} tooltip-before-after-basic-${color} tooltip-after-${color} tooltip-hover-after-before-${color} tooltip-before-${color} tooltip-top-${color} `
+      ],
+      [/^tooltip((left|bottom|right))-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, (match) =>
+        `tooltip-${match[1]}-${match[3]} `
+      ],
     ],
     rules: [
       ['select-arrow', {
@@ -494,6 +500,172 @@ export default function elonehooUI(): Preset {
         }
         `
       }],
+      [/^tooltip-basic-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([,color]) => {
+        return `
+        .tooltip-${color} {
+          position: relative;
+          display: inline-block;
+          text-align: center;
+          --tooltip-tail-offset: calc(100% + 0.0625rem - 0.1875rem);
+          --tooltip-offset: calc(100% + 1px + 0.1875rem);
+        }
+        `
+      }],
+      [/^tooltip-before-after-basic-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([,color]) => {
+        return `
+        .tooltip-${color}:before,
+        .tooltip-${color}:after {
+          opacity: 0;
+          transition-property: color, background-color, border-color, outline-color,
+            text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+            backdrop-filter;
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-duration: 200ms;
+          transition-delay: 100ms;
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        `
+      }],
+      [/^tooltip-after-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([,color]) => {
+        return `
+        .tooltip-${color}:after {
+          position: absolute;
+          content: "";
+          border-style: solid;
+          border-width: 0.1875rem;
+          width: 0;
+          height: 0;
+          display: block;
+        }
+        `
+      }],
+      [/^tooltip-hover-after-before-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([,color]) => {
+        return `
+        .tooltip-${color}.tooltip-open:before,
+        .tooltip-${color}.tooltip-open:after,
+        .tooltip-${color}:hover:before,
+        .tooltip-${color}:hover:after {
+          opacity: 1;
+          transition-delay: 75ms;
+        }
+        .tooltip:has(:focus-visible):after,
+        .tooltip:has(:focus-visible):before {
+          opacity: 1;
+          transition-delay: 75ms;
+        }
+        .tooltip:not([data-tip]):hover:before,
+        .tooltip:not([data-tip]):hover:after {
+          visibility: hidden;
+          opacity: 0;
+        }
+        `
+      }],
+      [/^tooltip-before-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([,color], data: any) => {
+        return `
+        .tooltip-${color}:before {
+          max-width: 20rem;
+          border-radius: 0.25rem;
+          padding-left: 0.5rem;
+          padding-right: 0.5rem;
+          padding-top: 0.25rem;
+          padding-bottom: 0.25rem;
+          font-size: 0.875rem;
+          line-height: 1.25rem;
+          background-color: ${data.theme.colors[color].DEFAULT};
+          color: ${color === 'light' ? data.theme.colors.gray.DEFAULT : data.theme.colors.gray[900]};
+          width: max-content;
+          position: absolute;
+          pointer-events: none;
+          z-index: 1;
+          content: attr(data-tip);
+        }
+        `
+      }],
+      [/^tooltip-top-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([,color], data: any) => {
+        return `
+        .tooltip-${color},
+        .tooltip-top {
+          &:after {
+            transform: translateX(-50%);
+            border-color: ${data.theme.colors[color].DEFAULT} transparent transparent transparent;
+            top: auto;
+            left: 50%;
+            right: auto;
+            bottom: var(--tooltip-tail-offset);
+          }
+          &:before {
+            transform: translateX(-50%);
+            top: auto;
+            left: 50%;
+            right: auto;
+            bottom: var(--tooltip-offset);
+          }
+        }
+        `
+      }],
+      [/^tooltip-bottom-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([,color], data: any) => {
+        return `
+        .tooltip-${color} {
+          &:after  {
+            transform: translateX(-50%) !important;
+            border-color: transparent transparent ${data.theme.colors[color].DEFAULT} transparent !important;
+            top: var(--tooltip-tail-offset) !important;
+            left: 50% !important;
+            right: auto !important;
+            bottom: auto !important;
+          }
+          &:before {
+            transform: translateX(-50%) !important;
+            top: var(--tooltip-offset) !important;
+            left: 50% !important;
+            right: auto !important;
+            bottom: auto !important;
+          }
+        }
+        `
+      }],
+      [/^tooltip-left-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([,color], data: any) => {
+        return `
+        .tooltip-${color} {
+          &:after {
+            transform: translateY(-50%) !important;
+            border-color: transparent transparent transparent ${data.theme.colors[color].DEFAULT} !important;
+            top: 50% !important;
+            left: auto !important;
+            right: calc(var(--tooltip-tail-offset) + 0.0625rem) !important;
+            bottom: auto !important;
+          }
+          &:before {
+            transform: translateY(-50%) !important;
+            top: 50% !important;
+            left: auto !important;
+            right: var(--tooltip-offset) !important;
+            bottom: auto !important;
+          }
+        }
+        `
+      }],
+      [/^tooltip-right-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([,color], data: any) => {
+        return `
+        .tooltip-${color} {
+          &:after {
+            transform: translateY(-50%) !important;
+            border-color: transparent ${data.theme.colors[color].DEFAULT} transparent transparent !important;
+            top: 50% !important;
+            left: calc(var(--tooltip-tail-offset) + 0.0625rem) !important;
+            right: auto !important;
+            bottom: auto !important;
+          }
+          &:before {
+            transform: translateY(-50%) !important;
+            top: 50% !important;
+            left: var(--tooltip-offset) !important;
+            right: auto !important;
+            bottom: auto !important;
+          }
+        }
+        `
+      }]
     ],
   }
 }
