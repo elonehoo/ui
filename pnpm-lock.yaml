@@ -87,9 +87,6 @@ importers:
 
   playground:
     dependencies:
-      '@elonehoo/ui':
-        specifier: ^0.0.1
-        version: link:..
       '@unocss/autocomplete':
         specifier: ^0.53.6
         version: 0.53.6
