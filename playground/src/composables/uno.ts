@@ -3,7 +3,7 @@ import type { GenerateResult, UserConfig } from 'unocss'
 import { createGenerator } from 'unocss'
 import { createAutocomplete } from '@unocss/autocomplete'
 import MagicString from 'magic-string'
-import type { UnocssPluginContext } from '@unocss/core'
+import type { Annotation, UnocssPluginContext } from '@unocss/core'
 import { evaluateUserConfig } from '../shared-docs'
 import type { CompletionContext, CompletionResult } from '@codemirror/autocomplete'
 
@@ -12,7 +12,7 @@ export const customConfigError = ref<Error>()
 
 export const uno = createGenerator({}, defaultConfig.value)
 export const output = shallowRef<GenerateResult>()
-export const annotations = shallowRef<any[]>()
+export const annotations = shallowRef<Annotation[]>()
 
 let customConfig: UserConfig = {}
 let autocomplete = createAutocomplete(uno)
