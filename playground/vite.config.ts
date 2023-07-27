@@ -32,4 +32,24 @@ export default defineConfig({
       dts: 'src/auto-imports.d.ts',
     }),
   ],
+  optimizeDeps: {
+    exclude: [
+      '@iconify/utils/lib/loader/fs',
+      '@iconify/utils/lib/loader/install-pkg',
+      '@iconify/utils/lib/loader/node-loader',
+      '@iconify/utils/lib/loader/node-loaders',
+    ],
+  },
+  build: {
+    outDir: 'dist',
+    emptyOutDir: true,
+    rollupOptions: {
+      external: [
+        '@iconify/utils/lib/loader/fs',
+        '@iconify/utils/lib/loader/install-pkg',
+        '@iconify/utils/lib/loader/node-loader',
+        '@iconify/utils/lib/loader/node-loaders',
+      ],
+    },
+  },
 })

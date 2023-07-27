@@ -1,12 +1,12 @@
 import {
   defineConfig,
-  presetAttributify,
   presetIcons,
-  presetUno,
   transformerCompileClass,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
+import presetUno from '@unocss/preset-uno'
+import presetAttributify from '@unocss/preset-attributify'
 import UI from '../src/index'
 
 export default defineConfig({
@@ -20,8 +20,8 @@ export default defineConfig({
     responsiveBorder: 'absolute flex items-center justify-center bg-light-700 dark:bg-dark-800 [&>span]-(w-4 h-4 text-gray-400)',
   },
   presets: [
-    presetAttributify(),
-    presetUno(),
+    presetAttributify() as any,
+    presetUno() as any,
     presetIcons(),
     UI()
   ],
