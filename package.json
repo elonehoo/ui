@@ -31,9 +31,9 @@
     "*.d.ts"
   ],
   "scripts": {
-    "play": "pnpm -C playground run dev",
     "dev": "unbuild --stub",
     "build": "unbuild",
+    "play": "pnpm -C example run dev",
     "test": "pnpm -C test run test",
     "ui": "pnpm -C test run ui",
     "coverage": "pnpm -C test run coverage",

@@ -64,6 +64,7 @@ UnoCss component library
 ## Dream
 
 - [x] add [test](/test) module
+- [x] add [example](/example) module
 - [ ] add playground module
 - [ ] add docs module
 - [ ] get [Anthony Fu](https://github.com/antfu) star
