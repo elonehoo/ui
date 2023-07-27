@@ -1,9 +1,9 @@
-import { describe, it, expect } from "vitest"
-import generator from '../setup';
-import { prettierCSS } from "../utils";
+import { describe, expect, it } from 'vitest'
+import generator from '../setup'
+import { prettierCSS } from '../utils'
 
-describe('content', ()=>{
-  it('content',async ()=>{
+describe('content', () => {
+  it('content', async () => {
     const { getLayer } = await generator.generate('content')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(

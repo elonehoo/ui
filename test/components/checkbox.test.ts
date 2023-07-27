@@ -2,9 +2,9 @@ import { describe, expect, it } from 'vitest'
 import generator from '../setup'
 import { hexToRgb, prettierCSS, uiColor } from '../utils'
 
-describe('checkbox color',()=>{
+describe('checkbox color', () => {
   for (const color of uiColor) {
-    it(`checkbox ${color}`,async()=>{
+    it(`checkbox ${color}`, async () => {
       const { getLayer } = await generator.generate(`checkbox-${color}`)
       const css = await prettierCSS(getLayer('shortcuts')!)
       expect(css).toEqual(
@@ -18,25 +18,25 @@ describe('checkbox color',()=>{
   appearance: none;
   border-width: 1px;
   --un-border-opacity: 1;
-  border-color: rgba(${hexToRgb(color,'DEFAULT')?.r}, ${hexToRgb(color,'DEFAULT')?.g}, ${hexToRgb(color,'DEFAULT')?.b}, var(--un-border-opacity));
+  border-color: rgba(${hexToRgb(color, 'DEFAULT')?.r}, ${hexToRgb(color, 'DEFAULT')?.g}, ${hexToRgb(color, 'DEFAULT')?.b}, var(--un-border-opacity));
   border-radius: 0.5rem;
 }
 .checkbox-${color}:checked {
   animation: checkmark 0.2s ease-in-out;
   --un-bg-opacity: 1;
-  background-color: rgba(${hexToRgb(color,'DEFAULT')?.r}, ${hexToRgb(color,'DEFAULT')?.g}, ${hexToRgb(color,'DEFAULT')?.b}, var(--un-bg-opacity));
+  background-color: rgba(${hexToRgb(color, 'DEFAULT')?.r}, ${hexToRgb(color, 'DEFAULT')?.g}, ${hexToRgb(color, 'DEFAULT')?.b}, var(--un-bg-opacity));
   background-repeat: no-repeat;
 }
 .checkbox-${color}:indeterminate {
   animation: checkmark 0.2s ease-in-out;
   --un-bg-opacity: 1;
-  background-color: rgba(${hexToRgb(color,'DEFAULT')?.r}, ${hexToRgb(color,'DEFAULT')?.g}, ${hexToRgb(color,'DEFAULT')?.b}, var(--un-bg-opacity));
+  background-color: rgba(${hexToRgb(color, 'DEFAULT')?.r}, ${hexToRgb(color, 'DEFAULT')?.g}, ${hexToRgb(color, 'DEFAULT')?.b}, var(--un-bg-opacity));
   background-repeat: no-repeat;
 }
 .checkbox-${color}:focus-visible {
   outline-width: 2px;
   --un-outline-color-opacity: 1;
-  outline-color: rgba(${hexToRgb(color,'DEFAULT')?.r}, ${hexToRgb(color,'DEFAULT')?.g}, ${hexToRgb(color,'DEFAULT')?.b}, var(--un-outline-color-opacity));
+  outline-color: rgba(${hexToRgb(color, 'DEFAULT')?.r}, ${hexToRgb(color, 'DEFAULT')?.g}, ${hexToRgb(color, 'DEFAULT')?.b}, var(--un-outline-color-opacity));
   outline-offset: 2px;
   outline-style: solid;
 }
@@ -45,8 +45,8 @@ describe('checkbox color',()=>{
   }
 })
 
-describe('checkbox size',()=>{
-  it('checkbox size xs',async()=>{
+describe('checkbox size', () => {
+  it('checkbox size xs', async () => {
     const { getLayer } = await generator.generate('checkbox-xs')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -58,7 +58,7 @@ describe('checkbox size',()=>{
 `)
   })
 
-  it('checkbox size sm',async()=>{
+  it('checkbox size sm', async () => {
     const { getLayer } = await generator.generate('checkbox-sm')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -70,7 +70,7 @@ describe('checkbox size',()=>{
 `)
   })
 
-  it('checkbox size md',async()=>{
+  it('checkbox size md', async () => {
     const { getLayer } = await generator.generate('checkbox-md')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -82,7 +82,7 @@ describe('checkbox size',()=>{
 `)
   })
 
-  it('checkbox size lg',async()=>{
+  it('checkbox size lg', async () => {
     const { getLayer } = await generator.generate('checkbox-lg')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(

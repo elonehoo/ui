@@ -1,10 +1,10 @@
-import { describe,it,expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import generator from '../setup'
 import { prettierCSS, uiColor } from '../utils'
 
-describe('range color',()=>{
+describe('range color', () => {
   for (const color of uiColor) {
-    it(`range ${color}`,async()=>{
+    it(`range ${color}`, async () => {
       const { getLayer } = await generator.generate(`range-${color}`)
       const css = await prettierCSS(getLayer('shortcuts')!)
       expect(css).toEqual(

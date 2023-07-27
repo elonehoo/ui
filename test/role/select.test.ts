@@ -1,10 +1,9 @@
-import { describe,it,expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import generator from '../setup'
 import { prettierCSS } from '../utils'
 
-
-describe('select arrow',()=>{
-  it('select arrow color',async()=>{
+describe('select arrow', () => {
+  it('select arrow color', async () => {
     const { getLayer } = await generator.generate('select-arrow')
     const css = await prettierCSS(getLayer('default')!)
     expect(css).toEqual(

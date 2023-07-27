@@ -1,9 +1,9 @@
-import { describe,it,expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import generator from '../setup'
 import { prettierCSS } from '../utils'
 
-describe('table',()=>{
-  it('table box', async ()=>{
+describe('table', () => {
+  it('table box', async () => {
     const { getLayer } = await generator.generate('table-box')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -28,7 +28,7 @@ describe('table',()=>{
 `)
   })
 
-  it('table main', async ()=>{
+  it('table main', async () => {
     const { getLayer } = await generator.generate('table-main')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -51,7 +51,7 @@ describe('table',()=>{
 `)
   })
 
-  it('table th', async ()=>{
+  it('table th', async () => {
     const { getLayer } = await generator.generate('table-th')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -78,7 +78,7 @@ describe('table',()=>{
 `)
   })
 
-  it('table body', async ()=>{
+  it('table body', async () => {
     const { getLayer } = await generator.generate('table-body')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -97,7 +97,7 @@ describe('table',()=>{
 `)
   })
 
-  it('table td', async ()=>{
+  it('table td', async () => {
     const { getLayer } = await generator.generate('table-td')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(

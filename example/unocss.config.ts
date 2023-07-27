@@ -8,9 +8,9 @@ import {
 import Sammui from '../src/index'
 
 export default defineConfig({
-  shortcuts:[
+  shortcuts: [
   ],
-  rules:[
+  rules: [
   ],
   presets: [
     Sammui(),

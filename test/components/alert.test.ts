@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import generator from '../setup'
-import { prettierCSS,uiColor,hexToRgb } from '../utils'
+import { hexToRgb, prettierCSS, uiColor } from '../utils'
 
 describe('alert color', () => {
   for (const color of uiColor) {
@@ -20,14 +20,14 @@ describe('alert color', () => {
   gap: 1rem;
   border-width: 1px;
   --un-border-opacity: 1;
-  border-color: rgba(${hexToRgb(color,'DEFAULT')?.r}, ${hexToRgb(color,'DEFAULT')?.g}, ${hexToRgb(color,'DEFAULT')?.b}, var(--un-border-opacity));
+  border-color: rgba(${hexToRgb(color, 'DEFAULT')?.r}, ${hexToRgb(color, 'DEFAULT')?.g}, ${hexToRgb(color, 'DEFAULT')?.b}, var(--un-border-opacity));
   border-radius: 1rem;
   --un-bg-opacity: 1;
-  background-color: rgba(${hexToRgb(color,'DEFAULT')?.r}, ${hexToRgb(color,'DEFAULT')?.g}, ${hexToRgb(color,'DEFAULT')?.b}, var(--un-bg-opacity));
+  background-color: rgba(${hexToRgb(color, 'DEFAULT')?.r}, ${hexToRgb(color, 'DEFAULT')?.g}, ${hexToRgb(color, 'DEFAULT')?.b}, var(--un-bg-opacity));
   padding: 1rem;
   text-align: center;
   --un-text-opacity: 1;
-  color: rgba(${color === 'dark'? '255':'0'}, ${color === 'dark'? '255':'0'}, ${color === 'dark'? '255':'0'}, var(--un-text-opacity));
+  color: rgba(${color === 'dark' ? '255' : '0'}, ${color === 'dark' ? '255' : '0'}, ${color === 'dark' ? '255' : '0'}, var(--un-text-opacity));
 }
 @media (min-width: 640px) {
   .alert-${color} {

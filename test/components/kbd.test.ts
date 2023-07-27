@@ -1,9 +1,9 @@
-import { describe,it,expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import generator from '../setup'
 import { prettierCSS } from '../utils'
 
-describe('kbd',()=>{
-  it('kbd', async ()=>{
+describe('kbd', () => {
+  it('kbd', async () => {
     const { getLayer } = await generator.generate('kbd')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -61,7 +61,7 @@ describe('kbd',()=>{
 `)
   })
 
-  it('kbd-sm', async ()=>{
+  it('kbd-sm', async () => {
     const { getLayer } = await generator.generate('kbd-sm')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -74,7 +74,7 @@ describe('kbd',()=>{
 `)
   })
 
-  it('kbd-xs', async ()=>{
+  it('kbd-xs', async () => {
     const { getLayer } = await generator.generate('kbd-xs')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -87,7 +87,7 @@ describe('kbd',()=>{
 `)
   })
 
-  it('kbd-md', async ()=>{
+  it('kbd-md', async () => {
     const { getLayer } = await generator.generate('kbd-md')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(

@@ -1,10 +1,10 @@
-import { describe,it,expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import generator from '../setup'
-import { prettierCSS,uiColor } from '../utils'
+import { prettierCSS, uiColor } from '../utils'
 
-describe('radiomark color',()=>{
+describe('radiomark color', () => {
   for (const color of uiColor) {
-    it(`radiomark ${color}`,async()=>{
+    it(`radiomark ${color}`, async () => {
       const { getLayer } = await generator.generate(`radiomark-${color}`)
       const css = await prettierCSS(getLayer('default')!)
       expect(css).toEqual(

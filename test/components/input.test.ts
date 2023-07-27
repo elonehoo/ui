@@ -1,10 +1,10 @@
-import { describe,it,expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import generator from '../setup'
-import { prettierCSS,hexToRgb, uiColor } from '../utils'
+import { hexToRgb, prettierCSS, uiColor } from '../utils'
 
-describe('input color',()=>{
-  for(const color of uiColor){
-    it(`input ${color}`, async ()=>{
+describe('input color', () => {
+  for (const color of uiColor) {
+    it(`input ${color}`, async () => {
       const { getLayer } = await generator.generate(`input-${color}`)
       const css = await prettierCSS(getLayer('shortcuts')!)
       expect(css).toEqual(
@@ -81,7 +81,7 @@ describe('input color',()=>{
     })
   }
 
-  it('input none',async ()=>{
+  it('input none', async () => {
     const { getLayer } = await generator.generate('input-none')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -127,11 +127,10 @@ describe('input color',()=>{
 }
 `)
   })
-
 })
 
-describe('input size', ()=>{
-  it('input size 2xs', async ()=>{
+describe('input size', () => {
+  it('input size 2xs', async () => {
     const { getLayer } = await generator.generate('input-2xs')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -149,7 +148,7 @@ describe('input size', ()=>{
 `)
   })
 
-  it('input size xs', async ()=>{
+  it('input size xs', async () => {
     const { getLayer } = await generator.generate('input-xs')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -167,7 +166,7 @@ describe('input size', ()=>{
 `)
   })
 
-  it('input size sm', async ()=>{
+  it('input size sm', async () => {
     const { getLayer } = await generator.generate('input-sm')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -185,7 +184,7 @@ describe('input size', ()=>{
 `)
   })
 
-  it('input size md', async ()=>{
+  it('input size md', async () => {
     const { getLayer } = await generator.generate('input-md')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -203,7 +202,7 @@ describe('input size', ()=>{
 `)
   })
 
-  it('input size lg', async ()=>{
+  it('input size lg', async () => {
     const { getLayer } = await generator.generate('input-lg')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -221,7 +220,7 @@ describe('input size', ()=>{
 `)
   })
 
-  it('input size xl', async ()=>{
+  it('input size xl', async () => {
     const { getLayer } = await generator.generate('input-xl')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(

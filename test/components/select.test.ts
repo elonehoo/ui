@@ -1,10 +1,10 @@
-import { describe,it,expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import generator from '../setup'
-import { prettierCSS,hexToRgb, uiColor } from '../utils'
+import { hexToRgb, prettierCSS, uiColor } from '../utils'
 
-describe('select color',()=>{
-  for(const color of uiColor){
-    it(`select ${color}`, async ()=>{
+describe('select color', () => {
+  for (const color of uiColor) {
+    it(`select ${color}`, async () => {
       const { getLayer } = await generator.generate(`select-${color}`)
       const css = await prettierCSS(getLayer('shortcuts')!)
       expect(css).toEqual(
@@ -86,8 +86,8 @@ describe('select color',()=>{
   }
 })
 
-describe('select size',()=>{
-  it('select 2xs', async ()=>{
+describe('select size', () => {
+  it('select 2xs', async () => {
     const { getLayer } = await generator.generate('select-2xs')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -105,7 +105,7 @@ describe('select size',()=>{
 `)
   })
 
-  it('select xs', async ()=>{
+  it('select xs', async () => {
     const { getLayer } = await generator.generate('select-xs')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -123,7 +123,7 @@ describe('select size',()=>{
 `)
   })
 
-  it('select sm', async ()=>{
+  it('select sm', async () => {
     const { getLayer } = await generator.generate('select-sm')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -141,7 +141,7 @@ describe('select size',()=>{
 `)
   })
 
-  it('select md', async ()=>{
+  it('select md', async () => {
     const { getLayer } = await generator.generate('select-md')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -159,7 +159,7 @@ describe('select size',()=>{
 `)
   })
 
-  it('select lg', async ()=>{
+  it('select lg', async () => {
     const { getLayer } = await generator.generate('select-lg')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -177,7 +177,7 @@ describe('select size',()=>{
 `)
   })
 
-  it('select xl', async ()=>{
+  it('select xl', async () => {
     const { getLayer } = await generator.generate('select-xl')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(

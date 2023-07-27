@@ -11,7 +11,7 @@ export default defineConfig({
   plugins: [
     Alias({
       useConfig: true,
-      useTypescript: true
+      useTypescript: true,
     }),
     Inspector({
       framework: 'vue',
@@ -44,5 +44,5 @@ export default defineConfig({
     // https://github.com/antfu/unocss
     // see unocss.config.ts for config
     UnoCss(),
-  ]
+  ],
 })

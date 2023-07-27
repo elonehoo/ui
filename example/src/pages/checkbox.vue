@@ -2,5 +2,5 @@
 </script>
 
 <template>
-  <input type="checkbox" class="checkbox-green" id="my"/>
+  <input id="my" type="checkbox" class="checkbox-green">
 </template>

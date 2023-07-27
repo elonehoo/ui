@@ -1,10 +1,10 @@
-import { describe,it,expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import generator from '../setup'
-import { prettierCSS,uiColor, hexToRgb } from '../utils'
+import { hexToRgb, prettierCSS, uiColor } from '../utils'
 
-describe('model code color',()=>{
-  for(const color of uiColor){
-    it(`model code ${color}`, async ()=>{
+describe('model code color', () => {
+  for (const color of uiColor) {
+    it(`model code ${color}`, async () => {
       const { getLayer } = await generator.generate(`model-code-${color}`)
       const css = await prettierCSS(getLayer('shortcuts')!)
       expect(css).toEqual(
@@ -21,9 +21,9 @@ describe('model code color',()=>{
   padding-bottom: 1.25rem;
   --un-text-opacity: 1;
   ${
-    color === 'light' ?
-    'color: rgba(0, 0, 0, var(--un-text-opacity));'
-    :'color: rgba(255, 255, 255, var(--un-text-opacity));'
+    color === 'light'
+    ? 'color: rgba(0, 0, 0, var(--un-text-opacity));'
+    : 'color: rgba(255, 255, 255, var(--un-text-opacity));'
   }
 }
 .model-code-${color}::before {
@@ -43,8 +43,8 @@ describe('model code color',()=>{
   }
 })
 
-describe('code line', ()=>{
-  it('code line',async ()=>{
+describe('code line', () => {
+  it('code line', async () => {
     const { getLayer } = await generator.generate('code-line')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(

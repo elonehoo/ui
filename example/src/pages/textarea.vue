@@ -2,5 +2,5 @@
 </script>
 
 <template>
-  <textarea class="textarea-green textarea-xl" placeholder="Search..." rows="3"></textarea>
+  <textarea class="textarea-green textarea-xl" placeholder="Search..." rows="3" />
 </template>

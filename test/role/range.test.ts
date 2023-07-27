@@ -1,9 +1,9 @@
-import { describe,it,expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import generator from '../setup'
-import { prettierCSS, uiColor,getHex } from '../utils'
+import { getHex, prettierCSS, uiColor } from '../utils'
 
-describe('range size',()=>{
-  it('range size xs',async()=>{
+describe('range size', () => {
+  it('range size xs', async () => {
     const { getLayer } = await generator.generate('range-xs')
     const css = await prettierCSS(getLayer('default')!)
     expect(css).toEqual(
@@ -31,7 +31,7 @@ describe('range size',()=>{
 `)
   })
 
-  it('range size sm',async()=>{
+  it('range size sm', async () => {
     const { getLayer } = await generator.generate('range-sm')
     const css = await prettierCSS(getLayer('default')!)
     expect(css).toEqual(
@@ -59,7 +59,7 @@ describe('range size',()=>{
 `)
   })
 
-  it('range size md',async()=>{
+  it('range size md', async () => {
     const { getLayer } = await generator.generate('range-md')
     const css = await prettierCSS(getLayer('default')!)
     expect(css).toEqual(
@@ -91,7 +91,7 @@ describe('range size',()=>{
 `)
   })
 
-  it('range size lg',async()=>{
+  it('range size lg', async () => {
     const { getLayer } = await generator.generate('range-lg')
     const css = await prettierCSS(getLayer('default')!)
     expect(css).toEqual(
@@ -124,23 +124,23 @@ describe('range size',()=>{
   })
 })
 
-describe('range variants',()=>{
+describe('range variants', () => {
   for (const color of uiColor) {
-    it(`range focus-visible ${color}`,async ()=>{
+    it(`range focus-visible ${color}`, async () => {
       const { getLayer } = await generator.generate(`range-focus-visible-${color}`)
       const css = await prettierCSS(getLayer('default')!)
       expect(css).toEqual(
 `/* layer: default */
 
 .range-${color}:focus-visible {
-  --focus-shadow: 0 0 0 6px #1d232a inset, 0 0 0 2rem ${getHex(color,'DEFAULT')} inset;
+  --focus-shadow: 0 0 0 6px #1d232a inset, 0 0 0 2rem ${getHex(color, 'DEFAULT')} inset;
 }
 `)
     })
   }
 
-  for(const color of uiColor){
-    it(`range webkit-slider-runnable-track ${color}`,async ()=>{
+  for (const color of uiColor) {
+    it(`range webkit-slider-runnable-track ${color}`, async () => {
       const { getLayer } = await generator.generate(`range-webkit-slider-runnable-track-${color}`)
       const css = await prettierCSS(getLayer('default')!)
       expect(css).toEqual(
@@ -156,8 +156,8 @@ describe('range variants',()=>{
     })
   }
 
-  for(const color of uiColor){
-    it(`range moz-range-track ${color}`,async ()=>{
+  for (const color of uiColor) {
+    it(`range moz-range-track ${color}`, async () => {
       const { getLayer } = await generator.generate(`range-moz-range-track-${color}`)
       const css = await prettierCSS(getLayer('default')!)
       expect(css).toEqual(
@@ -173,8 +173,8 @@ describe('range variants',()=>{
     })
   }
 
-  for(const color of uiColor){
-    it(`range webkit-slider-thumb ${color}`,async ()=>{
+  for (const color of uiColor) {
+    it(`range webkit-slider-thumb ${color}`, async () => {
       const { getLayer } = await generator.generate(`range-webkit-slider-thumb-${color}`)
       const css = await prettierCSS(getLayer('default')!)
       expect(css).toEqual(
@@ -185,18 +185,18 @@ describe('range variants',()=>{
   height: 1.5rem;
   width: 1.5rem;
   border-style: none;
-  background-color: ${color === 'dark' ? '#fff' : "#000"};
+  background-color: ${color === 'dark' ? '#fff' : '#000'};
   border-radius: 1rem;
   -moz-appearance: none;
   appearance: none;
   -webkit-appearance: none;
   top: 50%;
-  color: ${getHex(color,'DEFAULT')};
+  color: ${getHex(color, 'DEFAULT')};
   transform: translateY(-50%);
   --filler-size: 100rem;
   --filler-offset: 0.6rem;
   box-shadow:
-    0 0 0 3px ${getHex(color,'DEFAULT')} inset,
+    0 0 0 3px ${getHex(color, 'DEFAULT')} inset,
     var(--focus-shadow, 0 0),
     calc(var(--filler-size) * -1 - var(--filler-offset)) 0 0 var(--filler-size);
 }
@@ -204,8 +204,8 @@ describe('range variants',()=>{
     })
   }
 
-  for(const color of uiColor){
-    it(`range moz-range-thumb ${color}`,async ()=>{
+  for (const color of uiColor) {
+    it(`range moz-range-thumb ${color}`, async () => {
       const { getLayer } = await generator.generate(`range-moz-range-thumb-${color}`)
       const css = await prettierCSS(getLayer('default')!)
       expect(css).toEqual(
@@ -216,14 +216,14 @@ describe('range variants',()=>{
   height: 1.5rem;
   width: 1.5rem;
   border-style: none;
-  background-color: ${color === 'dark' ? '#fff' : "#000"};
+  background-color: ${color === 'dark' ? '#fff' : '#000'};
   border-radius: 1rem;
   top: 50%;
-  color: ${getHex(color,'DEFAULT')};
+  color: ${getHex(color, 'DEFAULT')};
   --filler-size: 100rem;
   --filler-offset: 0.5rem;
   box-shadow:
-    0 0 0 3px ${getHex(color,'DEFAULT')} inset,
+    0 0 0 3px ${getHex(color, 'DEFAULT')} inset,
     var(--focus-shadow, 0 0),
     calc(var(--filler-size) * -1 - var(--filler-offset)) 0 0 var(--filler-size);
 }

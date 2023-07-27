@@ -26,7 +26,7 @@ const show = ref(false)
   <div class="dropdown-box">
     <div class="dropdown-relative">
       <div class="dropdown-label">
-        <button @click="show=!show" class="btn-green">
+        <button class="btn-green" @click="show = !show">
           <span class="block truncate">Wade Cooper</span>
           <div class="i-carbon-chevron-down flex-shrink-0 h-5 w-5" />
         </button>
@@ -45,5 +45,4 @@ const show = ref(false)
       </div>
     </div>
   </div>
-
 </template>

@@ -2,5 +2,5 @@
 </script>
 
 <template>
-  <img avatar="~ 3xl" src="https://github.com/elonehoo.png"/>
+  <img avatar="~ 3xl" src="https://github.com/elonehoo.png">
 </template>

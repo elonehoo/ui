@@ -4,8 +4,10 @@
 
 <template>
   <div>
-    <select select="green lg" >
-      <option disabled value="">Please select one</option>
+    <select select="green lg">
+      <option disabled value="">
+        Please select one
+      </option>
       <option>A</option>
       <option>B</option>
       <option>C</option>

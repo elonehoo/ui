@@ -5,7 +5,7 @@ export default function elonehooUI(): Preset {
     name: 'elonehoo-ui',
     shortcuts: [
       { 'space-vertical': '[flex-flow:column_nowrap]' },
-      {'modal':'w-full max-w-md transform overflow-hidden rounded-2xl bg-white dark:bg-dark-800 p-6 text-left align-middle shadow-xl transition-all'},
+      { modal: 'w-full max-w-md transform overflow-hidden rounded-2xl bg-white dark:bg-dark-800 p-6 text-left align-middle shadow-xl transition-all' },
       [/^btn-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([, color]) => `focus:outline-none focus-visible:outline-0 disabled:cursor-not-allowed disabled:opacity-75 flex-shrink-0 font-medium rounded-md text-sm gap-x-1.5 px-2.5 py-1.5 shadow-sm text-${color === 'light' ? 'gray-900' : 'white'} dark:text-gray-900 bg-${color}-500 hover:bg-${color}-600 disabled:bg-${color}-500 disabled:hover:bg-${color}-500 dark:bg-${color}-400 dark:hover:bg-${color}-500 dark:disabled:bg-${color}-400 dark:disabled:hover:bg-${color}-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-${color}-500 dark:focus-visible:outline-${color}-400 inline-flex items-center`],
       [/^btn-outline-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([, color]) => `focus:outline-none focus-visible:outline-0 disabled:cursor-not-allowed disabled:opacity-75 flex-shrink-0 font-medium rounded-md text-sm gap-x-1.5 px-2.5 py-1.5 ring-1 ring-inset ring-current text-${color}-500 dark:text-${color}-400 hover:bg-${color}-50 disabled:bg-transparent dark:hover:bg-${color}-950 dark:disabled:bg-transparent focus-visible:ring-2 focus-visible:ring-${color}-500 dark:focus-visible:ring-${color}-400 inline-flex items-center`],
       [/^btn-soft-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([, color]) => `focus:outline-none focus-visible:outline-0 disabled:cursor-not-allowed disabled:opacity-75 flex-shrink-0 font-medium rounded-md text-sm gap-x-1.5 px-2.5 py-1.5 text-${color}-500 dark:text-${color}-400 bg-${color}-50 hover:bg-${color}-100 disabled:bg-${color}-50 dark:bg-${color}-950 dark:hover:bg-${color}-900 dark:disabled:bg-${color}-950 focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-${color}-500 dark:focus-visible:ring-${color}-400 inline-flex items-center`],
@@ -215,7 +215,7 @@ export default function elonehooUI(): Preset {
         else if (layout === 'th')
           return 'text-left rtl:text-right px-3 py-3.5 text-dark-950 dark:text-white font-semibold text-sm'
 
-        else if(layout === 'body')
+        else if (layout === 'body')
           return 'divide-y divide-gray-200 dark:divide-dark-800'
 
         else
@@ -223,58 +223,69 @@ export default function elonehooUI(): Preset {
       }],
       [/^range-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([,color]) => `h-6 w-full cursor-pointer appearance-none overflow-hidden bg-transparent rounded-2xl focus:[outline:none] range-focus-visible-${color} range-webkit-slider-runnable-track-${color} range-moz-range-track-${color} range-webkit-slider-thumb-${color} range-moz-range-thumb-${color}`],
       [/^alert-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([,color]) => `grid w-full grid-flow-row content-start items-center justify-items-center gap-4 text-center border text-${color === 'dark' ? 'white' : 'black'} bg-${color} p-4 rounded-2xl border-${color} sm:grid-flow-col sm:grid-cols-[auto_minmax(auto,1fr)] sm:justify-items-start sm:text-left`],
-      ['toast','fixed flex min-w-fit flex-col whitespace-nowrap gap-2 translate-x-0 translate-y-0 p-4 left-auto right-0 top-auto bottom-0 animate-[zoom-in_0.25s_ease-out]'],
+      ['toast', 'fixed flex min-w-fit flex-col whitespace-nowrap gap-2 translate-x-0 translate-y-0 p-4 left-auto right-0 top-auto bottom-0 animate-[zoom-in_0.25s_ease-out]'],
       [/^toast-((start|center|end|bottom|middle|top))$/, ([, layout]) => {
-        if (layout === 'start'){
+        if (layout === 'start')
           return 'translate-x-0! left-0! right-auto!'
-        }else if(layout === 'center'){
+
+        else if (layout === 'center')
           return 'top-50%! translate-x-[-50%]! left-50%! '
-        }else if(layout === 'end'){
+
+        else if (layout === 'end')
           return 'translate-x-0! right-0! left-auto!'
-        }else if(layout === 'bottom'){
+
+        else if (layout === 'bottom')
           return 'translate-y-0! bottom-0! top-auto!'
-        }else if(layout === 'middle'){
+
+        else if (layout === 'middle')
           return 'left-50%! translate-y-[-50%]! top-50%! '
-        }else{
+
+        else
           return 'translate-y-0! top-0! bottom-auto!'
-        }
       }],
       [/^dropdown-((box|relative|label|content|items|item))$/, ([, layout]) => {
-        if (layout === 'box'){
+        if (layout === 'box')
           return 'flex'
-        }else if(layout === 'relative'){
+
+        else if (layout === 'relative')
           return 'relative'
-        }else if(layout === 'label'){
+
+        else if (layout === 'label')
           return 'inline-flex w-full'
-        }else if(layout === 'content'){
+
+        else if (layout === 'content')
           return 'z-20 w-full absolute m-0 inset-[0px_0px_auto_auto] [transform:translate3d(0px,40px,0px)]'
-        }else if(layout === 'items'){
+
+        else if (layout === 'items')
           return 'relative focus:outline-none overflow-y-auto scroll-py-1 ring-1 ring-gray-200 dark:ring-gray-700 rounded-md shadow-lg bg-white dark:bg-dark-800 p-1 max-h-60'
-        }else {
+
+        else
           return 'cursor-default select-none relative flex items-center justify-between gap-1 rounded-md px-2 py-1.5 text-sm text-gray-900 dark:text-white pe-7 hover:bg-gray-100 dark:hover:bg-dark-900'
-        }
       }],
       [/^tooltip-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([, color]) =>
-        `tooltip-basic-${color} tooltip-before-after-basic-${color} tooltip-after-${color} tooltip-hover-after-before-${color} tooltip-before-${color} tooltip-top-${color} `
+        `tooltip-basic-${color} tooltip-before-after-basic-${color} tooltip-after-${color} tooltip-hover-after-before-${color} tooltip-before-${color} tooltip-top-${color} `,
       ],
-      [/^tooltip-((left|bottom|right))-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([,layout,,color]) =>{
+      [/^tooltip-((left|bottom|right))-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([,layout,,color]) => {
         return `tooltip-${layout}-${color} `
       }],
-      [/^page-((box|main|body|star|end|content))$/, ([,layout]) =>{
-        if(layout === 'box'){
+      [/^page-((box|main|body|star|end|content))$/, ([,layout]) => {
+        if (layout === 'box')
           return 'flex items-center justify-between py-3'
-        }else if(layout === 'main'){
-          return 'bg-white dark:bg-dark-900'
-        }else if(layout === 'body'){
-          return `isolate inline-flex -space-x-px rounded-md shadow-sm`
-        }else if(layout === 'star'){
-          return 'relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 dark:ring-gray-800 hover:bg-gray-50 dark:hover:bg-dark-950 focus:z-20 focus:outline-offset-0'
-        }else if(layout === 'end'){
-          return 'relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 dark:ring-gray-800 hover:bg-gray-50 dark:hover:bg-dark-950 focus:z-20 focus:outline-offset-0'
-        }else {
-          return 'relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 dark:text-gray-400 ring-1 ring-inset ring-gray-300 dark:ring-gray-800 hover:bg-gray-50 dark:hover:bg-dark-950 focus:z-20 focus:outline-offset-0'
-        }
 
+        else if (layout === 'main')
+          return 'bg-white dark:bg-dark-900'
+
+        else if (layout === 'body')
+          return 'isolate inline-flex -space-x-px rounded-md shadow-sm'
+
+        else if (layout === 'star')
+          return 'relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 dark:ring-gray-800 hover:bg-gray-50 dark:hover:bg-dark-950 focus:z-20 focus:outline-offset-0'
+
+        else if (layout === 'end')
+          return 'relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 dark:ring-gray-800 hover:bg-gray-50 dark:hover:bg-dark-950 focus:z-20 focus:outline-offset-0'
+
+        else
+          return 'relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 dark:text-gray-400 ring-1 ring-inset ring-gray-300 dark:ring-gray-800 hover:bg-gray-50 dark:hover:bg-dark-950 focus:z-20 focus:outline-offset-0'
       }],
     ],
     rules: [
@@ -354,7 +365,7 @@ export default function elonehooUI(): Preset {
         `
       }],
       [/^range-((xs|sm|md|lg))$/, ([,size]) => {
-        if(size === 'xs'){
+        if (size === 'xs') {
           return `
           .range-xs {
             height: 1rem !important;
@@ -376,7 +387,8 @@ export default function elonehooUI(): Preset {
             --filler-offset: .4rem !important;
           }
           `
-        }else if(size === 'sm'){
+        }
+        else if (size === 'sm') {
           return `
           .range-sm {
             height: 1.25rem !important;
@@ -398,7 +410,8 @@ export default function elonehooUI(): Preset {
             --filler-offset: 0.5rem !important;
           }
           `
-        }else if(size === 'md'){
+        }
+        else if (size === 'md') {
           return `
           .range-md {
             height: 1.5rem !important;
@@ -424,7 +437,8 @@ export default function elonehooUI(): Preset {
             --filler-offset: .6rem !important;
           }
           `
-        }else {
+        }
+        else {
           return `
           .range-lg {
             height: 2rem !important;
@@ -486,7 +500,7 @@ export default function elonehooUI(): Preset {
           height: 1.5rem;
           width: 1.5rem;
           border-style: none;
-          background-color: ${color === 'dark' ? '#FFF' : "#000"};
+          background-color: ${color === 'dark' ? '#FFF' : '#000'};
           border-radius: 1rem;
           -moz-appearance: none;
           appearance: none;
@@ -507,7 +521,7 @@ export default function elonehooUI(): Preset {
           height: 1.5rem;
           width: 1.5rem;
           border-style: none;
-          background-color: ${color === 'dark' ? '#FFF' : "#000"};
+          background-color: ${color === 'dark' ? '#FFF' : '#000'};
           border-radius: 1rem;
           top: 50%;
           color: ${data.theme.colors[color].DEFAULT};
@@ -682,7 +696,7 @@ export default function elonehooUI(): Preset {
           }
         }
         `
-      }]
+      }],
     ],
   }
 }

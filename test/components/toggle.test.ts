@@ -1,10 +1,10 @@
-import { describe,it,expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import generator from '../setup'
-import { prettierCSS,hexToRgb, uiColor } from '../utils'
+import { hexToRgb, prettierCSS, uiColor } from '../utils'
 
-describe('toggle color',()=>{
-  for(const color of uiColor){
-    it(`toggle ${color}`, async ()=>{
+describe('toggle color', () => {
+  for (const color of uiColor) {
+    it(`toggle ${color}`, async () => {
       const { getLayer } = await generator.generate(`toggle-${color}`)
       const css = await prettierCSS(getLayer('shortcuts')!)
       expect(css).toEqual(
@@ -69,8 +69,8 @@ describe('toggle color',()=>{
     })
   }
 
-  it(`toggle none`, async ()=>{
-    const { getLayer } = await generator.generate(`toggle-none`)
+  it('toggle none', async () => {
+    const { getLayer } = await generator.generate('toggle-none')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
 `/* layer: shortcuts */
@@ -108,9 +108,9 @@ describe('toggle color',()=>{
   })
 })
 
-describe('toggle size',()=>{
-  it(`toggle xs`, async ()=>{
-    const { getLayer } = await generator.generate(`toggle-xs`)
+describe('toggle size', () => {
+  it('toggle xs', async () => {
+    const { getLayer } = await generator.generate('toggle-xs')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
 `/* layer: shortcuts */
@@ -149,8 +149,8 @@ describe('toggle size',()=>{
 `)
   })
 
-  it(`toggle sm`, async ()=>{
-    const { getLayer } = await generator.generate(`toggle-sm`)
+  it('toggle sm', async () => {
+    const { getLayer } = await generator.generate('toggle-sm')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
 `/* layer: shortcuts */
@@ -189,8 +189,8 @@ describe('toggle size',()=>{
 `)
   })
 
-  it(`toggle md`, async ()=>{
-    const { getLayer } = await generator.generate(`toggle-md`)
+  it('toggle md', async () => {
+    const { getLayer } = await generator.generate('toggle-md')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
 `/* layer: shortcuts */
@@ -229,8 +229,8 @@ describe('toggle size',()=>{
 `)
   })
 
-  it(`toggle lg`, async ()=>{
-    const { getLayer } = await generator.generate(`toggle-lg`)
+  it('toggle lg', async () => {
+    const { getLayer } = await generator.generate('toggle-lg')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
 `/* layer: shortcuts */

@@ -1,10 +1,10 @@
-import { describe,it,expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import generator from '../setup'
-import { prettierCSS,hexToRgb, uiColor } from '../utils'
+import { hexToRgb, prettierCSS, uiColor } from '../utils'
 
-describe('textarea color', ()=>{
-  for(const color of uiColor){
-    it(`textarea ${color}`, async ()=>{
+describe('textarea color', () => {
+  for (const color of uiColor) {
+    it(`textarea ${color}`, async () => {
       const { getLayer } = await generator.generate(`textarea-${color}`)
       const css = await prettierCSS(getLayer('shortcuts')!)
       expect(css).toEqual(
@@ -82,7 +82,7 @@ describe('textarea color', ()=>{
     })
   }
 
-  it('textarea none', async ()=>{
+  it('textarea none', async () => {
     const { getLayer } = await generator.generate('textarea-none')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -131,8 +131,8 @@ describe('textarea color', ()=>{
   })
 })
 
-describe('textarea size', ()=>{
-  it('textarea 2xs', async ()=>{
+describe('textarea size', () => {
+  it('textarea 2xs', async () => {
     const { getLayer } = await generator.generate('textarea-2xs')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -150,7 +150,7 @@ describe('textarea size', ()=>{
 `)
   })
 
-  it('textarea xs', async ()=>{
+  it('textarea xs', async () => {
     const { getLayer } = await generator.generate('textarea-xs')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -168,7 +168,7 @@ describe('textarea size', ()=>{
 `)
   })
 
-  it('textarea sm', async ()=>{
+  it('textarea sm', async () => {
     const { getLayer } = await generator.generate('textarea-sm')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -186,7 +186,7 @@ describe('textarea size', ()=>{
 `)
   })
 
-  it('textarea md', async ()=>{
+  it('textarea md', async () => {
     const { getLayer } = await generator.generate('textarea-md')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -204,7 +204,7 @@ describe('textarea size', ()=>{
 `)
   })
 
-  it('textarea lg', async ()=>{
+  it('textarea lg', async () => {
     const { getLayer } = await generator.generate('textarea-lg')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
@@ -222,7 +222,7 @@ describe('textarea size', ()=>{
 `)
   })
 
-  it('textarea xl', async ()=>{
+  it('textarea xl', async () => {
     const { getLayer } = await generator.generate('textarea-xl')
     const css = await prettierCSS(getLayer('shortcuts')!)
     expect(css).toEqual(
