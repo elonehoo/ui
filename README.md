@@ -46,10 +46,10 @@ UnoCss component library
   - [x] Dropdown
 
 - Navigation
-  - [ ] Pagination
+  - [x] Pagination
 
 - Overlays
-  - [ ] Modal
+  - [x] Modal
   - [x] Tooltip
   - [x] Toast
 

@@ -260,6 +260,22 @@ export default function elonehooUI(): Preset {
       [/^tooltip-((left|bottom|right))-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([,layout,,color]) =>{
         return `tooltip-${layout}-${color} `
       }],
+      [/^page-((box|main|body|star|end|content))$/, ([,layout]) =>{
+        if(layout === 'box'){
+          return 'flex items-center justify-between py-3'
+        }else if(layout === 'main'){
+          return 'bg-white dark:bg-dark-900'
+        }else if(layout === 'body'){
+          return `isolate inline-flex -space-x-px rounded-md shadow-sm`
+        }else if(layout === 'star'){
+          return 'relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 dark:ring-gray-800 hover:bg-gray-50 dark:hover:bg-dark-950 focus:z-20 focus:outline-offset-0'
+        }else if(layout === 'end'){
+          return 'relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 dark:ring-gray-800 hover:bg-gray-50 dark:hover:bg-dark-950 focus:z-20 focus:outline-offset-0'
+        }else {
+          return 'relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 dark:text-gray-400 ring-1 ring-inset ring-gray-300 dark:ring-gray-800 hover:bg-gray-50 dark:hover:bg-dark-950 focus:z-20 focus:outline-offset-0'
+        }
+
+      }],
     ],
     rules: [
       ['select-arrow', {
