@@ -256,9 +256,9 @@ export default function elonehooUI(): Preset {
       [/^tooltip-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([, color]) =>
         `tooltip-basic-${color} tooltip-before-after-basic-${color} tooltip-after-${color} tooltip-hover-after-before-${color} tooltip-before-${color} tooltip-top-${color} `
       ],
-      [/^tooltip((left|bottom|right))-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, (match) =>
-        `tooltip-${match[1]}-${match[3]} `
-      ],
+      [/^tooltip-((left|bottom|right))-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([,layout,,color]) =>{
+        return `tooltip-${layout}-${color} `
+      }],
     ],
     rules: [
       ['select-arrow', {
