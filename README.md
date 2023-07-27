@@ -77,7 +77,7 @@ Thanks to:
 
 - [daisyui](https://github.com/saadeghi/daisyui)
 - [nuxtlabs/ui](https://github.com/nuxtlabs/ui)
-- [shadcn/ui](https://github.com/shadcn/ui)
+- [shadcn/ui](https://github.com/shadcn-ui/ui)
 - [unocss](https://github.com/unocss/unocss)
 
 ## License
