@@ -7,7 +7,7 @@ import {
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
-import UI from '@elonehoo/ui'
+import UI from '../src/index'
 
 export default defineConfig({
   theme: {

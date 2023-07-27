@@ -4,7 +4,7 @@ import {
   presetIcons,
   presetUno,
 } from 'unocss'
-import UI from '@elonehoo/ui'
+import UI from '../../../src/index'
 
 export default defineConfig({
   presets: [
