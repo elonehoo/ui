@@ -40,6 +40,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "typecheck": "tsc --noEmit",
+    "prepublishOnly": "pnpm run build",
     "release": "bumpp package.json --commit --push --tag && pnpm -r publish --access public"
   },
   "peerDependencies": {
