@@ -65,7 +65,7 @@ UnoCss component library
 
 - [x] add [test](/test) module
 - [x] add [example](/example) module
-- [ ] add playground module
+- [x] add [playground](/playground/) module
 - [ ] add docs module
 - [ ] get [Anthony Fu](https://github.com/antfu) star
 - [ ] get 100 star
