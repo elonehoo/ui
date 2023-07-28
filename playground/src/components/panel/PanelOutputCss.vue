@@ -22,11 +22,11 @@ defineProps<{ index: number }>()
         un-children="inline-flex items-center cursor-pointer gap1"
       >
         <label>
-          <input v-model="showPreflights" type="checkbox">
+          <input class="checkbox-gray checkbox-xs" v-model="showPreflights" type="checkbox">
           <span text-sm>Preflights</span>
         </label>
         <label>
-          <input v-model="isCSSPrettify" type="checkbox">
+          <input class="checkbox-gray checkbox-xs" v-model="isCSSPrettify" type="checkbox">
           <span text-sm>Prettify</span>
         </label>
       </div>

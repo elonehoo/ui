@@ -36,7 +36,7 @@ const computedInputHTML = computed({
           un-children="inline-flex items-center cursor-pointer gap-1"
         >
           <label>
-            <input v-model="options.transform" type="checkbox">
+            <input class="checkbox-gray checkbox-xs" v-model="options.transform" type="checkbox">
             <span text-sm>Transform</span>
           </label>
           <div w-1px h-28px my--1 bg-gray:20 />

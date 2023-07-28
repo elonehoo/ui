@@ -73,7 +73,7 @@ function goUnoCssHome(){
       />
       <a
         i-ri-github-line icon-btn
-        href="https://github.com/unocss/unocss"
+        href="https://github.com/elonehoo/ui"
         target="_blank"
         title="GitHub"
       />

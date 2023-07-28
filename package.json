@@ -33,7 +33,8 @@
   "scripts": {
     "dev": "unbuild --stub",
     "build": "unbuild",
-    "play": "pnpm -C example run dev",
+    "example": "pnpm -C example run dev",
+    "play": "pnpm -C playground run dev",
     "test": "pnpm -C test run test",
     "ui": "pnpm -C test run ui",
     "coverage": "pnpm -C test run coverage",
