@@ -1,0 +1,31 @@
+{
+  "name": "docs",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "author": "Elone Hoo <elonehoo@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "unplugin-vue-components": "^0.25.1",
+    "vite": "^4.4.5",
+    "vitepress": "1.0.0-beta.6"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search",
+        "search-insights"
+      ]
+    }
+  },
+  "dependencies": {
+    "@unocss/reset": "^0.53.6",
+    "@vueuse/core": "^10.2.1",
+    "unocss": "^0.53.6",
+    "vue": "^3.3.4"
+  }
+}

@@ -35,6 +35,7 @@
     "build": "unbuild",
     "example": "pnpm -C example run dev",
     "play": "pnpm -C playground run dev",
+    "docs": "pnpm -C docs run dev",
     "test": "pnpm -C test run test",
     "ui": "pnpm -C test run ui",
     "coverage": "pnpm -C test run coverage",
@@ -54,6 +55,7 @@
     "eslint": "^8.45.0",
     "typescript": "^5.1.6",
     "unbuild": "^1.2.1",
-    "unocss": "^0.53.5"
+    "unocss": "^0.53.5",
+    "vitepress": "1.0.0-beta.6"
   }
 }

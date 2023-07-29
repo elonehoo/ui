@@ -5,7 +5,7 @@ elonehoo/ui
 [Playground](https://ui-playground.elonehoo.me/play/)
 
 <p >
-UnoCss component library
+UnoCss component preset
 </p>
 
 ## Features
