@@ -7,9 +7,9 @@ defineProps<{
 </script>
 
 <template>
-  <a :href="link" class="" style="text-decoration:none">
-    <div class="group relative border hover:border-green-400 transition rounded-xl overflow-hidden h-full">
-      <div class="h-48 relative flex items-center justify-center bg-no-repeat bg-cover">
+  <a :href="link" class="no-underline" style="text-decoration:none">
+    <div class="group relative border border-dark-100 border-op-10 hover:border-green-400 transition rounded-xl overflow-hidden h-full">
+      <div class="h-48 relative flex items-center justify-center bg-grid bg-no-repeat bg-cover">
         <div class="blur-overlay w-full h-full absolute pointer-events-none" />
         <slot />
       </div>
@@ -20,3 +20,9 @@ defineProps<{
     </div>
   </a>
 </template>
+
+<style scoped>
+.bg-grid {
+  background: url(./grid.png);
+}
+</style>
