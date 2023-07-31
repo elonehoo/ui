@@ -162,7 +162,7 @@ export default function elonehooUI(): Preset {
       }],
       [/^card-((box|body|head|footer))$/, ([, layout]) => {
         if (layout === 'box')
-          return 'overflow-hidden rounded-lg divide-y divide-gray-200 dark:divide-gray-800 ring-1 ring-gray-200 dark:ring-gray-800 shadow bg-white dark:bg-gray-900 w-full'
+          return 'overflow-hidden rounded-lg divide-y divide-gray-200 dark:divide-gray-800 ring-1 ring-gray-200 dark:ring-gray-800 shadow bg-white dark:bg-dark-900 w-full'
 
         else if (layout === 'body')
           return 'px-4 py-5 sm:p-6'
@@ -273,7 +273,7 @@ export default function elonehooUI(): Preset {
           return 'flex items-center justify-between py-3'
 
         else if (layout === 'main')
-          return 'bg-white dark:bg-dark-900'
+          return 'bg-white dark:bg-dark-900 rounded-l-md rounded-r-md'
 
         else if (layout === 'body')
           return 'isolate inline-flex -space-x-px rounded-md shadow-sm'

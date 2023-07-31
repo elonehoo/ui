@@ -4,6 +4,7 @@ defineProps<{
   desc:string
   link: string
 }>()
+
 </script>
 
 <template>
@@ -14,7 +15,7 @@ defineProps<{
         <slot />
       </div>
       <div class="p-4">
-        <span class="font-semibold">{{ title }}</span>
+        <span class="font-semibold">{{ title.replace(/^\S/, s => s.toUpperCase()) }}</span>
         <p class="text-sm mt-1 text-gray-400">{{ desc }}</p>
       </div>
     </div>
