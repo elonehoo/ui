@@ -9,17 +9,17 @@
         <div class="vp-doc" flex flex-col items-center mt-10>
           <div w-full p-10>
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              <Preview title="button" desc="Create a button with UnoCss" link="/component/button">
+              <Preview title="button" desc="Create a button with UnoCss" >
                 <div class="space-center w-90%">
                   <button class="btn-black-green">UI</button>
                 </div>
               </Preview>
-              <Preview title="avatar" desc="Create a avatar with UnoCss" link="/component/button">
+              <Preview title="avatar" desc="Create a avatar with UnoCss" >
                 <div class="space-center w-90%">
                   <img src="https://github.com/elonehoo.png" class="avatar avatar-3xl" alt="">
                 </div>
               </Preview>
-              <Preview title="alert" desc="Create a alert with UnoCss" link="/component/button">
+              <Preview title="alert" desc="Create a alert with UnoCss" >
                   <div class="alert-green w-80% h-74px">
                     <div class=" ">
                       <h3 class="font-bold text-10px m-0!">
@@ -31,12 +31,12 @@
                     </div>
                   </div>
               </Preview>
-              <Preview title="badge" desc="Create a badge with UnoCss" link="/component/button">
+              <Preview title="badge" desc="Create a badge with UnoCss" >
                 <div class="space-center w-90%">
                   <span class="badge-green badge-lg">Badge</span>
                 </div>
               </Preview>
-              <Preview title="tooltip" desc="Create a tooltip with UnoCss" link="/component/button">
+              <Preview title="tooltip" desc="Create a tooltip with UnoCss" >
                 <div class="space-center w-90%">
                   <div class="tooltip-green" data-tip="@elonehoo/ui">
                     <button class="btn-green">
@@ -45,13 +45,13 @@
                   </div>
                 </div>
               </Preview>
-              <Preview title="skeleton" desc="Create a skeleton with UnoCss" link="/component/button">
+              <Preview title="skeleton" desc="Create a skeleton with UnoCss" >
                 <div class="space-center w-90%">
                   <div class="skeleton-green h-6 w-76 rounded-full" />
                   <div class="skeleton-green h-6 w-76 rounded-full" />
                 </div>
               </Preview>
-              <Preview title="code" desc="Create a code with UnoCss" link="/component/button">
+              <Preview title="code" desc="Create a code with UnoCss" >
                 <div class="space-center w-90%">
                   <div class="model-code-green">
                     <pre class="code-line" data-prefix=">">
@@ -60,35 +60,35 @@
                   </div>
                 </div>
               </Preview>
-              <Preview title="range" desc="Create a range with UnoCss" link="/component/button">
+              <Preview title="range" desc="Create a range with UnoCss" >
                 <div class="space-center w-90%">
                   <input type="range" min="0" max="100" class="range-green range-lg max-w-xs">
                 </div>
               </Preview>
-              <Preview title="toggle" desc="Create a toggle with UnoCss" link="/component/button">
+              <Preview title="toggle" desc="Create a toggle with UnoCss" >
                 <div class="space-center w-90%">
                   <input type="checkbox" style="border: 1px rgb(74, 222, 128) solid;" class="toggle-green toggle-lg">
                 </div>
               </Preview>
-              <Preview title="radio" desc="Create a radio with UnoCss" link="/component/button">
+              <Preview title="radio" desc="Create a radio with UnoCss" >
                 <div class="space-center w-90%">
                   <input type="radio" name="demo" style="border: 1px rgb(74, 222, 128) solid;" class="radio-green radio-lg">
                   <input type="radio" name="demo" style="border: 1px rgb(74, 222, 128) solid;" checked class="radio-green radio-lg">
                 </div>
               </Preview>
-              <Preview title="checkbox" desc="Create a checkbox with UnoCss" link="/component/button">
+              <Preview title="checkbox" desc="Create a checkbox with UnoCss" >
                 <div class="space-center w-90%">
                   <input type="checkbox" style="border: 1px rgb(74, 222, 128) solid;" checked class="checkbox-green checkbox-lg">
                   <input type="checkbox" style="border: 1px rgb(74, 222, 128) solid;" class="checkbox-green checkbox-lg">
                 </div>
               </Preview>
-              <Preview title="kbd" desc="Create a kbd with UnoCss" link="/component/button">
+              <Preview title="kbd" desc="Create a kbd with UnoCss" >
                 <div class="space-center w-90%">
                   <kbd class="kbd kbd-md">command</kbd>
                   <kbd class="kbd kbd-md">s</kbd>
                 </div>
               </Preview>
-              <Preview title="modal" desc="Create a modal with UnoCss" link="/component/button">
+              <Preview title="modal" desc="Create a modal with UnoCss" >
                 <div class="space-center w-90%">
                   <div id="modal_1" class="modal">
                     <form method="dialog" class="w-full h-full">
@@ -104,7 +104,7 @@
                 </div>
                 </div>
               </Preview>
-              <Preview title="select" desc="Create a select with UnoCss" link="/component/button">
+              <Preview title="select" desc="Create a select with UnoCss" >
                 <div class="space-center w-90%">
                   <select class="select-green select-lg">
                     <option disabled value="">
@@ -116,17 +116,17 @@
                   </select>
                 </div>
               </Preview>
-              <Preview title="textarea" desc="Create a textarea with UnoCss" link="/component/button">
+              <Preview title="textarea" desc="Create a textarea with UnoCss" >
                 <div class="space-center w-90%">
                   <textarea class="textarea-green textarea-xl" placeholder="Hi @elonehoo/ui..." rows="3"></textarea>
                 </div>
               </Preview>
-              <Preview title="input" desc="Create a input with UnoCss" link="/component/button">
+              <Preview title="input" desc="Create a input with UnoCss" >
                 <div class="space-center w-90%">
                   <input type="text" placeholder="Search..." class="input-green input-xl">
                 </div>
               </Preview>
-              <Preview title="dropdown" desc="Create a dropdown with UnoCss" link="/component/button">
+              <Preview title="dropdown" desc="Create a dropdown with UnoCss" >
                 <div class="space-center w-90%">
                   <div class="dropdown-box">
                     <div class="dropdown-relative">
@@ -152,7 +152,7 @@
                   </div>
                 </div>
               </Preview>
-              <Preview title="table" desc="Create a table with UnoCss" link="/component/button">
+              <Preview title="table" desc="Create a table with UnoCss" >
                 <div class="space-center w-90%">
                   <div class="table-box">
                     <table class="table-main">
@@ -176,7 +176,7 @@
                   </div>
                 </div>
               </Preview>
-              <Preview title="pagination" desc="Create a pagination with UnoCss" link="/component/button">
+              <Preview title="pagination" desc="Create a pagination with UnoCss" >
                 <div class="space-center w-90%">
                   <div class="page-box">
                     <div class="page-main ">
@@ -191,14 +191,14 @@
                   </div>
                 </div>
               </Preview>
-              <Preview title="content" desc="Create a content with UnoCss" link="/component/button">
+              <Preview title="content" desc="Create a content with UnoCss" >
                 <div class="space-center w-90% h-50px">
                   <div class="content ">
                     <Grid />
                   </div>
                 </div>
               </Preview>
-              <Preview title="card" desc="Create a card with UnoCss" link="/component/button">
+              <Preview title="card" desc="Create a card with UnoCss" >
                 <div class="space-center w-90%">
                   <div class="card-box mt-2">
                     <div class="card-head"> <Grid /> </div>
@@ -207,7 +207,7 @@
                   </div>
                 </div>
               </Preview>
-              <Preview title="toast" desc="Create a toast with UnoCss" link="/component/button">
+              <Preview title="toast" desc="Create a toast with UnoCss" >
                 <div style="transform:rotate(360deg);" class="space-center w-90%">
                   <div class="toast right--27px! bottom--100px! w-200px h-100px">
                     <Grid />
