@@ -60,7 +60,7 @@ describe('card', () => {
 }
 .dark .card-box {
   --un-bg-opacity: 1;
-  background-color: rgba(17, 24, 39, var(--un-bg-opacity));
+  background-color: rgba(15, 15, 15, var(--un-bg-opacity));
   --un-ring-opacity: 1;
   --un-ring-color: rgba(31, 41, 55, var(--un-ring-opacity));
 }
