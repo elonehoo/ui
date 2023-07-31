@@ -14,7 +14,7 @@ hero:
       link: /guide/
     - theme: alt
       text: Playground
-      link: /play/
+      link: https://ui.elonehoo.me/play/
 ---
 
 
