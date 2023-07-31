@@ -65,6 +65,11 @@
                   <input type="range" min="0" max="100" class="range-green range-lg max-w-xs">
                 </div>
               </Preview>
+              <Preview title="Toggle" desc="Create a toggle with UnoCss" link="/component/button">
+                <div class="space-center w-90%">
+                  <input type="checkbox" class="toggle-green toggle-none toggle-lg">
+                </div>
+              </Preview>
             </div>
           </div>
         </div>

@@ -25,13 +25,9 @@ export default defineConfig({
     Unocss({
       presets: [
         UI() as any,
-        presetUno({
-          dark: 'media',
-        }),
+        presetUno(),
         presetAttributify(),
-        presetIcons({
-          scale: 1.2,
-        }),
+        presetIcons(),
       ],
     }),
   ],

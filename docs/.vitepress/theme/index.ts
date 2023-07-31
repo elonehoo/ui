@@ -1,7 +1,7 @@
 import { h } from 'vue'
 import Theme from 'vitepress/theme'
-import '@unocss/reset/tailwind.css'
 import 'uno.css'
+import '@unocss/reset/tailwind.css'
 import HomePage from '../components/HomePage.vue'
 
 export default {
