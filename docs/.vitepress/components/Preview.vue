@@ -24,6 +24,6 @@ defineProps<{
 
 <style scoped>
 .bg-grid {
-  background: url(./grid.png);
+  background: url(/grid.png);
 }
 </style>
