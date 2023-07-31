@@ -48,7 +48,7 @@ export default defineConfig({
     ],
   },
   build: {
-    outDir: './dist/play',
+    outDir: '../docs/.vitepress/dist/play',
     emptyOutDir: true,
     rollupOptions: {
       external: [
