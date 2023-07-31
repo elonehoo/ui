@@ -26,7 +26,7 @@
                         New UI!
                       </h3>
                       <div class="text-10px">
-                        You have a message about the new UI
+                        You have a new UI
                       </div>
                     </div>
                   </div>
@@ -34,6 +34,35 @@
               <Preview title="Badge" desc="Create a badge with UnoCss" link="/component/button">
                 <div class="space-center w-90%">
                   <span class="badge-green badge-lg">Badge</span>
+                </div>
+              </Preview>
+              <Preview title="Tooltip" desc="Create a tooltip with UnoCss" link="/component/button">
+                <div class="space-center w-90%">
+                  <div class="tooltip-green" data-tip="@elonehoo/ui">
+                    <button class="btn-green">
+                      Tooltip
+                    </button>
+                  </div>
+                </div>
+              </Preview>
+              <Preview title="Skeleton" desc="Create a skeleton with UnoCss" link="/component/button">
+                <div class="space-center w-90%">
+                  <div class="skeleton-green h-6 w-76 rounded-full" />
+                  <div class="skeleton-green h-6 w-76 rounded-full" />
+                </div>
+              </Preview>
+              <Preview title="Code" desc="Create a code with UnoCss" link="/component/button">
+                <div class="space-center w-90%">
+                  <div class="model-code-green">
+                    <pre class="code-line" data-prefix=">">
+                        <code>npm install @elonehoo/ui</code>
+                      </pre>
+                  </div>
+                </div>
+              </Preview>
+              <Preview title="Range" desc="Create a range with UnoCss" link="/component/button">
+                <div class="space-center w-90%">
+                  <input type="range" min="0" max="100" class="range-green range-lg max-w-xs">
                 </div>
               </Preview>
             </div>
