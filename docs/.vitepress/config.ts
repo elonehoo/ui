@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import {version} from '../../package.json'
 
 export default defineConfig({
   lang: 'en-US',
@@ -24,6 +25,17 @@ export default defineConfig({
     },
     socialLinks: [
       {icon: 'github', link: 'https://github.com/elonehoo/ui'},
+    ],
+    nav:[
+      {
+        text: `v${version}`,
+        items: [
+          {
+            text: 'Release Notes',
+            link: 'https://github.com/elonehoo/ui/releases',
+          },
+        ],
+      },
     ],
     sidebar: {
       "/":[

@@ -1,3 +1,9 @@
+---
+title: Attributify preset
+description: The UnoCSS preset that enables the attributify mode for other presets.
+outline: deep
+---
+
 # Button
 
 > Buttons allow users to execute commands or make choices.

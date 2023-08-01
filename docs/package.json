@@ -12,7 +12,7 @@
   "devDependencies": {
     "unplugin-vue-components": "^0.25.1",
     "vite": "^4.4.5",
-    "vitepress": "1.0.0-beta.6"
+    "vitepress": "1.0.0-beta.7"
   },
   "pnpm": {
     "peerDependencyRules": {
