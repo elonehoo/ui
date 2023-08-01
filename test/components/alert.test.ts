@@ -16,7 +16,6 @@ describe('alert color', () => {
   align-content: flex-start;
   align-items: center;
   justify-items: center;
-  grid-gap: 1rem;
   gap: 1rem;
   border-width: 1px;
   --un-border-opacity: 1;

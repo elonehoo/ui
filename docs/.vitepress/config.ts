@@ -54,11 +54,16 @@ export default defineConfig({
               items:[
                 {text: 'Button', link: '/components/button'},
                 {text: 'Dropdown', link: '/components/dropdown'},
+                {text: 'Modal', link: '/components/modal'},
               ]
             },
             {
               text:'Data display',
               collapsed: false,
+              items:[
+                {text: 'Alert', link: '/components/alert'},
+                {text: 'Avatar', link: '/components/avatar'},
+              ]
             },
             {
               text:'Data input',

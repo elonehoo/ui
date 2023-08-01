@@ -93,7 +93,6 @@ describe('select size', () => {
     expect(css).toEqual(
 `/* layer: shortcuts */
 .select-2xs {
-  grid-column-gap: 0.25rem;
   column-gap: 0.25rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -111,7 +110,6 @@ describe('select size', () => {
     expect(css).toEqual(
 `/* layer: shortcuts */
 .select-xs {
-  grid-column-gap: 0.375rem;
   column-gap: 0.375rem;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
@@ -129,7 +127,6 @@ describe('select size', () => {
     expect(css).toEqual(
 `/* layer: shortcuts */
 .select-sm {
-  grid-column-gap: 0.5rem;
   column-gap: 0.5rem;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
@@ -147,7 +144,6 @@ describe('select size', () => {
     expect(css).toEqual(
 `/* layer: shortcuts */
 .select-md {
-  grid-column-gap: 0.5rem;
   column-gap: 0.5rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -165,7 +161,6 @@ describe('select size', () => {
     expect(css).toEqual(
 `/* layer: shortcuts */
 .select-lg {
-  grid-column-gap: 0.5rem;
   column-gap: 0.5rem;
   padding-left: 0.875rem;
   padding-right: 0.875rem;
@@ -183,7 +178,6 @@ describe('select size', () => {
     expect(css).toEqual(
 `/* layer: shortcuts */
 .select-xl {
-  grid-column-gap: 0.5rem;
   column-gap: 0.5rem;
   padding-left: 0.875rem;
   padding-right: 0.875rem;

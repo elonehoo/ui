@@ -14,7 +14,6 @@ describe('button base', () => {
   display: inline-flex;
   flex-shrink: 0;
   align-items: center;
-  grid-column-gap: 0.375rem;
   column-gap: 0.375rem;
   border-radius: 0.375rem;
   --un-bg-opacity: 1;
@@ -97,7 +96,6 @@ describe('button outline', () => {
   display: inline-flex;
   flex-shrink: 0;
   align-items: center;
-  grid-column-gap: 0.375rem;
   column-gap: 0.375rem;
   border-radius: 0.375rem;
   padding-left: 0.625rem;
@@ -177,7 +175,6 @@ describe('button soft', () => {
   display: inline-flex;
   flex-shrink: 0;
   align-items: center;
-  grid-column-gap: 0.375rem;
   column-gap: 0.375rem;
   border-radius: 0.375rem;
   --un-bg-opacity: 1;
@@ -254,7 +251,6 @@ describe('button ghost', () => {
   display: inline-flex;
   flex-shrink: 0;
   align-items: center;
-  grid-column-gap: 0.375rem;
   column-gap: 0.375rem;
   border-radius: 0.375rem;
   padding-left: 0.625rem;
@@ -325,7 +321,6 @@ describe('button link', () => {
   display: inline-flex;
   flex-shrink: 0;
   align-items: center;
-  grid-column-gap: 0.375rem;
   column-gap: 0.375rem;
   border-radius: 0.375rem;
   padding-left: 0.625rem;
@@ -402,7 +397,6 @@ describe('button black', () => {
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
-  grid-column-gap: 0.375rem;
   column-gap: 0.375rem;
   border-radius: 0.375rem;
   --un-bg-opacity: 1;
@@ -473,7 +467,6 @@ describe('button size', () => {
     expect(css).toEqual(
 `/* layer: shortcuts */
 .btn-2xs {
-  grid-column-gap: 0.25rem;
   column-gap: 0.25rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -491,7 +484,6 @@ describe('button size', () => {
     expect(css).toEqual(
 `/* layer: shortcuts */
 .btn-xs {
-  grid-column-gap: 0.375rem;
   column-gap: 0.375rem;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
@@ -509,7 +501,6 @@ describe('button size', () => {
     expect(css).toEqual(
 `/* layer: shortcuts */
 .btn-md {
-  grid-column-gap: 0.5rem;
   column-gap: 0.5rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -527,7 +518,6 @@ describe('button size', () => {
     expect(css).toEqual(
 `/* layer: shortcuts */
 .btn-lg {
-  grid-column-gap: 0.625rem;
   column-gap: 0.625rem;
   padding-left: 0.875rem;
   padding-right: 0.875rem;
@@ -545,7 +535,6 @@ describe('button size', () => {
     expect(css).toEqual(
 `/* layer: shortcuts */
 .btn-xl {
-  grid-column-gap: 0.625rem;
   column-gap: 0.625rem;
   padding-left: 0.875rem;
   padding-right: 0.875rem;

@@ -138,7 +138,6 @@ describe('textarea size', () => {
     expect(css).toEqual(
 `/* layer: shortcuts */
 .textarea-2xs {
-  grid-column-gap: 0.25rem;
   column-gap: 0.25rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -156,7 +155,6 @@ describe('textarea size', () => {
     expect(css).toEqual(
 `/* layer: shortcuts */
 .textarea-xs {
-  grid-column-gap: 0.375rem;
   column-gap: 0.375rem;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
@@ -174,7 +172,6 @@ describe('textarea size', () => {
     expect(css).toEqual(
 `/* layer: shortcuts */
 .textarea-sm {
-  grid-column-gap: 0.5rem;
   column-gap: 0.5rem;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
@@ -192,7 +189,6 @@ describe('textarea size', () => {
     expect(css).toEqual(
 `/* layer: shortcuts */
 .textarea-md {
-  grid-column-gap: 0.5rem;
   column-gap: 0.5rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -210,7 +206,6 @@ describe('textarea size', () => {
     expect(css).toEqual(
 `/* layer: shortcuts */
 .textarea-lg {
-  grid-column-gap: 0.5rem;
   column-gap: 0.5rem;
   padding-left: 0.875rem;
   padding-right: 0.875rem;
@@ -228,7 +223,6 @@ describe('textarea size', () => {
     expect(css).toEqual(
 `/* layer: shortcuts */
 .textarea-xl {
-  grid-column-gap: 0.5rem;
   column-gap: 0.5rem;
   padding-left: 0.875rem;
   padding-right: 0.875rem;

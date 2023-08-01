@@ -12,7 +12,6 @@ describe('space', () => {
   flex-flow: row wrap;
   display: flex;
   justify-content: flex-start;
-  grid-gap: 8px 12px;
   gap: 8px 12px;
 }
 `)
@@ -27,7 +26,6 @@ describe('space', () => {
   flex-flow: row wrap;
   display: flex;
   justify-content: center;
-  grid-gap: 8px 12px;
   gap: 8px 12px;
 }
 `)
@@ -42,7 +40,6 @@ describe('space', () => {
   flex-flow: row wrap;
   display: flex;
   justify-content: flex-end;
-  grid-gap: 8px 12px;
   gap: 8px 12px;
 }
 `)
@@ -57,7 +54,6 @@ describe('space', () => {
   flex-flow: row wrap;
   display: flex;
   justify-content: space-around;
-  grid-gap: 8px 12px;
   gap: 8px 12px;
 }
 `)
@@ -72,7 +68,6 @@ describe('space', () => {
   flex-flow: row wrap;
   display: flex;
   justify-content: space-between;
-  grid-gap: 8px 12px;
   gap: 8px 12px;
 }
 `)
@@ -87,7 +82,6 @@ describe('space', () => {
   flex-flow: row wrap;
   display: flex;
   justify-content: space-evenly;
-  grid-gap: 8px 12px;
   gap: 8px 12px;
 }
 `)
@@ -102,7 +96,6 @@ describe('space', () => {
   flex-flow: row wrap;
   display: flex;
   justify-content: stretch;
-  grid-gap: 8px 12px;
   gap: 8px 12px;
 }
 `)
