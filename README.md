@@ -68,7 +68,7 @@ UnoCss component preset
 - [x] add [test](/test) module
 - [x] add [example](/example) module
 - [x] add [playground](/playground/) module
-- [ ] add [docs](/docs/) module
+- [x] add [docs](/docs/) module
 - [ ] get [Anthony Fu](https://github.com/antfu) star
 - [ ] get 100 star
 
