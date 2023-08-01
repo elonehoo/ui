@@ -2,7 +2,7 @@
 elonehoo/ui
 </h1>
 
-[Playground](https://ui.elonehoo.me/play/)
+[Playground](https://ui.elonehoo.me/play/) | [Docs](https://ui.elonehoo.me/)
 
 <p >
 UnoCss component preset
