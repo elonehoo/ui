@@ -195,9 +195,7 @@ describe('range variants', () => {
   transform: translateY(-50%);
   --filler-size: 100rem;
   --filler-offset: 0.6rem;
-  box-shadow:
-    0 0 0 3px ${getHex(color, 'DEFAULT')} inset,
-    var(--focus-shadow, 0 0),
+  box-shadow: 0 0 0 3px ${getHex(color, 'DEFAULT')} inset, var(--focus-shadow, 0 0),
     calc(var(--filler-size) * -1 - var(--filler-offset)) 0 0 var(--filler-size);
 }
 `)
@@ -222,9 +220,7 @@ describe('range variants', () => {
   color: ${getHex(color, 'DEFAULT')};
   --filler-size: 100rem;
   --filler-offset: 0.5rem;
-  box-shadow:
-    0 0 0 3px ${getHex(color, 'DEFAULT')} inset,
-    var(--focus-shadow, 0 0),
+  box-shadow: 0 0 0 3px ${getHex(color, 'DEFAULT')} inset, var(--focus-shadow, 0 0),
     calc(var(--filler-size) * -1 - var(--filler-offset)) 0 0 var(--filler-size);
 }
 `)
