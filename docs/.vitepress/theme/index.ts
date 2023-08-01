@@ -1,4 +1,4 @@
-import { h,watch } from 'vue'
+import { h } from 'vue'
 import Theme from 'vitepress/theme'
 import '../style/main.css'
 import '../style/vars.css'

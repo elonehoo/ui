@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="content mt-10">
+  <div class="content min-w-auto! mt-10">
     <div class="content-container">
       <main class="main">
         <div class="vp-doc" flex flex-col items-center mt-10>
