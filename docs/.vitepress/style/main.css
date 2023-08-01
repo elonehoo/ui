@@ -82,3 +82,6 @@ table {
 .VPLocalSearchBox .excerpt-wrapper {
   margin-top: 4px;
 }
+.content{
+  min-width: 100%;
+}

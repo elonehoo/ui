@@ -11,21 +11,13 @@
   "license": "MIT",
   "devDependencies": {
     "unplugin-vue-components": "^0.25.1",
-    "vite": "^4.4.5",
+    "vite": "^4.4.7",
     "vitepress": "1.0.0-beta.7"
   },
-  "pnpm": {
-    "peerDependencyRules": {
-      "ignoreMissing": [
-        "@algolia/client-search",
-        "search-insights"
-      ]
-    }
-  },
   "dependencies": {
-    "@unocss/reset": "^0.53.6",
-    "@vueuse/core": "^10.2.1",
-    "unocss": "^0.53.6",
+    "@unocss/reset": "^0.54.1",
+    "@vueuse/core": "^10.3.0",
+    "unocss": "^0.54.1",
     "vue": "^3.3.4"
   }
 }
