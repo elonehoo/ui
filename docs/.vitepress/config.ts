@@ -64,23 +64,46 @@ export default defineConfig({
                 {text: 'Alert', link: '/components/alert'},
                 {text: 'Avatar', link: '/components/avatar'},
                 {text: 'Badge', link: '/components/badge'},
+                {text: 'Card', link: '/components/card'},
+                {text: 'Kbd', link: '/components/kbd'},
+                {text: 'Table', link: '/components/table'},
+                {text: 'Tooltip', link: '/components/tooltip'},
               ]
             },
             {
               text:'Data input',
               collapsed: false,
+              items:[
+                {text: 'Checkbox', link: '/components/checkbox'},
+                {text: 'Radio', link: '/components/radio'},
+                {text: 'Range', link: '/components/range'},
+                {text: 'Select', link: '/components/select'},
+                {text: 'Input', link: '/components/input'},
+                {text: 'Textarea', link: '/components/textarea'},
+                {text: 'Toggle', link: '/components/toggle'},
+              ]
             },
             {
               text:'Layout',
               collapsed: false,
+              items:[
+                {text: 'Toast', link: '/components/toast'},
+                {text: 'Content', link: '/components/content'},
+              ]
             },
             {
               text:'Navigation',
               collapsed: false,
+              items:[
+                {text: 'Pagination', link: '/components/pagination'},
+              ]
             },
             {
               text:'Mockup',
               collapsed: false,
+              items:[
+                {text: 'Code', link: '/components/code'},
+              ]
             }
           ]
         }
