@@ -10,6 +10,8 @@ export default defineConfig({
 
   ignoreDeadLinks: [
     /^\/play/,
+    './../README',
+    './../LICENSE',
   ],
 
   markdown: {
