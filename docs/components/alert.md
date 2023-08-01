@@ -7,7 +7,7 @@ outline: deep
 <br />
 
 <Showcase
-  path="Alert Demo"
+  title="alert"
   play="https://ui.elonehoo.me/play/?html=DwEwlgbgBAxgNgQwM5ILwCIFwKYCcAuAtAOa7bYB26AfAFBQNSiSyIoZiEwK4BGA9hUJgKAM364AtgnxhB6KAHo6jJuGjxkadAC9CATkM16qpgAdWWjOIpEBcEMdOMActgDuUSdhQJi2AEITVWBFMxVTZg02bXxsAA8ieKQnZygATX4AVygACwQIbCgARigsijIEEC8fJD9sYMZQ9QiGZsgI9ohqIA&config=JYWwDg9gTgLgBAbwFBzgEwKYDNgDsMDCEuOA5gDQpxhQYDOGMAgjDFMAEYCuMwWAnpVQ16jAJIBjYnSHVaDGAFVcESgF84WKBBBwA5FxUS6dPUlCRYcRWM3bdegAIYANsQwALCBAD0XYGZIGAAelvCYWACGXC7h2HiExGQAFMjC8ox0AFxwANpUqDbJAJSy6aJKKiVlchUsbJw8fPzVBbUKktKpbah0EpEuGDkAjAB0AEw1qBJouDl6Hqxg2T4%2B9CCjdB4%2BZqioaqVUALpIB0hAA&css=Q&options=N4IgLgTghgdgzgMwPYQLYgFwKgGzgUwF8g"
 >
   <div class="space-center">
