@@ -2,8 +2,8 @@ const MODULE_PATH = '/@vite/client'
 
 const _onModuleUpdated = createEventHook<any>()
 const _onConfigChanged = createEventHook<void>()
-export const onModuleUpdated = _onModuleUpdated.on
-export const onConfigChanged = _onConfigChanged.on
+export const onModuleUpdated:any = _onModuleUpdated.on
+export const onConfigChanged:any = _onConfigChanged.on
 
 import(/* @vite-ignore */ MODULE_PATH)
   .then((c) => {

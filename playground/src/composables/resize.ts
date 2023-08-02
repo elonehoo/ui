@@ -23,7 +23,7 @@ export interface UseResizeOptions {
 
 const container = ref<MaybeElementRef[]>([])
 
-export function useResize(element: MaybeElementRef, options: UseResizeOptions = {}) {
+export function useResize(element: MaybeElementRef, options: UseResizeOptions = {}):any {
   const {
     disabled = false,
     mode = 'auto',

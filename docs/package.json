@@ -11,7 +11,7 @@
   "license": "MIT",
   "devDependencies": {
     "unplugin-vue-components": "^0.25.1",
-    "vite": "^4.4.7",
+    "vite": "^4.4.8",
     "vitepress": "1.0.0-beta.7"
   },
   "dependencies": {
@@ -19,5 +19,13 @@
     "@vueuse/core": "^10.3.0",
     "unocss": "^0.54.1",
     "vue": "^3.3.4"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search",
+        "search-insights"
+      ]
+    }
   }
 }

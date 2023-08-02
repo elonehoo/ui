@@ -49,24 +49,12 @@
     "unocss": ">=0.53.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.39.8",
+    "@antfu/eslint-config": "^0.40.0",
     "@types/node": "^20.4.5",
     "bumpp": "^9.1.1",
     "eslint": "^8.46.0",
     "typescript": "^5.1.6",
     "unbuild": "^1.2.1",
     "unocss": "^0.54.1"
-  },
-  "pnpm": {
-    "peerDependencyRules": {
-      "ignoreMissing": [
-        "@algolia/client-search",
-        "search-insights"
-      ]
-    },
-    "overrides": {
-      "magic-string": "^0.30.1",
-      "prettier": "^2.8.8"
-    }
   }
 }
