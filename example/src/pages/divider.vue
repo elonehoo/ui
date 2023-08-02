@@ -3,5 +3,5 @@
 </script>
 
 <template>
-  <div class="divider-green divider-horizontal-green">OR</div>
+  <div class="divider-green">OR</div>
 </template>
