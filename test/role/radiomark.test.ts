@@ -18,20 +18,24 @@ describe('radiomark color', () => {
 }
 .radio-${color}:checked {
   animation: radiomark 0.2s ease-in-out;
-  box-shadow: var(--radiomark-color) 0px 0px 0px 4px inset,
+  box-shadow:
+    var(--radiomark-color) 0px 0px 0px 4px inset,
     var(--radiomark-color) 0px 0px 0px 4px inset;
 }
 @keyframes radiomark {
   0% {
-    box-shadow: 0 0 0 12px var(--radiomark-color) inset,
+    box-shadow:
+      0 0 0 12px var(--radiomark-color) inset,
       0 0 0 12px var(--radiomark-color) inset;
   }
   50% {
-    box-shadow: 0 0 0 3px var(--radiomark-color) inset,
+    box-shadow:
+      0 0 0 3px var(--radiomark-color) inset,
       0 0 0 3px var(--radiomark-color) inset;
   }
   100% {
-    box-shadow: 0 0 0 4px var(--radiomark-color) inset,
+    box-shadow:
+      0 0 0 4px var(--radiomark-color) inset,
       0 0 0 4px var(--radiomark-color) inset;
   }
 }
