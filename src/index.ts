@@ -289,7 +289,12 @@ export default function elonehooUI(): Preset {
       }],
       [/^divider-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([,color]) => {
         return `divider-color-${color}`
-      }]
+      }],
+      [/^progress-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([, color]) => `
+        align-baseline relative w-full appearance-none overflow-hidden h-2 bg-#1f293733 rounded-2xl indeterminate:bg-[repeating-linear-gradient(90deg,#1f293733_-1%,#1f293733_10%,transparent_10%,transparent_90%)] indeterminate:bg-size-200% indeterminate:animate-[progress-loading_5s_ease-in-out_infinite]
+        dark:bg-#a6adba33 dark:indeterminate:bg-[repeating-linear-gradient(90deg,#a6adba33_-1%,#a6adba33_10%,transparent_10%,transparent_90%)]
+        progress-moz-bar-${color}
+      `],
     ],
     rules: [
       ['select-arrow', {
@@ -727,6 +732,53 @@ export default function elonehooUI(): Preset {
           &:not(:empty) {
             gap: 1rem;
           }
+        }
+        `
+      }],
+      [/^bg-size-(.*)$/, ([, d]) => ({ 'background-size': `${d}` })],
+      [/^progress-moz-bar-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([,color], data: any) => {
+        return `
+        .progress-${color}::-moz-progress-bar {
+          background-color: ${data.theme.colors[color].DEFAULT};
+        }
+        .progress-${color}::-webkit-progress-bar {
+          background-color: transparent;
+          border-radius: 1rem;
+        }
+        .progress-${color}::-webkit-progress-value {
+          background-color: ${data.theme.colors[color].DEFAULT};
+          border-radius: 1rem;
+        }
+        .progress-${color}:indeterminate {
+          background-image: repeating-linear-gradient(90deg,#1f293733 -1%,#1f293733 10%,transparent 10%,transparent 90%);
+          background-size: 200%;
+          background-position-x: 15%;
+          animation: progress-loading 5s ease-in-out infinite
+        }
+        .dark .progress-${color}:indeterminate {
+            background-image: repeating-linear-gradient(90deg,#a6adba33 -1%,#a6adba33 10%,transparent 10%,transparent 90%) !important;
+        }
+        .progress-${color}:indeterminate::-moz-progress-bar {
+          background-color: transparent;
+          background-image: repeating-linear-gradient(
+            90deg,
+            #1f293733 -1%,
+            #1f293733 10%,
+            transparent 10%,
+            transparent 90%
+          );
+          background-size: 200%;
+          background-position-x: 15%;
+          animation: progress-loading 5s ease-in-out infinite;
+        }
+        .dark .progress-${color}:indeterminate::-moz-progress-bar {
+          background-image: repeating-linear-gradient(
+            90deg,
+            #a6adba33 -1%,
+            #a6adba33 10%,
+            transparent 10%,
+            transparent 90%
+          ) !important;
         }
         `
       }],
