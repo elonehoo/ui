@@ -1,7 +1,7 @@
 {
   "name": "@elonehoo/ui",
   "type": "module",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Starter template for TypeScript library",
   "author": "Elone Hoo <hi@elonehoo.me>",
   "license": "MIT",
