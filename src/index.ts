@@ -782,6 +782,32 @@ export default function elonehooUI(): Preset {
         }
         `
       }],
+      [/^stack$/, () => {
+        return `
+        .stack {
+          display: inline-grid;
+          place-items: center;
+          align-items: flex-end;
+          & > * {
+            grid-row-start: 1;
+            grid-column-start: 1;
+            opacity: 0.6;
+            transform: translateY(10%) scale(0.9);
+            z-index: 1;
+          }
+          & > *:nth-child(2) {
+            opacity: 0.8;
+            transform: translateY(5%) scale(0.95);
+            z-index: 2;
+          }
+          & > *:nth-child(1) {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+            z-index: 3;
+          }
+        }
+        `
+      }],
     ],
   }
 }

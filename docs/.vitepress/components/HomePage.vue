@@ -219,6 +219,15 @@
                   <progress class="progress-green " value="50" max="100"></progress>
                 </div>
               </Preview>
+              <Preview title="stack" desc="Create a stack with UnoCss" >
+                <div class="space-center w-90%">
+                  <div class="stack">
+                    <div class="grid w-32 h-20 rounded bg-green text-white place-content-center">one</div>
+                    <div class="grid w-32 h-20 rounded bg-red text-white place-content-center">two</div>
+                    <div class="grid w-32 h-20 rounded bg-pink text-white place-content-center">three</div>
+                  </div>
+                </div>
+              </Preview>
             </div>
           </div>
         </div>
