@@ -46,6 +46,7 @@ UnoCss component preset
   - [x] Alert
   - [x] Table
   - [x] Dropdown
+  - [x] Progress
 
 - Navigation
   - [x] Pagination
@@ -60,6 +61,7 @@ UnoCss component preset
   - [x] Card
   - [x] Content
   - [x] Skeleton
+  - [x] Stack
 
 </details>
 

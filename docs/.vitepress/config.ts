@@ -70,6 +70,7 @@ export default defineConfig({
                 {text: 'Kbd', link: '/components/kbd'},
                 {text: 'Table', link: '/components/table'},
                 {text: 'Tooltip', link: '/components/tooltip'},
+                {text: 'Progress', link: '/components/progress'},
               ]
             },
             {
@@ -91,6 +92,7 @@ export default defineConfig({
               items:[
                 {text: 'Toast', link: '/components/toast'},
                 {text: 'Content', link: '/components/content'},
+                {text: 'Stack', link: '/components/stack'},
               ]
             },
             {
