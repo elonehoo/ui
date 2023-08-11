@@ -62,6 +62,10 @@ UnoCss component preset
   - [x] Content
   - [x] Skeleton
   - [x] Stack
+  - [ ] Indicator
+  - [ ] Window
+  - [ ] Phone
+  - [ ] Browser
 
 </details>
 
