@@ -228,6 +228,16 @@
                   </div>
                 </div>
               </Preview>
+              <Preview title="indicator" desc="Create a indicator with UnoCss" >
+                <div class="space-center w-90%">
+                  <div class="indicator">
+                    <span class="indicator-item badge-green">New</span>
+                    <div class="grid w-24 h-24">
+                      <Grid />
+                    </div>
+                  </div>
+                </div>
+              </Preview>
             </div>
           </div>
         </div>

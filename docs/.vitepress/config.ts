@@ -93,6 +93,7 @@ export default defineConfig({
                 {text: 'Toast', link: '/components/toast'},
                 {text: 'Content', link: '/components/content'},
                 {text: 'Stack', link: '/components/stack'},
+                {text: 'Indicator', link: '/components/indicator'},
               ]
             },
             {
