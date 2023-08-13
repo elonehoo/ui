@@ -808,6 +808,114 @@ export default function elonehooUI(): Preset {
         }
         `
       }],
+      [/^indicator$/, () => {
+        return `
+        .indicator {
+          display: inline-flex;
+          position: relative;
+          width: max-content;
+          & :where(.indicator-item) {
+            z-index: 1;
+            position: absolute;
+            transform: translateX(var(--un-translate-x)) translateY(var(--un-translate-y))
+              translateZ(var(--un-translate-z)) rotate(var(--un-rotate))
+              rotateX(var(--un-rotate-x)) rotateY(var(--un-rotate-y))
+              rotateZ(var(--un-rotate-z)) skewX(var(--un-skew-x)) skewY(var(--un-skew-y))
+              scaleX(var(--un-scale-x)) scaleY(var(--un-scale-y))
+              scaleZ(var(--un-scale-z));
+            white-space: nowrap;
+          }
+        }
+        .indicator {
+          & :where(.indicator-item) {
+            right: 0;
+            left: auto;
+            top: 0;
+            bottom: auto;
+            --un-translate-x: 50%;
+            transform: translateX(var(--un-translate-x)) translateY(var(--un-translate-y))
+              translateZ(var(--un-translate-z)) rotate(var(--un-rotate))
+              rotateX(var(--un-rotate-x)) rotateY(var(--un-rotate-y))
+              rotateZ(var(--un-rotate-z)) skewX(var(--un-skew-x)) skewY(var(--un-skew-y))
+              scaleX(var(--un-scale-x)) scaleY(var(--un-scale-y))
+              scaleZ(var(--un-scale-z));
+            --un-translate-y: -50%;
+            transform: translateX(var(--un-translate-x)) translateY(var(--un-translate-y))
+              translateZ(var(--un-translate-z)) rotate(var(--un-rotate))
+              rotateX(var(--un-rotate-x)) rotateY(var(--un-rotate-y))
+              rotateZ(var(--un-rotate-z)) skewX(var(--un-skew-x)) skewY(var(--un-skew-y))
+              scaleX(var(--un-scale-x)) scaleY(var(--un-scale-y))
+              scaleZ(var(--un-scale-z));
+          }
+          & :where(.indicator-item.indicator-start) {
+            right: auto;
+            left: 0;
+            --un-translate-x: -50%;
+            transform: translateX(var(--un-translate-x)) translateY(var(--un-translate-y))
+              translateZ(var(--un-translate-z)) rotate(var(--un-rotate))
+              rotateX(var(--un-rotate-x)) rotateY(var(--un-rotate-y))
+              rotateZ(var(--un-rotate-z)) skewX(var(--un-skew-x)) skewY(var(--un-skew-y))
+              scaleX(var(--un-scale-x)) scaleY(var(--un-scale-y))
+              scaleZ(var(--un-scale-z));
+          }
+          & :where(.indicator-item.indicator-center) {
+            right: 50%;
+            left: 50%;
+            --un-translate-x: -50%;
+            transform: translateX(var(--un-translate-x)) translateY(var(--un-translate-y))
+              translateZ(var(--un-translate-z)) rotate(var(--un-rotate))
+              rotateX(var(--un-rotate-x)) rotateY(var(--un-rotate-y))
+              rotateZ(var(--un-rotate-z)) skewX(var(--un-skew-x)) skewY(var(--un-skew-y))
+              scaleX(var(--un-scale-x)) scaleY(var(--un-scale-y))
+              scaleZ(var(--un-scale-z));
+          }
+          & :where(.indicator-item.indicator-end) {
+            right: 0;
+            left: auto;
+            --un-translate-x: 50%;
+            transform: translateX(var(--un-translate-x)) translateY(var(--un-translate-y))
+              translateZ(var(--un-translate-z)) rotate(var(--un-rotate))
+              rotateX(var(--un-rotate-x)) rotateY(var(--un-rotate-y))
+              rotateZ(var(--un-rotate-z)) skewX(var(--un-skew-x)) skewY(var(--un-skew-y))
+              scaleX(var(--un-scale-x)) scaleY(var(--un-scale-y))
+              scaleZ(var(--un-scale-z));
+          }
+          & :where(.indicator-item.indicator-bottom) {
+            top: auto;
+            bottom: 0;
+            --un-translate-y: 50%;
+            transform: translateX(var(--un-translate-x)) translateY(var(--un-translate-y))
+              translateZ(var(--un-translate-z)) rotate(var(--un-rotate))
+              rotateX(var(--un-rotate-x)) rotateY(var(--un-rotate-y))
+              rotateZ(var(--un-rotate-z)) skewX(var(--un-skew-x)) skewY(var(--un-skew-y))
+              scaleX(var(--un-scale-x)) scaleY(var(--un-scale-y))
+              scaleZ(var(--un-scale-z));
+          }
+          & :where(.indicator-item.indicator-middle) {
+            top: 50%;
+            bottom: 50%;
+            --un-translate-y: -50%;
+            transform: translateX(var(--un-translate-x)) translateY(var(--un-translate-y))
+              translateZ(var(--un-translate-z)) rotate(var(--un-rotate))
+              rotateX(var(--un-rotate-x)) rotateY(var(--un-rotate-y))
+              rotateZ(var(--un-rotate-z)) skewX(var(--un-skew-x)) skewY(var(--un-skew-y))
+              scaleX(var(--un-scale-x)) scaleY(var(--un-scale-y))
+              scaleZ(var(--un-scale-z));
+          }
+          & :where(.indicator-item.indicator-top) {
+            bottom: auto;
+            top: 0;
+            --un-translate-y: -50%;
+            transform: translateX(var(--un-translate-x)) translateY(var(--un-translate-y))
+              translateZ(var(--un-translate-z)) rotate(var(--un-rotate))
+              rotateX(var(--un-rotate-x)) rotateY(var(--un-rotate-y))
+              rotateZ(var(--un-rotate-z)) skewX(var(--un-skew-x)) skewY(var(--un-skew-y))
+              scaleX(var(--un-scale-x)) scaleY(var(--un-scale-y))
+              scaleZ(var(--un-scale-z));
+          }
+        }
+        `
+      }],
     ],
   }
 }
