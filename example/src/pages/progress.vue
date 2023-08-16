@@ -3,5 +3,5 @@
 </script>
 
 <template>
-  <progress class="progress-red w-56! " value="10" max="100"></progress>
+  <progress class="progress-red w-56! " value="10" max="100" />
 </template>

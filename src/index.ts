@@ -296,9 +296,9 @@ export default function elonehooUI(): Preset {
         progress-moz-bar-${color}
       `],
       [/^mockup-((window|phone|browser))$/, ([, layout]) => {
-        if(layout === 'window'){
-          return `relative overflow-hidden overflow-x-auto pt-5 rounded-2xl [&:before]:content-[''] [&:before]:block [&:before]:aspect-[1/1] [&:before]:h-3 [&:before]:opacity-30 [&:before]:shadow-[1.4em_0,2.8em_0,4.2em_0] [&:before]:mb-4 [&:before]:rounded-full`
-        }
+        if (layout === 'window')
+          return 'relative overflow-hidden overflow-x-auto pt-5 rounded-2xl [&:before]:content-[\'\'] [&:before]:block [&:before]:aspect-[1/1] [&:before]:h-3 [&:before]:opacity-30 [&:before]:shadow-[1.4em_0,2.8em_0,4.2em_0] [&:before]:mb-4 [&:before]:rounded-full'
+
         return ''
       }],
     ],

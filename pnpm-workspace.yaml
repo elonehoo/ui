@@ -1,5 +1,5 @@
 packages:
-  - 'example'
-  - 'playground'
-  - 'docs'
-  - 'test'
+  - example
+  - playground
+  - docs
+  - test
