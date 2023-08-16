@@ -238,6 +238,11 @@
                   </div>
                 </div>
               </Preview>
+              <Preview title="window" desc="Create a window with UnoCss" >
+                  <div class="mockup-window border bg-light-600 dark:bg-dark-100 border-dark-400 w-90% h-90%">
+                    <div class="flex justify-center px-4 py-12 border-t border-dark-400">Window!</div>
+                  </div>
+              </Preview>
             </div>
           </div>
         </div>

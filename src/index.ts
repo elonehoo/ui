@@ -295,6 +295,12 @@ export default function elonehooUI(): Preset {
         dark:bg-#a6adba33 dark:indeterminate:bg-[repeating-linear-gradient(90deg,#a6adba33_-1%,#a6adba33_10%,transparent_10%,transparent_90%)]
         progress-moz-bar-${color}
       `],
+      [/^mockup-((window|phone|browser))$/, ([, layout]) => {
+        if(layout === 'window'){
+          return `relative overflow-hidden overflow-x-auto pt-5 rounded-2xl [&:before]:content-[''] [&:before]:block [&:before]:aspect-[1/1] [&:before]:h-3 [&:before]:opacity-30 [&:before]:shadow-[1.4em_0,2.8em_0,4.2em_0] [&:before]:mb-4 [&:before]:rounded-full`
+        }
+        return ''
+      }],
     ],
     rules: [
       ['select-arrow', {

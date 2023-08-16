@@ -94,6 +94,7 @@ export default defineConfig({
                 {text: 'Content', link: '/components/content'},
                 {text: 'Stack', link: '/components/stack'},
                 {text: 'Indicator', link: '/components/indicator'},
+                {text: 'Window', link: '/components/window'},
               ]
             },
             {
