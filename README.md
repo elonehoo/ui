@@ -63,7 +63,9 @@ UnoCss component preset
   - [x] Skeleton
   - [x] Stack
   - [x] Indicator
-  - [ ] Window
+  - [ ] Command Palette
+    - [x] raycast theme
+  - [x] Window
   - [ ] Phone
   - [ ] Browser
 

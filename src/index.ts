@@ -301,6 +301,87 @@ export default function elonehooUI(): Preset {
 
         return ''
       }],
+      [/^cmdk-raycast-((root|input|loader|list|group|group-heading|items|item|meta|icon))$/, ([, layout]) => {
+        if(layout === 'root'){
+          return `
+          max-w-screen-sm
+          w-full
+          border
+          border-#e2e2e2
+          dark:border-#343434
+          relative
+          px-0
+          py-2
+          rounded-xl
+          border-solid
+          dark:border-0
+          [background:#fcfcfc]
+          dark:[background:#1c1c1c]
+          shadow-[0_16px_70px_#000]
+          dark:[&:after]:content-['']
+          dark:[&:after]:z--1
+          dark:[&:after]:absolute
+          dark:[&:after]:w-[calc(100%_+_2px)]
+          dark:[&:after]:h-[calc(100%_+_2px)]
+          dark:[&:after]:animate-[shine_3s_ease_forwards_0.1s]
+          dark:[&:after]:bg-[200%_auto]
+          dark:[&:after]:rounded-xl
+          dark:[&:after]:-left-px
+          dark:[&:after]:-top-px
+          dark:[&:after]:cmdk-raycast-background
+          dark:[&:before]:content-['']
+          dark:[&:before]:z-[-1]
+          dark:[&:before]:absolute
+          dark:[&:before]:w-[calc(100%_+_2px)]
+          dark:[&:before]:h-[calc(100%_+_2px)]
+          dark:[&:before]:shadow-[0_0_0_1px_transparent]
+          dark:[&:before]:animate-[border_1s_linear_forwards_0.5s]
+          dark:[&:before]:rounded-xl
+          dark:[&:before]:-left-px
+          dark:[&:before]:-top-px
+          `
+        }else if(layout === 'input'){
+          return `[background:transparent] w-full text-15px sm:text-4 text-#171717 dark:text-#ededed px-4 py-2 border-none [&::placeholder]:text-#8f8f8f [&::placeholder]:text-#707070`
+        }else if(layout === 'loader'){
+          return `
+          w-full
+          h-px
+          relative
+          overflow-visible
+          block
+          my-3
+          border-0
+          left-0
+          [background:#e2e2e2]
+          dark:[background:#343434]
+          [&:after]:content-['']
+          [&:after]:w-1/2
+          [&:after]:h-px
+          [&:after]:absolute
+          [&:after]:opacity-0
+          [&:after]:-top-px
+          [&:after]:[animation-duration:1.5s]
+          [&:after]:[animation-delay:1s]
+          [&:after]:[animation-timing-function:ease]
+          [&:after]:[animation-name:loading]
+          [&:after]:cmdk-raycast-input-background-light
+          dark:[&:after]:cmdk-raycast-input-background-dark
+          `
+        }else if(layout === 'list'){
+          return `h-[393px] overflow-auto overscroll-contain [transition:100ms_ease] [transition-property:height] [scroll-padding-block-end:40px] pb-10 px-2 py-0`
+        }else if(layout === 'group' || layout === 'items'){
+          return `w-full`
+        }else if(layout === 'group-heading'){
+          return `select-none text-xs text-#6f6f6f dark:text-#a0a0a0 flex items-center px-2 py-0`
+        }else if(layout === 'item'){
+          return `cursor-pointer h-10 text-sm flex items-center gap-2 text-#171717 dark:text-#ededed select-none [will-change:background,color] [transition:all_150ms_ease] [transition-property:none] px-2 py-0 rounded-lg [content-visibility:auto]
+          [&:first-child]:mt-2 active:[transition-property:background] active:[background:#ededed] dark:active:[background:#282828] hover:[background:#ededed] dark:hover:[background:#282828] hover:text-#171717 dark:hover:text-#ededed`
+        }else if(layout === 'meta'){
+          return `text-#6f6f6f dark:text-#a0a0a0 text-[13px] ml-auto`
+        }else if(layout === 'icon'){
+          return `flex items-center justify-center relative rounded overflow-hidden shadow-[inset_0_0_1px_1px_rgba(0,0,0,0.015)]`
+        }
+      }],
     ],
     rules: [
       ['select-arrow', {
@@ -922,6 +1003,9 @@ export default function elonehooUI(): Preset {
         }
         `
       }],
+      ['cmdk-raycast-background', { background: 'linear-gradient(to right, #343434 20%, #343434 40%, #7e7e7e 50%, #7e7e7e 55%, #343434 70%, #343434 100%);' }],
+      ['cmdk-raycast-input-background-light', { background: 'linear-gradient(90deg, transparent 0%, #8f8f8f 50%, transparent 100%);' }],
+      ['cmdk-raycast-input-background-dark', { background: 'linear-gradient(90deg, transparent 0%, #707070 50%, transparent 100%);' }],
     ],
   }
 }
