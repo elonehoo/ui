@@ -295,12 +295,13 @@ export default function elonehooUI(): Preset {
         dark:bg-#a6adba33 dark:indeterminate:bg-[repeating-linear-gradient(90deg,#a6adba33_-1%,#a6adba33_10%,transparent_10%,transparent_90%)]
         progress-moz-bar-${color}
       `],
-      [/^mockup-((window|phone|browser))$/, ([, layout]) => {
-        if (layout === 'window')
-          return 'relative overflow-hidden overflow-x-auto pt-5 rounded-2xl [&:before]:content-[\'\'] [&:before]:block [&:before]:aspect-[1/1] [&:before]:h-3 [&:before]:opacity-30 [&:before]:shadow-[1.4em_0,2.8em_0,4.2em_0] [&:before]:mb-4 [&:before]:rounded-full'
-
-        return ''
-      }],
+      { 'mockup-window': 'relative overflow-hidden overflow-x-auto pt-5 rounded-2xl [&:before]:content-[\'\'] [&:before]:block [&:before]:aspect-[1/1] [&:before]:h-3 [&:before]:opacity-30 [&:before]:shadow-[1.4em_0,2.8em_0,4.2em_0] [&:before]:mb-4 [&:before]:rounded-full' },
+      { 'mockup-phone': 'inline-block bg-black overflow-hidden mx-auto my-0 p-2.5 rounded-50px border-4 border-solid border-#444444' },
+      [/^mockup-phone-((camera|display))$/, ([, color]) => `
+        align-baseline relative w-full appearance-none overflow-hidden h-2 bg-#1f293733 rounded-2xl indeterminate:bg-[repeating-linear-gradient(90deg,#1f293733_-1%,#1f293733_10%,transparent_10%,transparent_90%)] indeterminate:bg-size-200% indeterminate:animate-[progress-loading_5s_ease-in-out_infinite]
+        dark:bg-#a6adba33 dark:indeterminate:bg-[repeating-linear-gradient(90deg,#a6adba33_-1%,#a6adba33_10%,transparent_10%,transparent_90%)]
+        progress-moz-bar-${color}
+      `],
       [/^cmdk-raycast-((root|input|loader|list|group|group-heading|items|item|meta|icon))$/, ([, layout]) => {
         if(layout === 'root'){
           return `
