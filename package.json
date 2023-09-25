@@ -49,12 +49,12 @@
     "unocss": ">=0.53.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.42.1",
-    "@types/node": "^20.6.2",
+    "@antfu/eslint-config": "^0.43.1",
+    "@types/node": "^20.6.5",
     "bumpp": "^9.2.0",
-    "eslint": "^8.49.0",
+    "eslint": "^8.50.0",
     "typescript": "^5.2.2",
     "unbuild": "^1.2.1",
-    "unocss": "^0.55.7"
+    "unocss": "^0.56.1"
   }
 }
