@@ -54,7 +54,7 @@
     "bumpp": "^9.2.0",
     "eslint": "^8.50.0",
     "typescript": "^5.2.2",
-    "unbuild": "^1.2.1",
+    "unbuild": "^2.0.0",
     "unocss": "^0.56.1"
   }
 }
