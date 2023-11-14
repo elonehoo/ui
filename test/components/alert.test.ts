@@ -36,7 +36,8 @@ describe('alert color', () => {
     text-align: left;
   }
 }
-`)
+`,
+      )
     })
   }
 })

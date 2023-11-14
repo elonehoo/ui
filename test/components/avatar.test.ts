@@ -25,7 +25,8 @@ describe('avatar', () => {
   --un-bg-opacity: 1;
   background-color: rgba(24, 24, 24, var(--un-bg-opacity));
 }
-`)
+`,
+    )
   })
 })
 
@@ -40,7 +41,8 @@ describe('avatar size', () => {
   width: 1rem;
   font-size: 8px;
 }
-`)
+`,
+    )
   })
 
   it('avatar size 2xs', async () => {
@@ -53,7 +55,8 @@ describe('avatar size', () => {
   width: 1.25rem;
   font-size: 10px;
 }
-`)
+`,
+    )
   })
 
   it('avatar size xs', async () => {
@@ -66,7 +69,8 @@ describe('avatar size', () => {
   width: 1.5rem;
   font-size: 11px;
 }
-`)
+`,
+    )
   })
 
   it('avatar size sm', async () => {
@@ -80,7 +84,8 @@ describe('avatar size', () => {
   font-size: 0.75rem;
   line-height: 1rem;
 }
-`)
+`,
+    )
   })
 
   it('avatar size md', async () => {
@@ -94,7 +99,8 @@ describe('avatar size', () => {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-`)
+`,
+    )
   })
 
   it('avatar size lg', async () => {
@@ -108,7 +114,8 @@ describe('avatar size', () => {
   font-size: 1rem;
   line-height: 1.5rem;
 }
-`)
+`,
+    )
   })
 
   it('avatar size xl', async () => {
@@ -122,7 +129,8 @@ describe('avatar size', () => {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
-`)
+`,
+    )
   })
 
   it('avatar size 2xl', async () => {
@@ -136,7 +144,8 @@ describe('avatar size', () => {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
-`)
+`,
+    )
   })
 
   it('avatar size 3xl', async () => {
@@ -150,6 +159,7 @@ describe('avatar size', () => {
   font-size: 1.5rem;
   line-height: 2rem;
 }
-`)
+`,
+    )
   })
 })

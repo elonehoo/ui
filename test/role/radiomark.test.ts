@@ -39,7 +39,8 @@ describe('radiomark color', () => {
       0 0 0 4px var(--radiomark-color) inset;
   }
 }
-`)
+`,
+      )
     })
   }
 })

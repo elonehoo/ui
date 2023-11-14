@@ -18,7 +18,8 @@ describe('skeleton color', () => {
   --un-bg-opacity: 1;
   background-color: rgba(${hexToRgb(color, '800')?.r}, ${hexToRgb(color, '800')?.g}, ${hexToRgb(color, '800')?.b}, var(--un-bg-opacity));
 }
-`)
+`,
+      )
     })
   }
 })

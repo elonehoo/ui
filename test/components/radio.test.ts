@@ -32,7 +32,8 @@ describe('radio color', () => {
   outline-offset: 2px;
   outline-style: solid;
 }
-`)
+`,
+      )
     })
   }
 })
@@ -47,7 +48,8 @@ describe('radio size', () => {
   width: 1rem;
   height: 1rem;
 }
-`)
+`,
+    )
   })
 
   it('radio size sm', async () => {
@@ -59,7 +61,8 @@ describe('radio size', () => {
   width: 1.25rem;
   height: 1.25rem;
 }
-`)
+`,
+    )
   })
 
   it('radio size md', async () => {
@@ -71,7 +74,8 @@ describe('radio size', () => {
   width: 1.5rem;
   height: 1.5rem;
 }
-`)
+`,
+    )
   })
 
   it('radio size lg', async () => {
@@ -83,6 +87,7 @@ describe('radio size', () => {
   width: 2rem;
   height: 2rem;
 }
-`)
+`,
+    )
   })
 })

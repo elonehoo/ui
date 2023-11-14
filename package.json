@@ -27,8 +27,8 @@
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "files": [
-    "dist",
-    "*.d.ts"
+    "*.d.ts",
+    "dist"
   ],
   "scripts": {
     "dev": "unbuild --stub",
@@ -49,12 +49,12 @@
     "unocss": ">=0.53.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.43.1",
-    "@types/node": "^20.6.5",
+    "@antfu/eslint-config": "^1.1.1",
+    "@types/node": "^20.9.0",
     "bumpp": "^9.2.0",
-    "eslint": "^8.50.0",
+    "eslint": "^8.53.0",
     "typescript": "^5.2.2",
     "unbuild": "^2.0.0",
-    "unocss": "^0.56.1"
+    "unocss": "^0.57.4"
   }
 }

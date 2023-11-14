@@ -19,6 +19,7 @@ describe('select arrow', () => {
     4px 4px;
   background-repeat: no-repeat;
 }
-`)
+`,
+    )
   })
 })

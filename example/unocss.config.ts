@@ -19,7 +19,7 @@ export default defineConfig({
       after:[&.carbon]:content-[''] after:[&.carbon]:absolute after:[&.carbon]:w-2 after:[&.carbon]:h-2
       after:[&.carbon]:bg-[#0f0b25] after:[&.carbon]:rounded-[5px] after:[&.carbon]:left-[70%] after:[&.carbon]:top-[20%]
       [&.display]:overflow-hidden [&.display]:mt-[-25px] [&.display]:rounded-40px
-    `},
+    ` },
   ],
   rules: [
   ],

@@ -81,7 +81,8 @@ describe('select color', () => {
   --un-ring-opacity: 1;
   --un-ring-color: rgba(${hexToRgb(color, '400')?.r}, ${hexToRgb(color, '400')?.g}, ${hexToRgb(color, '400')?.b}, var(--un-ring-opacity));
 }
-`)
+`,
+      )
     })
   }
 })
@@ -101,7 +102,8 @@ describe('select size', () => {
   font-size: 0.75rem;
   line-height: 1rem;
 }
-`)
+`,
+    )
   })
 
   it('select xs', async () => {
@@ -118,7 +120,8 @@ describe('select size', () => {
   font-size: 0.75rem;
   line-height: 1rem;
 }
-`)
+`,
+    )
   })
 
   it('select sm', async () => {
@@ -135,7 +138,8 @@ describe('select size', () => {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-`)
+`,
+    )
   })
 
   it('select md', async () => {
@@ -152,7 +156,8 @@ describe('select size', () => {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-`)
+`,
+    )
   })
 
   it('select lg', async () => {
@@ -169,7 +174,8 @@ describe('select size', () => {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-`)
+`,
+    )
   })
 
   it('select xl', async () => {
@@ -186,6 +192,7 @@ describe('select size', () => {
   font-size: 1rem;
   line-height: 1.5rem;
 }
-`)
+`,
+    )
   })
 })

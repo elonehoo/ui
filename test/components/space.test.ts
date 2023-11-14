@@ -14,7 +14,8 @@ describe('space', () => {
   justify-content: flex-start;
   gap: 8px 12px;
 }
-`)
+`,
+    )
   })
 
   it('space center', async () => {
@@ -28,7 +29,8 @@ describe('space', () => {
   justify-content: center;
   gap: 8px 12px;
 }
-`)
+`,
+    )
   })
 
   it('space end', async () => {
@@ -42,7 +44,8 @@ describe('space', () => {
   justify-content: flex-end;
   gap: 8px 12px;
 }
-`)
+`,
+    )
   })
 
   it('space around', async () => {
@@ -56,7 +59,8 @@ describe('space', () => {
   justify-content: space-around;
   gap: 8px 12px;
 }
-`)
+`,
+    )
   })
 
   it('space between', async () => {
@@ -70,7 +74,8 @@ describe('space', () => {
   justify-content: space-between;
   gap: 8px 12px;
 }
-`)
+`,
+    )
   })
 
   it('space evenly', async () => {
@@ -84,7 +89,8 @@ describe('space', () => {
   justify-content: space-evenly;
   gap: 8px 12px;
 }
-`)
+`,
+    )
   })
 
   it('space stretch', async () => {
@@ -98,7 +104,8 @@ describe('space', () => {
   justify-content: stretch;
   gap: 8px 12px;
 }
-`)
+`,
+    )
   })
 
   it('space vertical', async () => {
@@ -109,6 +116,7 @@ describe('space', () => {
 .space-vertical {
   flex-flow: column nowrap;
 }
-`)
+`,
+    )
   })
 })

@@ -27,7 +27,7 @@ For example, you can use the UI by providing a preset in a local [config file](h
 ```ts
 // uno.config.ts
 import { defineConfig } from 'unocss'
-import {presetUno} from 'unocss'
+import { presetUno } from 'unocss'
 import UI from '@elonehoo/ui'
 
 export default defineConfig({

@@ -19,7 +19,8 @@ describe('card', () => {
     padding: 1.5rem;
   }
 }
-`)
+`,
+    )
   })
 
   it('card-box', async () => {
@@ -64,7 +65,8 @@ describe('card', () => {
   --un-ring-opacity: 1;
   --un-ring-color: rgba(31, 41, 55, var(--un-ring-opacity));
 }
-`)
+`,
+    )
   })
 
   it('card-head', async () => {
@@ -84,7 +86,8 @@ describe('card', () => {
     padding-right: 1.5rem;
   }
 }
-`)
+`,
+    )
   })
 
   it('card-footer', async () => {
@@ -104,6 +107,7 @@ describe('card', () => {
     padding-right: 1.5rem;
   }
 }
-`)
+`,
+    )
   })
 })

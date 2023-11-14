@@ -28,6 +28,7 @@ describe('content', () => {
     padding-right: 2rem;
   }
 }
-`)
+`,
+    )
   })
 })

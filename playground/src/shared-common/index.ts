@@ -2,7 +2,7 @@ import type { ExtractorContext, UnoGenerator } from '@unocss/core'
 import { escapeRegExp, isAttributifySelector, splitWithVariantGroupRE } from '@unocss/core'
 import MagicString from 'magic-string'
 import { arbitraryPropertyRE, quotedArbitraryValuesRE } from '../extractor-arbitrary-variants'
-import { HighlightAnnotation } from '../types'
+import type { HighlightAnnotation } from '../types'
 
 // https://github.com/dsblv/string-replace-async/blob/main/index.js
 export function replaceAsync(string: string, searchValue: RegExp, replacer: (...args: string[]) => Promise<string>) {

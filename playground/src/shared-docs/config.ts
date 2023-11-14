@@ -1,5 +1,5 @@
 // fork https://github.com/unocss/unocss/blob/main/packages/shared-docs/src/config.ts
-/* eslint-disable no-restricted-imports */
+
 import * as __unocss from 'unocss'
 import type { UserConfig } from '@unocss/core'
 import { ofetch } from 'ofetch'
@@ -28,11 +28,9 @@ export async function evaluateUserConfig<U = UserConfig>(configStr: string): Pro
   const _import = new Function('a', 'return import(a);')
   const __import = (name: string): any => {
     if (!modulesCache.has(name)) {
-      modulesCache.set(name,
-        name.endsWith('.json')
-          ? ofetch(CDN_BASE + name, { responseType: 'json' }).then(r => ({ default: r }))
-          : _import(CDN_BASE + name),
-      )
+      modulesCache.set(name, name.endsWith('.json')
+        ? ofetch(CDN_BASE + name, { responseType: 'json' }).then(r => ({ default: r }))
+        : _import(CDN_BASE + name))
     }
     return modulesCache.get(name)
   }

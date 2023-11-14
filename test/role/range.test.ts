@@ -28,7 +28,8 @@ describe('range size', () => {
   width: 1rem !important;
   --filler-offset: 0.4rem !important;
 }
-`)
+`,
+    )
   })
 
   it('range size sm', async () => {
@@ -56,7 +57,8 @@ describe('range size', () => {
   width: 1.25rem !important;
   --filler-offset: 0.5rem !important;
 }
-`)
+`,
+    )
   })
 
   it('range size md', async () => {
@@ -88,7 +90,8 @@ describe('range size', () => {
   width: 1.5rem !important;
   --filler-offset: 0.6rem !important;
 }
-`)
+`,
+    )
   })
 
   it('range size lg', async () => {
@@ -120,7 +123,8 @@ describe('range size', () => {
   width: 2rem !important;
   --filler-offset: 1rem !important;
 }
-`)
+`,
+    )
   })
 })
 
@@ -135,7 +139,8 @@ describe('range variants', () => {
 .range-${color}:focus-visible {
   --focus-shadow: 0 0 0 6px #1d232a inset, 0 0 0 2rem ${getHex(color, 'DEFAULT')} inset;
 }
-`)
+`,
+      )
     })
   }
 
@@ -152,7 +157,8 @@ describe('range variants', () => {
   background-color: #a6adba1a;
   border-radius: 1rem;
 }
-`)
+`,
+      )
     })
   }
 
@@ -169,7 +175,8 @@ describe('range variants', () => {
   background-color: #a6adba1a;
   border-radius: 1rem;
 }
-`)
+`,
+      )
     })
   }
 
@@ -200,7 +207,8 @@ describe('range variants', () => {
     var(--focus-shadow, 0 0),
     calc(var(--filler-size) * -1 - var(--filler-offset)) 0 0 var(--filler-size);
 }
-`)
+`,
+      )
     })
   }
 
@@ -227,7 +235,8 @@ describe('range variants', () => {
     var(--focus-shadow, 0 0),
     calc(var(--filler-size) * -1 - var(--filler-offset)) 0 0 var(--filler-size);
 }
-`)
+`,
+      )
     })
   }
 })

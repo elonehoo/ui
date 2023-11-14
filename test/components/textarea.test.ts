@@ -78,7 +78,8 @@ describe('textarea color', () => {
   --un-placeholder-opacity: 1;
   color: rgba(156, 163, 175, var(--un-placeholder-opacity));
 }
-`)
+`,
+      )
     })
   }
 
@@ -127,7 +128,8 @@ describe('textarea color', () => {
   --un-placeholder-opacity: 1;
   color: rgba(156, 163, 175, var(--un-placeholder-opacity));
 }
-`)
+`,
+    )
   })
 })
 
@@ -146,7 +148,8 @@ describe('textarea size', () => {
   font-size: 0.75rem;
   line-height: 1rem;
 }
-`)
+`,
+    )
   })
 
   it('textarea xs', async () => {
@@ -163,7 +166,8 @@ describe('textarea size', () => {
   font-size: 0.75rem;
   line-height: 1rem;
 }
-`)
+`,
+    )
   })
 
   it('textarea sm', async () => {
@@ -180,7 +184,8 @@ describe('textarea size', () => {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-`)
+`,
+    )
   })
 
   it('textarea md', async () => {
@@ -197,7 +202,8 @@ describe('textarea size', () => {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-`)
+`,
+    )
   })
 
   it('textarea lg', async () => {
@@ -214,7 +220,8 @@ describe('textarea size', () => {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-`)
+`,
+    )
   })
 
   it('textarea xl', async () => {
@@ -231,6 +238,7 @@ describe('textarea size', () => {
   font-size: 1rem;
   line-height: 1.5rem;
 }
-`)
+`,
+    )
   })
 })

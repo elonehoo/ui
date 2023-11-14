@@ -263,8 +263,7 @@ export default function elonehooUI(): Preset {
           return 'cursor-default select-none relative flex items-center justify-between gap-1 rounded-md px-2 py-1.5 text-sm text-gray-900 dark:text-white pe-7 hover:bg-gray-100 dark:hover:bg-dark-900'
       }],
       [/^tooltip-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([, color]) =>
-        `tooltip-basic-${color} tooltip-before-after-basic-${color} tooltip-after-${color} tooltip-hover-after-before-${color} tooltip-before-${color} tooltip-top-${color} `,
-      ],
+        `tooltip-basic-${color} tooltip-before-after-basic-${color} tooltip-after-${color} tooltip-hover-after-before-${color} tooltip-before-${color} tooltip-top-${color} `],
       [/^tooltip-((left|bottom|right))-((rose|pink|fuchsia|purple|violet|indigo|blue|sky|cyan|teal|emerald|green|lime|yellow|amber|orange|red|gray|slate|zinc|neutral|stone|light|dark|lightblue|warmgray|truegray|coolgray|bluegray))$/, ([,layout,,color]) => {
         return `tooltip-${layout}-${color} `
       }],
@@ -303,7 +302,7 @@ export default function elonehooUI(): Preset {
         progress-moz-bar-${color}
       `],
       [/^cmdk-raycast-((root|input|loader|list|group|group-heading|items|item|meta|icon))$/, ([, layout]) => {
-        if(layout === 'root'){
+        if (layout === 'root') {
           return `
           max-w-screen-sm
           w-full
@@ -341,9 +340,11 @@ export default function elonehooUI(): Preset {
           dark:[&:before]:-left-px
           dark:[&:before]:-top-px
           `
-        }else if(layout === 'input'){
+        }
+        else if (layout === 'input') {
           return `[background:transparent] w-full text-15px sm:text-4 text-#171717 dark:text-#ededed px-4 py-2 border-none [&::placeholder]:text-#8f8f8f [&::placeholder]:text-#707070`
-        }else if(layout === 'loader'){
+        }
+        else if (layout === 'loader') {
           return `
           w-full
           h-px
@@ -368,18 +369,24 @@ export default function elonehooUI(): Preset {
           [&:after]:cmdk-raycast-input-background-light
           dark:[&:after]:cmdk-raycast-input-background-dark
           `
-        }else if(layout === 'list'){
+        }
+        else if (layout === 'list') {
           return `h-[393px] overflow-auto overscroll-contain [transition:100ms_ease] [transition-property:height] [scroll-padding-block-end:40px] pb-10 px-2 py-0`
-        }else if(layout === 'group' || layout === 'items'){
+        }
+        else if (layout === 'group' || layout === 'items') {
           return `w-full`
-        }else if(layout === 'group-heading'){
+        }
+        else if (layout === 'group-heading') {
           return `select-none text-xs text-#6f6f6f dark:text-#a0a0a0 flex items-center px-2 py-0`
-        }else if(layout === 'item'){
+        }
+        else if (layout === 'item') {
           return `cursor-pointer h-10 text-sm flex items-center gap-2 text-#171717 dark:text-#ededed select-none [will-change:background,color] [transition:all_150ms_ease] [transition-property:none] px-2 py-0 rounded-lg [content-visibility:auto]
           [&:first-child]:mt-2 active:[transition-property:background] active:[background:#ededed] dark:active:[background:#282828] hover:[background:#ededed] dark:hover:[background:#282828] hover:text-#171717 dark:hover:text-#ededed`
-        }else if(layout === 'meta'){
+        }
+        else if (layout === 'meta') {
           return `text-#6f6f6f dark:text-#a0a0a0 text-[13px] ml-auto`
-        }else if(layout === 'icon'){
+        }
+        else if (layout === 'icon') {
           return `flex items-center justify-center relative rounded overflow-hidden shadow-[inset_0_0_1px_1px_rgba(0,0,0,0.015)]`
         }
       }],

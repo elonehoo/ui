@@ -38,7 +38,8 @@ describe('model code color', () => {
     var(--un-shadow);
   content: '';
 }
-`)
+`,
+      )
     })
   }
 })
@@ -63,6 +64,7 @@ describe('code line', () => {
   justify-content: flex-start;
   padding-right: 1.25rem;
 }
-`)
+`,
+    )
   })
 })

@@ -40,7 +40,8 @@ describe('checkbox color', () => {
   outline-offset: 2px;
   outline-style: solid;
 }
-`)
+`,
+      )
     })
   }
 })
@@ -55,7 +56,8 @@ describe('checkbox size', () => {
   width: 1rem;
   height: 1rem;
 }
-`)
+`,
+    )
   })
 
   it('checkbox size sm', async () => {
@@ -67,7 +69,8 @@ describe('checkbox size', () => {
   width: 1.25rem;
   height: 1.25rem;
 }
-`)
+`,
+    )
   })
 
   it('checkbox size md', async () => {
@@ -79,7 +82,8 @@ describe('checkbox size', () => {
   width: 1.5rem;
   height: 1.5rem;
 }
-`)
+`,
+    )
   })
 
   it('checkbox size lg', async () => {
@@ -91,6 +95,7 @@ describe('checkbox size', () => {
   width: 2rem;
   height: 2rem;
 }
-`)
+`,
+    )
   })
 })

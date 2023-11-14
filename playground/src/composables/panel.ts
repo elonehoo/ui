@@ -9,7 +9,7 @@ export const titleHeightPercent = computed(() => {
   return TITLE_HEIGHT / vh.value * 100
 })
 
-export const panelSizes:any = useLocalStorage<number[]>(
+export const panelSizes: any = useLocalStorage<number[]>(
   'unocss-panel-sizes',
   getInitialPanelSizes(titleHeightPercent.value),
   { listenToStorageChanges: false },

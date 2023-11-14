@@ -47,7 +47,8 @@ describe('badge color', () => {
   --un-ring-color: rgba(${hexToRgb(color, '400')?.r}, ${hexToRgb(color, '400')?.g}, ${hexToRgb(color, '400')?.b}, var(--un-ring-opacity));
   --un-ring-opacity: 0.2;
 }
-`)
+`,
+      )
     })
   }
 })
@@ -66,7 +67,8 @@ describe('badge size', () => {
   font-size: 0.75rem;
   line-height: 1rem;
 }
-`)
+`,
+    )
   })
 
   it('badge size sm', async () => {
@@ -82,7 +84,8 @@ describe('badge size', () => {
   font-size: 0.75rem;
   line-height: 1rem;
 }
-`)
+`,
+    )
   })
 
   it('badge size md', async () => {
@@ -98,7 +101,8 @@ describe('badge size', () => {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-`)
+`,
+    )
   })
 
   it('badge size lg', async () => {
@@ -114,6 +118,7 @@ describe('badge size', () => {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-`)
+`,
+    )
   })
 })

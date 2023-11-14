@@ -1,50 +1,50 @@
 {
-    "compilerOptions": {
-        "baseUrl": ".",
-        "module": "ESNext",
-        "target": "es2016",
-        "lib": [
-            "DOM",
-            "ESNext"
-        ],
-        "strict": true,
-        "jsx": "preserve",
-        "esModuleInterop": true,
-        "skipLibCheck": true,
-        "moduleResolution": "node",
-        "resolveJsonModule": true,
-        "noUnusedLocals": true,
-        "strictNullChecks": true,
-        "forceConsistentCasingInFileNames": true,
-        "types": [
-            "vite/client",
-            "vite-plugin-pages/client"
-        ],
-        "paths": {
-            "~components/*": [
-                "src/components/*"
-            ],
-            "~composables/*": [
-                "src/composables/*"
-            ],
-            "~pages/*": [
-                "src/pages/*"
-            ],
-            "~styles/*": [
-                "src/styles/*"
-            ],
-            "~/*": [
-                "src/*"
-            ]
-        }
-    },
-    "exclude": [
-        "dist",
-        "node_modules"
+  "compilerOptions": {
+    "target": "es2016",
+    "jsx": "preserve",
+    "lib": [
+      "DOM",
+      "ESNext"
     ],
-    "references": [
-        {
-            "path": "./tsconfig.node.json"
-        }
-    ]
+    "baseUrl": ".",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "paths": {
+      "~components/*": [
+        "src/components/*"
+      ],
+      "~composables/*": [
+        "src/composables/*"
+      ],
+      "~pages/*": [
+        "src/pages/*"
+      ],
+      "~styles/*": [
+        "src/styles/*"
+      ],
+      "~/*": [
+        "src/*"
+      ]
+    },
+    "resolveJsonModule": true,
+    "types": [
+      "vite/client",
+      "vite-plugin-pages/client"
+    ],
+    "strict": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  },
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
 }

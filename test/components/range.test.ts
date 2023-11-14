@@ -22,7 +22,8 @@ describe('range color', () => {
   border-radius: 1rem;
   background-color: transparent;
 }
-`)
+`,
+      )
     })
   }
 })

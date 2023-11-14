@@ -30,8 +30,8 @@
 ```jsx [JSX]
 <div className="model-code-green">
   <pre className="code-line" data-prefix=">">
-      <code>npm install @elonehoo/ui</code>
-    </pre>
+    <code>npm install @elonehoo/ui</code>
+  </pre>
 </div>
 ```
 

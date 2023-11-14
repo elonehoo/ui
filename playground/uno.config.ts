@@ -23,7 +23,7 @@ export default defineConfig({
     presetAttributify() as any,
     presetUno() as any,
     presetIcons(),
-    UI()
+    UI(),
   ],
   transformers: [
     transformerCompileClass(),

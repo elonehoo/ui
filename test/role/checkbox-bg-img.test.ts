@@ -49,7 +49,8 @@ describe('checkbox bg img color', () => {
     background-position-y: 0;
   }
 }
-`)
+`,
+      )
     })
   }
 })

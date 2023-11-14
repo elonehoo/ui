@@ -58,7 +58,8 @@ describe('kbd', () => {
   --un-ring-opacity: 1;
   --un-ring-color: rgba(55, 65, 81, var(--un-ring-opacity));
 }
-`)
+`,
+    )
   })
 
   it('kbd-sm', async () => {
@@ -71,7 +72,8 @@ describe('kbd', () => {
   min-width: 20px;
   font-size: 11px;
 }
-`)
+`,
+    )
   })
 
   it('kbd-xs', async () => {
@@ -84,7 +86,8 @@ describe('kbd', () => {
   min-width: 16px;
   font-size: 10px;
 }
-`)
+`,
+    )
   })
 
   it('kbd-md', async () => {
@@ -97,6 +100,7 @@ describe('kbd', () => {
   min-width: 24px;
   font-size: 12px;
 }
-`)
+`,
+    )
   })
 })

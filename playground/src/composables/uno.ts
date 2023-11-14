@@ -4,8 +4,8 @@ import { createGenerator } from 'unocss'
 import { createAutocomplete } from '@unocss/autocomplete'
 import MagicString from 'magic-string'
 import type { Annotation, UnocssPluginContext } from '@unocss/core'
-import { evaluateUserConfig } from '../shared-docs'
 import type { CompletionContext, CompletionResult } from '@codemirror/autocomplete'
+import { evaluateUserConfig } from '../shared-docs'
 
 export const init = ref(false)
 export const customConfigError = ref<Error>()

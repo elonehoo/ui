@@ -77,7 +77,8 @@ describe('input color', () => {
   --un-placeholder-opacity: 1;
   color: rgba(156, 163, 175, var(--un-placeholder-opacity));
 }
-`)
+`,
+      )
     })
   }
 
@@ -125,7 +126,8 @@ describe('input color', () => {
   --un-placeholder-opacity: 1;
   color: rgba(156, 163, 175, var(--un-placeholder-opacity));
 }
-`)
+`,
+    )
   })
 })
 
@@ -144,7 +146,8 @@ describe('input size', () => {
   font-size: 0.75rem;
   line-height: 1rem;
 }
-`)
+`,
+    )
   })
 
   it('input size xs', async () => {
@@ -161,7 +164,8 @@ describe('input size', () => {
   font-size: 0.75rem;
   line-height: 1rem;
 }
-`)
+`,
+    )
   })
 
   it('input size sm', async () => {
@@ -178,7 +182,8 @@ describe('input size', () => {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-`)
+`,
+    )
   })
 
   it('input size md', async () => {
@@ -195,7 +200,8 @@ describe('input size', () => {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-`)
+`,
+    )
   })
 
   it('input size lg', async () => {
@@ -212,7 +218,8 @@ describe('input size', () => {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-`)
+`,
+    )
   })
 
   it('input size xl', async () => {
@@ -229,6 +236,7 @@ describe('input size', () => {
   font-size: 1rem;
   line-height: 1.5rem;
 }
-`)
+`,
+    )
   })
 })

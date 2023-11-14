@@ -65,7 +65,8 @@ describe('toggle color', () => {
   outline-offset: 2px;
   outline-style: solid;
 }
-`)
+`,
+      )
     })
   }
 
@@ -104,7 +105,8 @@ describe('toggle color', () => {
   box-shadow: var(--un-ring-offset-shadow), var(--un-ring-shadow),
     var(--un-shadow) !important;
 }
-`)
+`,
+    )
   })
 })
 
@@ -146,7 +148,8 @@ describe('toggle size', () => {
   box-shadow: var(--un-ring-offset-shadow), var(--un-ring-shadow),
     var(--un-shadow) !important;
 }
-`)
+`,
+    )
   })
 
   it('toggle sm', async () => {
@@ -186,7 +189,8 @@ describe('toggle size', () => {
   box-shadow: var(--un-ring-offset-shadow), var(--un-ring-shadow),
     var(--un-shadow) !important;
 }
-`)
+`,
+    )
   })
 
   it('toggle md', async () => {
@@ -226,7 +230,8 @@ describe('toggle size', () => {
   box-shadow: var(--un-ring-offset-shadow), var(--un-ring-shadow),
     var(--un-shadow) !important;
 }
-`)
+`,
+    )
   })
 
   it('toggle lg', async () => {
@@ -266,6 +271,7 @@ describe('toggle size', () => {
   box-shadow: var(--un-ring-offset-shadow), var(--un-ring-shadow),
     var(--un-shadow) !important;
 }
-`)
+`,
+    )
   })
 })

@@ -25,7 +25,8 @@ describe('table', () => {
   --un-bg-opacity: 1;
   background-color: rgba(15, 15, 15, var(--un-bg-opacity));
 }
-`)
+`,
+    )
   })
 
   it('table main', async () => {
@@ -48,7 +49,8 @@ describe('table', () => {
   --un-divide-opacity: 1;
   border-color: rgba(31, 41, 55, var(--un-divide-opacity));
 }
-`)
+`,
+    )
   })
 
   it('table th', async () => {
@@ -75,7 +77,8 @@ describe('table', () => {
   --un-text-opacity: 1;
   color: rgba(255, 255, 255, var(--un-text-opacity));
 }
-`)
+`,
+    )
   })
 
   it('table body', async () => {
@@ -94,7 +97,8 @@ describe('table', () => {
   --un-divide-opacity: 1;
   border-color: rgba(24, 24, 24, var(--un-divide-opacity));
 }
-`)
+`,
+    )
   })
 
   it('table td', async () => {
@@ -117,6 +121,7 @@ describe('table', () => {
   --un-text-opacity: 1;
   color: rgba(156, 163, 175, var(--un-text-opacity));
 }
-`)
+`,
+    )
   })
 })

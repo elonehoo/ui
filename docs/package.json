@@ -3,23 +3,23 @@
   "type": "module",
   "version": "0.0.0",
   "private": true,
+  "author": "Elone Hoo <elonehoo@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build && pnpm -C ../playground/ run build",
     "preview": "vitepress preview"
   },
-  "author": "Elone Hoo <elonehoo@gmail.com>",
-  "license": "MIT",
+  "dependencies": {
+    "@unocss/reset": "^0.57.4",
+    "@vueuse/core": "^10.6.1",
+    "unocss": "^0.57.4",
+    "vue": "^3.3.8"
+  },
   "devDependencies": {
     "unplugin-vue-components": "^0.25.2",
-    "vite": "^4.4.9",
-    "vitepress": "1.0.0-rc.20"
-  },
-  "dependencies": {
-    "@unocss/reset": "^0.56.1",
-    "@vueuse/core": "^10.4.1",
-    "unocss": "^0.56.1",
-    "vue": "^3.3.4"
+    "vite": "^4.5.0",
+    "vitepress": "1.0.0-rc.25"
   },
   "pnpm": {
     "peerDependencyRules": {
