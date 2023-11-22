@@ -22,7 +22,7 @@
     "unplugin-auto-import": "^0.16.7",
     "unplugin-vue-components": "^0.25.2",
     "vite": "^5.0.2",
-    "vite-inspector": "^0.1.2",
+    "vite-inspector": "^0.1.4",
     "vite-plugin-alias": "^0.1.1",
     "vite-plugin-pages": "^0.31.0",
     "vue-tsc": "^1.8.22"
