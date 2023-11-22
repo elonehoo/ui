@@ -11,15 +11,15 @@
     "preview": "vitepress preview"
   },
   "dependencies": {
-    "@unocss/reset": "^0.57.4",
+    "@unocss/reset": "^0.57.7",
     "@vueuse/core": "^10.6.1",
-    "unocss": "^0.57.4",
+    "unocss": "^0.57.7",
     "vue": "^3.3.8"
   },
   "devDependencies": {
     "unplugin-vue-components": "^0.25.2",
-    "vite": "^4.5.0",
-    "vitepress": "1.0.0-rc.25"
+    "vite": "^5.0.2",
+    "vitepress": "1.0.0-rc.29"
   },
   "pnpm": {
     "peerDependencyRules": {

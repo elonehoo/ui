@@ -386,7 +386,7 @@ export default function elonehooUI(): Preset {
         else if (layout === 'meta') {
           return `text-#6f6f6f dark:text-#a0a0a0 text-[13px] ml-auto`
         }
-        else if (layout === 'icon') {
+        else {
           return `flex items-center justify-center relative rounded overflow-hidden shadow-[inset_0_0_1px_1px_rgba(0,0,0,0.015)]`
         }
       }],
