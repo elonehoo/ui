@@ -12,9 +12,9 @@
   },
   "dependencies": {
     "@unocss/reset": "^0.58.0",
-    "@vueuse/core": "^10.6.1",
+    "@vueuse/core": "^10.7.0",
     "unocss": "^0.58.0",
-    "vue": "^3.3.9"
+    "vue": "^3.3.11"
   },
   "devDependencies": {
     "unplugin-vue-components": "^0.26.0",
