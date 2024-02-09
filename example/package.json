@@ -17,7 +17,7 @@
     "@iconify/json": "^2.2.162",
     "@types/node": "^20.10.5",
     "@unocss/preset-icons": "^0.58.2",
-    "@vitejs/plugin-vue": "^4.6.0",
+    "@vitejs/plugin-vue": "^5.0.4",
     "typescript": "^5.3.3",
     "unplugin-auto-import": "^0.17.3",
     "unplugin-vue-components": "^0.26.0",
